@@ -95,7 +95,7 @@ export const PlatformShiftSection = () => {
           <div className="mb-8 flex items-center gap-3">
             <Boxes className="w-5 h-5 text-primary" />
             <div>
-              <h3 className="text-xl font-bold text-foreground">In Scope vs Adjacent: Energy Efficiency vs Asset Planning</h3>
+              <h3 className="text-xl font-bold text-foreground">Advisory and RA+ ClimVar: Two Modes, One Methodology</h3>
               <p className="text-xs text-muted-foreground mt-0.5">{productScope.intro}</p>
             </div>
           </div>
