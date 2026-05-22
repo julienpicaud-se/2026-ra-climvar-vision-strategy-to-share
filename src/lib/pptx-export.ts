@@ -421,13 +421,13 @@ export const exportToPptx = async () => {
 
   const buildSuccessMetrics = () => {
     const s = newSlide();
-    addTitle(s, "QUANTITATIVE KPIS", "Success Looks Like", "Measurable signals that translate the Strategic Pillars into trackable indicators. Each KPI defines what we measure, not a committed target.");
+    addTitle(s, "QUANTITATIVE KPIS", "Success Looks Like", "Measurable signals that translate the strategic pillars into trackable indicators. Each KPI defines what we measure, not a committed target.");
     const quantKPIs = [
-      { label: "Audit Cycle Time", signal: "Days per audit (trend)" },
-      { label: "Advisory-to-Audit Conversion", signal: "% prompts → audits" },
-      { label: "Time to Quote", signal: "Hours to quote (median)" },
-      { label: "Recommendation Adoption", signal: "% recs actioned (90d)" },
-      { label: "RA+ Revenue Contribution", signal: "% of RA+ ARR" },
+      { label: "First Climate VaR", signal: "Weeks from kickoff to delivery" },
+      { label: "Scenario Refresh Cycle", signal: "Days per refresh in RA+ ClimVar" },
+      { label: "Adaptation Coverage", signal: "% VaR addressed by sized levers" },
+      { label: "Cross Module Reuse", signal: "ClimVar clients consuming adjacent modules" },
+      { label: "RA+ ClimVar Recurring Use", signal: "Active client teams (90d)" },
     ];
     quantKPIs.forEach((k, i) => {
       const xPos = 0.5 + i * 1.85;
@@ -438,7 +438,7 @@ export const exportToPptx = async () => {
       s.addText(k.label, { x: xPos + 0.1, y: 2.0, w: 1.55, h: 0.45, fontSize: 9, bold: true, color: TEXT_WHITE, fit: "shrink" });
       s.addText(k.signal, { x: xPos + 0.1, y: 2.45, w: 1.55, h: 0.45, fontSize: 7.5, color: BRAND_GREEN, fit: "shrink" });
     });
-    s.addText("Sera Interface Signals", { x: 0.5, y: 3.15, w: 9, h: 0.3, fontSize: 11, bold: true, color: BRAND_GREEN });
+    s.addText("RA+ ClimVar Adoption Signals", { x: 0.5, y: 3.15, w: 9, h: 0.3, fontSize: 11, bold: true, color: BRAND_GREEN });
     s.addText(seraKPIs.intro, { x: 0.5, y: 3.45, w: 9, h: 0.35, fontSize: 8, italic: true, color: TEXT_MUTED, fit: "shrink" });
     seraKPIs.kpis.forEach((k, i) => {
       const xPos = 0.5 + (i % 3) * 3.05;
