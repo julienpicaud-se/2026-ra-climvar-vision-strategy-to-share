@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Target, ChevronDown, Zap, Compass, BookOpen, Database } from "lucide-react";
+import { Target, ChevronDown, Layers, LineChart, Sparkles, DollarSign } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import {
   Collapsible,
@@ -11,57 +11,54 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const keyObjectives = [
   {
     id: "O1",
-    tag: "Automation",
-    tagIcon: Zap,
-    title: "Compress carbon footprint cycle time with AI agents",
+    tag: "Quantify",
+    tagIcon: Layers,
+    title: "Establish ClimVar as the integrated financial view of climate and nature risk",
     description:
-      "Shift senior sustainability experts from manual scoping to calibration. Agentic assistants draft inventories, stack abatement measures, and surface assumptions so experts focus on judgment.",
+      "Combine physical, transition and nature drivers into a single Climate Value at Risk per scenario, anchored on a published DCF methodology and public scenario references.",
     keyResults: [
-      "Cut average decarbonization scoping time from weeks to days",
-      "Automate 90%+ of recurring GHG calculations and disclosure templating",
-      "Free senior consultants to spend most of their time on client-facing judgment",
+      "Six risk drivers in production: four physical, two transition, with nature wired into the same waterfall",
+      "Scenarios anchored on NGFS and IPCC RCP references for full auditability",
+      "Variable granularity from country and sector down to site and supplier level",
     ],
   },
   {
     id: "O2",
-    tag: "Discovery",
-    tagIcon: Compass,
-    title: "Surface always-on sustainability opportunities inside RA+",
+    tag: "Adapt",
+    tagIcon: LineChart,
+    title: "Turn risk reduction into investment options tied to Schneider Electric offers",
     description:
-      "Make early, credible sustainability advice visible in-product and keep it on between formal disclosure cycles. Continuous detection surfaces Scope 3 hotspots, supplier engagement gaps, and biodiversity exposures the consultancy team would normally find manually.",
+      "Move clients from awareness to action by sizing gross versus net Value at Risk after Schneider Electric adaptation measures across energy, efficiency, supply chain and resilience.",
     keyResults: [
-      "Ship in-product decarbonization recommendations with transparent assumptions and confidence levels",
-      "Stand up always-on abatement detection on top of the RA+ sustainability data spine",
-      "Generate qualified pull from RA+ discovery into deeper GSP advisory work",
-      "Establish early advisory as a recurring touchpoint, not a one-off engagement",
+      "Gross to net Value at Risk view operational across the main adaptation levers",
+      "Adaptation library connected to the Schneider Electric offer catalogue",
+      "Site and supply chain deep dive paths productised for the highest impact interventions",
     ],
   },
   {
     id: "O3",
-    tag: "Knowledge",
-    tagIcon: BookOpen,
-    title: "Turn legacy GSP IP into a reusable knowledge engine",
+    tag: "Automate",
+    tagIcon: Sparkles,
+    title: "Industrialise ClimVar inside RA+ as a recurring product",
     description:
-      "Ingest, structure, and govern decades of GSP deliverables so every future recommendation learns from past projects and assurance outcomes.",
+      "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios on demand, drill from portfolio to site, and reuse the same backbone across disclosure, capital and transition planning cycles.",
     keyResults: [
-      "Extract structured methodology evidence from the historical engagement library",
-      "Stand up a probabilistic estimator that improves with every new engagement",
-      "Feed assurance results back into the engine to sharpen future recommendations",
+      "RA+ ClimVar module live with refreshable scenarios, horizons and adaptation profiles",
+      "Lower marginal cost on every additional Climate Value at Risk refresh",
+      "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy modules",
     ],
   },
   {
     id: "O4",
-    tag: "Platform (RA+)",
-    tagIcon: Database,
-    title: "Anchor sustainability on the RA+ data spine",
+    tag: "Finance Entry",
+    tagIcon: DollarSign,
+    title: "Make finance the entry door for the climate conversation",
     description:
-      "One resolved view of client emissions, supplier, operational, and disclosure data shared across discovery, scoping, advisory, and in-product guidance. RA+ exposes an agent-ready context layer to Sera and downstream agents.",
+      "Position ClimVar so every first conversation starts with the financial framing and sustainability follows. The buyer set spans CFO, CRO, CSO and operational leaders on the same Value at Risk backbone.",
     keyResults: [
-      "Run client sustainability data natively inside RA+ instead of fragmented vendor tools",
-      "Reuse client context across engagements, quotes, and follow-ups without re-keying",
-      "Expose an enriched, agent-ready context layer (emissions + methodology + advisory IP) to Sera",
-      "Cover self-serve, expert-supported, and fully-managed engagement profiles on the same sustainability platform",
-      "Align RA+ Sustainability MVP with SE Corporate as design partner ahead of RA+ go-live",
+      "First meetings led by Climate Value at Risk framing, not qualitative heatmaps",
+      "Shared one number view used by finance, risk and sustainability teams",
+      "ClimVar outputs reused in impairment, capital allocation and disclosure work",
     ],
   },
 ];
@@ -84,13 +81,13 @@ export const KeyObjectivesSection = () => {
       <div className="container px-4">
         <div className="text-center mb-12 sm:mb-16">
           <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 sm:mb-4 block">
-            Goals & Key Results
+            Goals and Key Results
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
             Key Objectives
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Customer-outcome focused objectives that frame the Beyond Sustainability Library transformation
+            Four objectives that operationalise the Quantify, Adapt and Automate pillars across ClimVar advisory and RA+ ClimVar.
           </p>
         </div>
 

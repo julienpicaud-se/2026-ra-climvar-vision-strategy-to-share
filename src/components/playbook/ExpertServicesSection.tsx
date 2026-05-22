@@ -3,27 +3,27 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const archetypes = [
   {
-    icon: Bot,
-    title: "Self-Serve Operator",
-    tagline: "FULL AUTONOMY, AI-DRIVEN",
+    icon: HeartHandshake,
+    title: "Advisory First Client",
+    tagline: "EXPERT LED, METHODOLOGY GROUNDED",
     description:
-      "Wants the keys. Runs RA+ analytics, builds decarbonization scenarios, and acts on Sera recommendations without waiting for a human. RA+ is their cockpit; the platform must stand on its own.",
+      "Wants a senior ClimVar team in the room to size their first Climate Value at Risk, calibrate scenarios with the CFO and risk team, and frame adaptation as a capital allocation question. The methodology travels with the engagement.",
     bullets: [
-      "Self-directed exploration of RA+ interval data and benchmarks",
-      "Agent-led scoping, ROM estimates, and what-if scenarios on demand",
-      "Expert services available a-la-carte, never required to make progress",
+      "Bespoke scoping with finance, risk and sustainability stakeholders",
+      "Hands on calibration of physical, transition and nature drivers",
+      "Board ready Value at Risk waterfall and adaptation narrative",
     ],
   },
   {
-    icon: HeartHandshake,
-    title: "Guided Decision Client",
-    tagline: "HUMAN IN THE LOOP",
+    icon: Bot,
+    title: "Living Platform Client",
+    tagline: "RA+ CLIMVAR, REFRESHED ON DEMAND",
     description:
-      "Wants a trusted expert in the room for high-stakes calls. The platform still drives the work, but a Schneider expert validates, interprets, and translates RA+ outputs into board-ready decisions.",
+      "Has been through a first ClimVar engagement and now wants the model inside RA+ ClimVar so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
-      "Senior auditor co-pilots RA+ readouts and decarbonization trade-offs",
-      "Expert-led risk framing for capital, compliance, and tenant impact",
-      "Recurring advisory cadence tied to the same RA+ workspace and RA+ spine",
+      "Self service refresh of scenarios, horizons and adaptation profiles",
+      "Geographic and asset level deep dives on demand",
+      "Reusable inputs across disclosure, capital and transition planning",
     ],
   },
 ];
@@ -31,51 +31,51 @@ const archetypes = [
 const judgementPillars = [
   {
     icon: ShieldCheck,
-    title: "Validation",
+    title: "Methodology validation",
     description:
-      "Experts pressure-test RA+ baselines, decarbonization assumptions, and Sera outputs before they become commitments , confirming that what the agent proposes survives engineering and field reality.",
+      "Experts confirm that scenario choices, scope boundaries and DCF assumptions hold up to finance, risk and audit scrutiny before a Climate Value at Risk number leaves the room.",
   },
   {
     icon: Lightbulb,
-    title: "Interpretation",
+    title: "Driver interpretation",
     description:
-      "Translates RA+ telemetry, anomaly patterns, and decarbonization roadmaps into a clear narrative , what is happening in the portfolio, why it matters, and what the realistic envelope of action looks like.",
+      "Translates physical, transition and nature drivers into a narrative the CFO, CRO and CSO can act on, with clear sensitivities and uncertainty ranges.",
   },
   {
     icon: AlertTriangle,
-    title: "Risk translation",
+    title: "Adaptation framing",
     description:
-      "Frames downside, tenant impact, compliance exposure, and execution risk for measures that RA+ surfaces , so clients see both the upside model and the operational guardrails.",
+      "Sizes the gross versus net Value at Risk for each Schneider Electric lever and surfaces the trade offs between resilience, abatement and capital cost.",
   },
   {
     icon: Presentation,
-    title: "Executive communication",
+    title: "Board grade communication",
     description:
-      "Packages RA+ evidence and Sera reasoning into board-grade recommendations, capital narratives, and stakeholder talking points that move decisions, not just dashboards.",
+      "Packages results into capital narratives, impairment briefs and disclosure inputs that move decisions across finance, risk, sustainability and operations.",
   },
 ];
 
 const tiers = [
   {
-    name: "Self-Serve",
-    audience: "Self-Serve Operator",
-    cadence: "On demand",
-    human: "Expert services available a-la-carte",
-    platform: "Full RA+ + RA+ + Sera autonomy",
-  },
-  {
-    name: "Assisted",
-    audience: "Mixed maturity",
-    cadence: "Async reviews + QBRs",
-    human: "Expert validates RA+ outputs and decarbonization scopes on cadence",
-    platform: "Shared RA+ workspace with annotated RA+ readouts",
-  },
-  {
     name: "Advisory",
-    audience: "Guided Decision Client",
-    cadence: "Embedded engagement",
-    human: "Named expert owns interpretation and exec communication",
-    platform: "Co-piloted RA+ + RA+ spine with expert IP layered in",
+    audience: "First time Climate Value at Risk",
+    cadence: "Project based",
+    human: "Senior ClimVar team owns scoping, calibration and exec communication",
+    platform: "Bespoke modelling shared back via the ClimVar advisory deliverable",
+  },
+  {
+    name: "Hybrid",
+    audience: "Recurring refresh, expert assist",
+    cadence: "Quarterly or disclosure aligned",
+    human: "Expert validates scenarios and adaptation framing at each refresh",
+    platform: "Shared RA+ ClimVar workspace with annotated Value at Risk outputs",
+  },
+  {
+    name: "RA+ ClimVar",
+    audience: "Living platform client",
+    cadence: "On demand",
+    human: "Expert services available a la carte for new scenarios or deep dives",
+    platform: "Full RA+ ClimVar autonomy on portfolio, country, site and supplier views",
   },
 ];
 
@@ -91,17 +91,16 @@ export const ExpertServicesSection = () => {
       <div className="container px-4">
         <div className="text-center mb-12 sm:mb-16">
           <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 sm:mb-4 block">
-            Human in the Loop
+            Advisory Plus Platform
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Expert Services Layer on the RA+ Spine
+            ClimVar Advisory on the RA+ ClimVar Backbone
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            AI executes, humans apply judgment. RA+ runs the analytics; Schneider experts step in where validation, interpretation, risk, and executive communication make the difference.
+            Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ ClimVar industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
           </p>
         </div>
 
-        {/* Client archetypes */}
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 mb-12">
           {archetypes.map((a) => {
             const Icon = a.icon;
@@ -137,11 +136,10 @@ export const ExpertServicesSection = () => {
           })}
         </div>
 
-        {/* Judgement layer */}
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex items-center gap-3 mb-6">
             <UserCog className="w-5 h-5 text-primary" />
-            <h3 className="font-semibold text-foreground">Service Advisors as the Judgment Layer</h3>
+            <h3 className="font-semibold text-foreground">Where ClimVar Experts Make the Difference</h3>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {judgementPillars.map((p) => {
@@ -162,11 +160,10 @@ export const ExpertServicesSection = () => {
           </div>
         </div>
 
-        {/* Engagement tiers */}
         <div className="max-w-6xl mx-auto bg-card rounded-xl border border-border/50 p-6 sm:p-8">
           <div className="flex items-center gap-3 mb-6">
             <MessageSquare className="w-5 h-5 text-primary" />
-            <h3 className="font-semibold text-foreground">Engagement Tiers on One RA+ Spine</h3>
+            <h3 className="font-semibold text-foreground">Engagement Tiers on One ClimVar Backbone</h3>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm min-w-[680px]">
@@ -176,7 +173,7 @@ export const ExpertServicesSection = () => {
                   <th className="py-3 pr-4 text-xs uppercase tracking-wider text-primary font-semibold">Best for</th>
                   <th className="py-3 pr-4 text-xs uppercase tracking-wider text-primary font-semibold">Cadence</th>
                   <th className="py-3 pr-4 text-xs uppercase tracking-wider text-primary font-semibold">Human role</th>
-                  <th className="py-3 text-xs uppercase tracking-wider text-primary font-semibold">Platform / RA+</th>
+                  <th className="py-3 text-xs uppercase tracking-wider text-primary font-semibold">Platform</th>
                 </tr>
               </thead>
               <tbody>
@@ -193,7 +190,7 @@ export const ExpertServicesSection = () => {
             </table>
           </div>
           <p className="text-xs text-muted-foreground italic mt-5">
-            One RA+ spine, one RA+ workspace. Clients move between tiers without losing context, history, or model continuity.
+            One methodology, one backbone. Clients move from advisory to RA+ ClimVar without losing scenarios, assumptions or model continuity.
           </p>
         </div>
       </div>

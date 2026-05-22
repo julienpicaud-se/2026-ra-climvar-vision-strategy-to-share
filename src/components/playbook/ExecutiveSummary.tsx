@@ -54,81 +54,81 @@ const sections: Section[] = [
   {
     num: "01",
     id: "whats-happening",
-    label: "What's Happening",
+    label: "What is Happening",
     title:
-      "World-class GSP expertise, ready to scale through the RA+ platform",
+      "Climate and nature risk has become a board level financial question",
     icon: Activity,
     tone: "muted",
     body:
-      "The Global Sustainability Practice already delivers trusted advisory across regions (400+ climate experts, 7,500+ projects, 426.54M tCO2 managed, 2,000+ carbon footprints calculated, 400+ offsetting projects in 55+ countries, ranked #1 globally by Sustainability Magazine). The opportunity is to convert that operating strength into a repeatable platform capability inside RA+, with Sera as the unified interface and client sustainability data as the trusted foundation, so customers are reached earlier, action is guided faster, and continuous improvement becomes the default.",
+      "CFOs, investors, regulators and operational leaders all need a single, defensible answer to one question: how much enterprise value, revenue, OPEX and COGS is exposed to physical, transition and nature risks, and how much of that exposure can be reduced. Today that answer lives in scattered consulting decks, qualitative heatmaps and one off models. ClimVar exists to make it quantified, comparable and actionable.",
   },
   {
     num: "02",
     id: "true-problem",
-    label: "The True Problem",
-    title: "The issue is not demand, it is repeatability",
+    label: "The Core Problem",
+    title: "Risk is described qualitatively, decisions need it in financial terms",
     icon: AlertTriangle,
     tone: "destructive",
     body:
-      "Customers want clear guidance on their net-zero path, and the GSP has the expertise to answer. The constraint is that emissions data, methodologies, offsetting pathways, and client context are not yet governed as one reusable product foundation across Strategy, Portfolio View, advisory workflows, and customer-facing recommendations.",
+      "Most climate and nature risk work stops at exposure heatmaps and narrative scenarios. Finance, risk and capital allocation teams cannot use that output to test impairment, prioritise CAPEX or compare adaptation choices. Without a financial common denominator, climate risk stays in the sustainability silo and never reaches the decisions where it would matter most.",
   },
   {
     num: "03",
     id: "north-star",
     label: "Our North Star",
-    title: "A governed GSP capability embedded in RA+",
+    title: "Climate Value at Risk as the integrated, financial view of climate and nature risk",
     icon: Compass,
     tone: "primary",
     body:
-      "RA+ Sustainability is the focus of this discovery: a governed product inside RA+ that combines client sustainability data as the system of record, expert GSP knowledge, and guided workflows for Sustainability Leads, Data Ops, CSOs, and Executives. Asset Planning is a separate adjacent product. Sera is the single interface across both, sequenced so the Sustainability Lead experience leads.",
+      "ClimVar uses a published Discounted Cash Flow methodology to express physical, transition and nature risks as one Climate Value at Risk number per scenario, broken down by driver, geography and asset. Finance becomes the entry door for the climate conversation, and sustainability follows once the financial case is on the table.",
   },
   {
     num: "04",
     id: "way-to-win",
     label: "A Pragmatic Way to Win",
-    title: "Start with reusable intelligence, then expand into guided workflows",
+    title: "Advisory first, then a living capability in RA+ ClimVar",
     icon: Wrench,
     tone: "muted",
     body:
-      "The practical sequence is to finalize the unified sustainability taxonomy, publish a provisional decarbonization knowledge base with SME review, define clean service boundaries, and connect trusted client signals to Strategy first. From there, RA+ can introduce Portfolio View, rule-based opportunity surfacing, customer self-service exploration, and platform-native disclosure outputs.",
+      "Clients start with a ClimVar advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ ClimVar productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
   },
   {
     num: "05",
     id: "economic-impact",
     label: "Economic Impact",
-    title: "The value case spans productivity, upsell, and recurring revenue",
+    title: "Three value pillars: Quantify, Adapt, Automate",
     icon: TrendingUp,
     tone: "secondary",
     body:
-      "This transformation lowers cost to serve by reducing rework on disclosures, creates better qualified demand for SBTi, climate risk and transition advisory, and strengthens RA+ stickiness through continuous sustainability guidance that customers can act on between disclosure cycles.",
+      "Quantify turns climate and nature exposure into a financial number CFOs and boards can act on. Adapt connects that number to concrete Schneider Electric solutions and sizes the net Value at Risk after intervention. Automate lifts the model out of decks and into RA+ ClimVar so every refresh is faster, cheaper and more useful than the last.",
     kpis: [
-      { value: "Faster", label: "Inventory throughput" },
-      { value: "Higher", label: "Advisory pull" },
-      { value: "Stickier", label: "RA+ value proposition" },
+      { value: "One number", label: "Financial framing" },
+      { value: "Gross to net", label: "Adaptation impact" },
+      { value: "Living", label: "RA+ ClimVar refresh" },
     ],
   },
   {
     num: "06",
     id: "strategic-upside",
     label: "Strategic Upside",
-    title: "Sustainability becomes a continuous RA+ operating model",
+    title: "A blue ocean position on integrated risk, carbon and monitoring to finance",
     icon: Rocket,
     tone: "muted",
     body:
-      "The end state is a credible, governed sustainability layer in RA+ that links strategy, design, execution, and continuous improvement. Customers receive contextual decarbonization and risk recommendations, GSP teams reuse a consistent knowledge base, and expert services are pulled in at the right moments for deeper engagement without turning early guidance into an assurance commitment.",
+      "No competitor combines climate, nature and transition risk with carbon performance and operational monitoring, all expressed in financial terms, the way ClimVar does. The methodology is published and defensible, internal use cases on Schneider Electric sites prove the model at scale, and RA+ ClimVar gives clients a recurring product wrapper that pulls through the wider RA+ portfolio.",
   },
 ];
 
 const risks: { risk: string; mitigation: string }[] = [
   {
-    risk: "Customer context is too thin for useful recommendations",
+    risk: "Clients perceive ClimVar as another qualitative climate study",
     mitigation:
-      "Start with data-light guidance, show data gaps transparently, and progressively enrich with site, supplier, vendor software, and customer inputs.",
+      "Lead every conversation with the financial framing and a worked Climate Value at Risk waterfall, then bring in the sustainability narrative only once finance is on the table.",
   },
   {
-    risk: "Sustainability guidance becomes inconsistent across regions",
+    risk: "Advisory delivery is hard to industrialise inside RA+",
     mitigation:
-      "Govern taxonomy, required fields, emission factors, and SME review so the library becomes the single source of truth.",
+      "Sequence the build so the ClimVar advisory model and RA+ ClimVar share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
   },
 ];
 
@@ -200,13 +200,13 @@ export const ExecutiveSummary = () => {
         <div className="mx-auto max-w-6xl">
           <header className="mb-12 text-center sm:mb-16">
             <div className="mb-4 font-mono text-[11px] font-semibold uppercase tracking-widest text-primary">
-              Briefing / Steve's Ready Narrative
+              Briefing / ClimVar Executive Narrative
             </div>
             <h2 className="text-4xl font-bold leading-tight text-foreground sm:text-5xl">
               Executive Summary
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              A comprehensive view of the transformation opportunity for executive stakeholders.
+              How ClimVar advisory and RA+ ClimVar turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
             </p>
           </header>
 
@@ -228,13 +228,13 @@ export const ExecutiveSummary = () => {
                     07
                   </div>
                   <h3 className="text-xl font-semibold text-foreground sm:text-2xl">
-                    Risks & Mitigations
+                    Risks and Mitigations
                   </h3>
                 </div>
               </div>
 
               <p className="mb-6 text-sm text-muted-foreground">
-                Two cross-cutting risks live here. Operating rules are detailed in{" "}
+                Two cross cutting risks live here. Operating rules are detailed in{" "}
                 <a href="#guardrails" className="text-primary underline-offset-4 hover:underline">Guardrails</a>{" "}
                 and boundaries in{" "}
                 <a href="#out-of-scope" className="text-primary underline-offset-4 hover:underline">Out of Scope</a>.

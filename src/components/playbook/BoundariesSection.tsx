@@ -15,56 +15,56 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const outOfScopeItems = [
   {
     icon: FileCheck,
-    title: "Assurance Sign-Off",
-    description: "Limited assurance under ISAE 3000 / ISSA 5000 stays with accredited third parties, not the platform",
+    title: "Audit Sign Off",
+    description: "Statutory assurance of climate related financial figures stays with accredited auditors, not with the ClimVar methodology or platform.",
   },
   {
     icon: Wrench,
     title: "Regulatory Interpretation",
-    description: "Binding legal interpretation of CSRD, ISSB, EU Taxonomy, or local disclosure law remains with the customer's counsel",
+    description: "Binding legal interpretation of CSRD, IFRS S2, TCFD, TNFD or local disclosure law remains with the client's counsel.",
   },
   {
     icon: Boxes,
-    title: "Asset Planning",
-    description: "Baseline modeling, capital planning, and decarbonization project execution are covered in a separate Asset Planning discovery, not in this playbook",
+    title: "Pricing and Discounting",
+    description: "ClimVar advisory commercials and RA+ ClimVar pricing live outside this space. The focus here is methodology, value and product scope.",
   },
 ];
 
 const guardrailCategories = [
   {
     icon: Eye,
-    title: "Transparency & Scope",
+    title: "Transparency and Scope",
     points: [
-      "Label sustainability guidance as advisory, not a commercial or regulatory commitment",
-      "Show abatement and emissions as ranges with confidence levels and data freshness",
-      "Display key methodology choices, factors, and any data gaps",
+      "Show Climate Value at Risk as ranges with explicit scenarios, time horizons and confidence levels",
+      "Surface the drivers, geographies and assets included or excluded in each run",
+      "Label every output as decision support, not as a regulatory or commercial commitment",
     ],
   },
   {
     icon: Database,
-    title: "Data Quality & Applicability",
+    title: "Methodology and Data",
     points: [
-      "Enforce minimum data checks across Scope 1, 2, and 3 before showing estimates",
-      "Display applicability rules, framework scope, and prerequisites",
-      "Filter recommendations by sector, geography, and supply chain context",
+      "Anchor every scenario on public references (NGFS, IPCC RCP) and document any departure",
+      "Apply minimum data checks before producing a Value at Risk number",
+      "Expose data gaps transparently rather than hiding them behind a single number",
     ],
   },
   {
     icon: ShieldCheck,
-    title: "Risk & Assurance",
+    title: "Auditability and Trust",
     points: [
-      "No auto-publish for figures heading into audited disclosures without expert review",
-      "Maintain audit trails of methodology, factors, and inputs used",
-      "Link to SBTi, GHG Protocol, CSRD, and ISSB standards without legal interpretation",
+      "Keep full audit trails of drivers, assumptions and inputs used in each run",
+      "Link to recognised standards without offering legal interpretation",
+      "No auto publish of figures into audited disclosures without expert review",
     ],
   },
   {
     icon: Users,
-    title: "User Experience & Escalation",
+    title: "User Experience and Escalation",
     points: [
-      "Offer a path to request GSP expert help from any recommendation",
-      "Provide rationale snippets and similar-client decarbonization evidence",
-      "Allow users to reject, snooze, or annotate recommendations",
+      "Offer a clear path from any RA+ ClimVar output to a ClimVar expert engagement",
+      "Allow finance, risk and sustainability users to annotate, snooze or reject suggestions",
+      "Lead every flow with finance framing, with sustainability narrative layered on top",
     ],
   },
 ];
@@ -78,25 +78,23 @@ export const BoundariesSection = () => {
       ref={ref as React.RefObject<HTMLElement>}
       className={`py-24 bg-muted/30 section-fade ${isVisible ? "visible" : ""}`}
     >
-      {/* Legacy anchors so existing nav links keep working */}
       <span id="out-of-scope" className="block -mt-24 pt-24" aria-hidden />
       <span id="guardrails" className="block -mt-24 pt-24" aria-hidden />
 
       <div className="container px-4">
         <div className="text-center mb-12 sm:mb-16">
           <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 sm:mb-4 block">
-            Boundaries & Operating Rules
+            Boundaries and Operating Rules
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
             Where We Stop, How We Operate
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            The boundary list keeps scope honest. The operating rules keep customer-facing advice trustworthy.
+            The boundary list keeps scope honest. The operating rules keep client facing Climate Value at Risk outputs trustworthy.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Out of Scope column */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
@@ -129,7 +127,6 @@ export const BoundariesSection = () => {
             </div>
           </div>
 
-          {/* Guardrails column */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">

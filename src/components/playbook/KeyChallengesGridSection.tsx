@@ -5,61 +5,61 @@ const challenges = [
   {
     icon: FileText,
     color: "rose",
-    title: "Knowledge Fragmentation",
+    title: "Risk Trapped in Qualitative Heatmaps",
     points: [
-      "Decades of GSP advisory IP locked inside PowerPoint deliverables that are hard to search or reuse",
-      "Decarbonization levers, emission factors, and methodology choices are scattered across consultants and engagements",
-      "Every new engagement starts from a near-blank page instead of building on prior evidence",
+      "Most climate risk outputs stop at colour coded exposure maps that CFOs and boards cannot act on",
+      "Physical, transition and nature drivers are reported in different units and rarely combined",
+      "Finance, risk and sustainability teams each rebuild their own view from scratch",
     ],
   },
   {
     icon: Clock,
     color: "amber",
-    title: "Manual Disclosure Workflows",
+    title: "One Off Models, Yearly Cadence",
     points: [
-      "CSRD, ISSB, CDP, and TCFD outputs are stitched together by hand across multiple vendor tools and spreadsheets",
-      "Templated calculations and supplier follow-ups are redone on every cycle",
-      "Capacity to serve more clients is capped by available expert time, not by demand",
+      "Climate Value at Risk analyses live in bespoke spreadsheets and slide decks refreshed once a year",
+      "Scenarios, time horizons and adaptation assumptions cannot be updated on demand",
+      "Capital, impairment and disclosure cycles all run faster than the risk model can keep up with",
     ],
   },
   {
     icon: ScanText,
     color: "orange",
-    title: "Opportunity Latency",
+    title: "Adaptation Has No Financial Lens",
     points: [
-      "Customers wait for a full disclosure cycle to learn what decarbonization moves are possible",
-      "Early sustainability advisory is delivered late and does not scale beyond individual consultants",
-      "RA+ users see operational data but no in-product sustainability recommendations",
+      "Adaptation choices are pitched on resilience narratives, not on Value at Risk reduction",
+      "There is no shared way to compare a PPA, an efficiency upgrade and a supply chain change on the same financial footing",
+      "Boards approve mitigation budgets without seeing the net Value at Risk after intervention",
     ],
   },
   {
     icon: Users,
     color: "violet",
-    title: "Disconnected Deliverables",
+    title: "Climate Speaks the Wrong Language",
     points: [
-      "Slide-driven outputs require manual assembly and break the link to underlying client data",
-      "Assurance findings rarely feed back into future recommendations or scoping logic",
-      "No shared client data spine across discovery, advisory, disclosure, and follow-up",
+      "Conversations led by the sustainability prism lose finance, risk and capital allocation teams",
+      "Disclosure narratives and capital narratives are produced separately, with no shared backbone",
+      "Investors cannot tell which assets, sites or suppliers are actually driving exposure",
     ],
   },
   {
     icon: Database,
     color: "sky",
-    title: "Scope 3 Stranded",
+    title: "Supply Chain and Nature Stay Out of Scope",
     points: [
-      "Supplier and value-chain emissions live in scattered spreadsheets and surveys, disconnected from the sustainability workflow",
-      "Activity and spend-based data never reaches the same layer where corporate inventory and disclosure sit",
-      "Sera and downstream agents cannot reason over supply chain data because it is not unified or agent-ready",
+      "Supply chain business interruption and carbon cost propagation rarely make it into the risk view",
+      "Nature risk lives in a separate workstream from climate risk, despite shared drivers",
+      "Site, supplier and ecosystem data never reach the same model that scores enterprise exposure",
     ],
   },
   {
     icon: Layers,
     color: "emerald",
-    title: "No Agent-Ready Spine",
+    title: "No Living, In Product Risk View",
     points: [
-      "Emissions, supplier, financial, and methodology data live in separate systems with no shared semantics",
-      "Each engagement re-stitches data instead of pulling from a governed sustainability spine",
-      "Self-serve, expert-supported, and fully-managed clients cannot be supported on the same data foundation",
+      "Each refresh means rebuilding scenarios, re-running models and re-formatting decks",
+      "Clients cannot drill from a portfolio number into a country, site or supplier without a new engagement",
+      "The cost of every additional Climate Value at Risk view is high enough to discourage iteration",
     ],
   },
 ];
@@ -104,10 +104,10 @@ const colorStyles: Record<string, { border: string; bg: string; iconBg: string; 
 };
 
 const kpis = [
-  { value: "1000s", label: "Legacy GSP engagement deliverables waiting to be reactivated", color: "text-rose-400" },
-  { value: "Weeks", label: "Typical time to first decarbonization roadmap today", color: "text-amber-400" },
-  { value: "Multi", label: "Vendor tools clients juggle for CSRD, ISSB, CDP, and TCFD", color: "text-sky-400" },
-  { value: "1 spine", label: "Unified sustainability data target across every service line", color: "text-orange-400" },
+  { value: "1 number", label: "Climate Value at Risk that combines physical, transition and nature drivers", color: "text-rose-400" },
+  { value: "Yearly", label: "Typical refresh cadence of existing bespoke risk models", color: "text-amber-400" },
+  { value: "Gross → Net", label: "Adaptation framing missing from most climate risk outputs today", color: "text-sky-400" },
+  { value: "1 backbone", label: "Shared DCF methodology across advisory and RA+ ClimVar", color: "text-orange-400" },
 ];
 
 export const KeyChallengesGridSection = () => {
@@ -128,7 +128,7 @@ export const KeyChallengesGridSection = () => {
             Key Challenges
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
-            Sustainability value today is bottlenecked by knowledge sitting in slides, manual disclosure workflows, and deliverables that do not connect back to the RA+ data spine.
+            Climate, nature and transition risk are growing in materiality, but the outputs available today do not speak the language of finance and cannot be refreshed on the cadence boards now expect.
           </p>
         </div>
 

@@ -1,65 +1,65 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Database, Library, Building2, Check, Clock, AlertCircle } from "lucide-react";
+import { Layers, LineChart, Sparkles, Check, Clock, AlertCircle } from "lucide-react";
 
 type Status = "urgent" | "strategic" | "exploration";
 
 const phases = [
   {
-    id: "data-foundation",
+    id: "quantify",
     phase: "Phase 1",
-    title: "Sustainability Data Foundation",
-    tagline: "Urgent, no-regret",
-    icon: Database,
+    title: "Quantify",
+    tagline: "Published DCF methodology, integrated risk view",
+    icon: Layers,
     status: "urgent" as Status,
-    statusLabel: "In flight",
-    timing: "MVP target Q4 2025 / Q1 2026",
+    statusLabel: "In production",
+    timing: "Live, expanding driver coverage",
     summary:
-      "Stand up the unified sustainability data spine inside RA+ to consolidate emissions, supplier, and disclosure data into one governed, agent-ready context layer.",
+      "Establish ClimVar advisory as the integrated financial view of climate and nature risk, combining physical, transition and nature drivers into one Climate Value at Risk waterfall.",
     bullets: [
-      "Closes a competitive gap that becomes urgent if left unaddressed",
-      "Anchored by SE Corporate as design partner and reference customer",
-      "Aligned to SE Corporate RA+ go-live in early Q1 2027",
-      "Embeds into the broader sustainability workflow, not a standalone module",
+      "Six risk drivers live: four physical, two transition",
+      "Nature risk wired into the same waterfall",
+      "Scenarios anchored on NGFS and IPCC RCP for full auditability",
+      "Variable granularity from country and sector to site and supplier",
     ],
-    dependencies: "Foundation for Phase 2 and 3. Sets the data, agent, and context patterns reused downstream.",
+    dependencies: "Foundation for the adaptation and platform phases. Every engagement seeds the model and the platform.",
   },
   {
-    id: "decarb-library",
+    id: "adapt",
     phase: "Phase 2",
-    title: "Decarbonization Library",
-    tagline: "Cross-GSP feeder",
-    icon: Library,
+    title: "Adapt",
+    tagline: "Risk reduction as investment options",
+    icon: LineChart,
     status: "strategic" as Status,
-    statusLabel: "Adjacent strategic",
-    timing: "Sequenced with GSP methodology ingestion",
+    statusLabel: "Scaling",
+    timing: "Sequenced with offer integration",
     summary:
-      "Decarbonization Library is a feeder for many capabilities across RA+. It connects advisory, NTBS offsetting, and disclosure into one knowledge backbone.",
+      "Turn quantified risk into a ranked set of adaptation choices tied to Schneider Electric solutions, sizing the gross versus net Value at Risk after each lever.",
     bullets: [
-      "Connects advisory, NTBS, and disclosure workflows",
-      "Codifies GSP methodology, factors, and abatement evidence",
-      "Powers Sera reasoning with structured measures, assumptions, and outcomes",
-      "Reuses data patterns established by the sustainability spine in Phase 1",
+      "Gross to net Value at Risk view operational",
+      "Adaptation library connected to the Schneider Electric offer catalogue",
+      "Site and supply chain deep dive paths productised",
+      "Climate and nature opportunities surfaced alongside risk drivers",
     ],
-    dependencies: "Builds on the Phase 1 data foundation. Co-evolves with the GSP methodology ingestion workstream.",
+    dependencies: "Builds on the Phase 1 methodology. Co evolves with offer integration across energy, efficiency, PPA and resilience.",
   },
   {
-    id: "akitabox",
+    id: "automate",
     phase: "Phase 3",
-    title: "AkitaBox",
-    tagline: "Build vs. integrate decision",
-    icon: Building2,
+    title: "Automate",
+    tagline: "Living capability inside RA+ ClimVar",
+    icon: Sparkles,
     status: "exploration" as Status,
-    statusLabel: "Open question",
-    timing: "Sequencing TBD",
+    statusLabel: "Industrialising",
+    timing: "Rolling out into RA+",
     summary:
-      "AkitaBox is a no-regret strategic move, but the shape is undefined. Open questions: do we build, and if so, inside RA+ or as a separate module?",
+      "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
-      "Confirmed as one of three no-regret strategic moves",
-      "Build vs. partner vs. integrate not yet decided",
-      "Surface area within RA+ vs. standalone module to be scoped",
-      "Differentiation vs. adjacent S&S products (BDP, Foresight) must be clear",
+      "RA+ ClimVar module quantifies Value at Risk before and after adaptation",
+      "Refreshable scenarios, time horizons and adaptation profiles",
+      "Reusable financial and operational inputs across engagements",
+      "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy modules of RA+",
     ],
-    dependencies: "Sequencing depends on Phase 1 and Decarbonization Library groundwork plus a clearer commercial case.",
+    dependencies: "Depends on Quantify and Adapt being stable. Unlocks recurring revenue and lower marginal cost per refresh.",
   },
 ];
 
@@ -90,10 +90,10 @@ export const PhasingSection = () => {
             Sequencing · Axis: over time
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Phasing: Three No-Regret Moves
+            Phasing: Quantify, Adapt, Automate
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            A clear order of operations for the RA+ Sustainability build. Data Foundation first, then Decarbonization Library, then AkitaBox.
+            A clear order of operations for ClimVar. Quantify first as advisory, then Adapt connects risk to Schneider Electric offers, then Automate turns the model into a living capability in RA+ ClimVar.
           </p>
         </div>
 
