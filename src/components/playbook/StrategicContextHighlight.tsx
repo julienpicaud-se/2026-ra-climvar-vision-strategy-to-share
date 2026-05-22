@@ -1,39 +1,38 @@
-import { Compass, Clock, BookOpen, Layers, Sparkles, Database, Activity } from "lucide-react";
+import { Compass, DollarSign, Layers, Sparkles, Database, Activity, Repeat } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const kpis = [
   {
-    icon: Clock,
-    value: "Weeks to Days",
-    label: "GHG Inventory Cycle",
-    detail: "Compress manual decarbonization scoping from weeks of expert time to days of guided drafting",
-  },
-  {
-    icon: BookOpen,
-    value: "90%+",
-    label: "GSP IP Reused",
-    detail: "Legacy GHG inventory, TCFD, and SBTi deliverables reactivated as structured, searchable evidence",
-  },
-  {
-    icon: Database,
-    value: "RA+",
-    label: "Sustainability Data Spine",
-    detail: "A unified, agent-ready sustainability foundation that blends client emissions, supplier, and disclosure data with GSP methodology",
-  },
-  {
-    icon: Activity,
-    value: "Always-On",
-    label: "Continuous Discovery",
-    detail: "Sustainability signals continuously surface Scope 3 hotspots, supplier engagement gaps, and biodiversity exposures without waiting for a full disclosure cycle",
+    icon: DollarSign,
+    value: "1 number",
+    label: "Climate Value at Risk",
+    detail: "Physical, transition and nature drivers combined into one financial figure per scenario",
   },
   {
     icon: Layers,
-    value: "1 Spine",
-    label: "Unified Sustainability Data",
-    detail: "Shared across discovery, advisory, disclosure, and in-product guidance",
+    value: "Gross → Net",
+    label: "Adaptation framing",
+    detail: "Value at Risk before and after Schneider Electric adaptation measures, on the same footing as any CAPEX",
+  },
+  {
+    icon: Database,
+    value: "DCF",
+    label: "Published methodology",
+    detail: "Discounted Cash Flow backbone anchored on NGFS and IPCC RCP scenarios for full auditability",
+  },
+  {
+    icon: Activity,
+    value: "Out to 2050",
+    label: "Forward looking",
+    detail: "Revenue, OPEX and COGS impacts modelled across business as usual, net zero and worst case paths",
+  },
+  {
+    icon: Repeat,
+    value: "Living",
+    label: "RA+ ClimVar refresh",
+    detail: "From a one off advisory analysis to a continuously refreshable in product capability",
   },
 ];
-
 
 export const StrategicContextHighlight = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -51,14 +50,13 @@ export const StrategicContextHighlight = () => {
             Strategic Context
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Our biggest sustainability lever is unlocking the knowledge and data we already own
+            Climate risk wins the room when it shows up as a financial number
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Decades of GSP methodology IP sit locked inside slide decks, and client emissions
-            and supplier data sit fragmented across vendor tools and spreadsheets. RA+ users wait
-            for full disclosure cycles to see what decarbonization moves are possible. The leverage
-            is in turning that knowledge into a living, in-product engine and unifying client
-            sustainability data inside RA+ as its agent-ready spine.
+            ClimVar leads with finance. A published Discounted Cash Flow methodology turns physical,
+            transition and nature risks into one Climate Value at Risk per scenario, then connects every
+            exposure to a concrete Schneider Electric adaptation lever. RA+ ClimVar turns that work into
+            a living, in product view finance, risk and sustainability teams share over time.
           </p>
         </div>
 
@@ -95,10 +93,9 @@ export const StrategicContextHighlight = () => {
             </span>
           </div>
           <p className="text-sm sm:text-base lg:text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
-            Turn decades of GSP methodology IP and client sustainability data into a living, in-product
-            decarbonization engine inside RA+, with the sustainability data spine as the agent-ready
-            foundation, so every customer sees credible, calibrated sustainability opportunities
-            without waiting for a full disclosure cycle.
+            Make Climate Value at Risk the default way clients quantify climate, nature and transition
+            exposure, frame adaptation as an investment in Schneider Electric solutions, and run it all
+            as a living capability inside RA+ ClimVar.
           </p>
         </div>
       </div>

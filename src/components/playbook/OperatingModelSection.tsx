@@ -4,39 +4,39 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const pillars = [
   {
     icon: Users,
-    title: "Sustainability Experts",
-    tagline: "JUDGMENT, METHODOLOGY, CLIENT RELATIONSHIPS",
+    title: "Climate Risk Experts",
+    tagline: "METHODOLOGY, JUDGMENT, CFO LANGUAGE",
     description:
-      "Senior sustainability consultants, climate scientists, and assurance specialists who own the recommendation and the customer conversation, working from RA+ client emissions and methodology context.",
+      "Senior climate, nature and financial risk specialists who own the ClimVar advisory engagement, calibrate scenarios, and translate Value at Risk results into board ready narratives for finance, risk and sustainability leaders.",
   },
   {
     icon: Bot,
-    title: "Agentic AI Assistants",
-    tagline: "CO-PILOTS THAT COMPRESS ADVISORY HOURS INTO MINUTES",
+    title: "Modelling and Scenario Engine",
+    tagline: "DCF METHODOLOGY AT THE CORE",
     description:
-      "Purpose-built agents (Sera and peers) that reason over the RA+ sustainability spine plus legacy GSP IP, draft inventories, stack abatement measures, and explain assumptions so experts focus on calibration and trade-offs.",
+      "A published Discounted Cash Flow engine that turns physical, transition and nature drivers into Value at Risk waterfalls across business as usual, net zero and worst case scenarios, anchored on NGFS and IPCC RCP references.",
   },
   {
     icon: Zap,
-    title: "Automation Engine",
-    tagline: "PARAMETRIC SUSTAINABILITY AT SCALE",
+    title: "Adaptation Connector",
+    tagline: "FROM EXPOSURE TO SE OFFERS",
     description:
-      "Templated GHG calculations, supplier outreach, disclosure drafting, and assurance scaffolding generated automatically from RA+ emissions, supplier, and operational data, with always-on detection between formal disclosure cycles.",
+      "Direct hook from quantified risk drivers to Schneider Electric solutions across energy, efficiency, PPA, supply chain and resilience, sizing the net Value at Risk after each adaptation lever.",
   },
   {
     icon: Database,
-    title: "RA+ Sustainability Spine",
-    tagline: "AGENT-READY CLIENT DATA + GSP IP, NATIVE TO RA+",
+    title: "RA+ ClimVar Backbone",
+    tagline: "LIVING RISK VIEW INSIDE THE PLATFORM",
     description:
-      "A unified sustainability foundation inside RA+ that resolves client identity, ingests emissions, supplier, and operational data, blends in GSP methodology and advisory IP, and exposes one enriched context layer to experts and agents, no module hop.",
+      "RA+ ClimVar industrialises the model so clients refresh scenarios, drill from portfolio to site, and reuse the same financial and operational inputs across disclosure, capital and transition planning cycles.",
   },
 ];
 
 const principles = [
-  "Software absorbs the repeatable work; sustainability experts own the judgment calls",
-  "Every service line shares the same RA+ spine, client emissions, supplier context, and GSP IP in one place, no swivel-chair handoffs",
-  "Agents are accountable to humans; humans are accountable to clients; sustainability data is accountable to both",
-  "Automation targets 90%+ of recurring inventory and disclosure touches over the horizon, powered by always-on RA+ discovery",
+  "Lead with finance: every conversation starts with the financial framing, sustainability follows once Value at Risk is on the table",
+  "One backbone: ClimVar advisory and RA+ ClimVar share one published methodology, one set of scenarios and one data spine",
+  "Quantify, Adapt, Automate: every engagement maps to all three pillars and seeds the platform for the next refresh",
+  "Auditable by default: public scenarios, transparent assumptions and traceable inputs so every output survives finance and audit scrutiny",
 ];
 
 export const OperatingModelSection = () => {
@@ -54,10 +54,10 @@ export const OperatingModelSection = () => {
             Operating Model
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Experts Supported by Software
+            Advisory Plus a Living Platform Capability
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            We are not a software vendor and we are not a pure consultancy. We are experts supported by software, humans on point for judgment, software on point for scale.
+            ClimVar is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ ClimVar inside the platform.
           </p>
         </div>
 

@@ -68,7 +68,7 @@ export const RAPlusPlatformFoundationSection = () => {
                   <div className="mt-auto rounded-lg border border-primary/20 bg-primary/5 p-4">
                     <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground mb-1 flex items-center gap-1.5">
                       <ArrowRight className="w-3.5 h-3.5 text-primary" />
-                      What GSP gets
+                      What clients get
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {pillar.gspBenefit}

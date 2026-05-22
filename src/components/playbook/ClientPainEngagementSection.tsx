@@ -1,34 +1,38 @@
-import { Leaf, TrendingDown, ShieldCheck, ArrowRight, Activity, Database } from "lucide-react";
+import { Leaf, TrendingDown, ShieldCheck, ArrowRight, Activity, Database, DollarSign } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const signals = [
   {
+    icon: DollarSign,
+    quote: "Our board wants climate risk in the same language as every other risk",
+    response: "ClimVar expresses physical, transition and nature exposure as a single Climate Value at Risk, broken down by driver and scenario, in enterprise value, revenue, OPEX and COGS terms.",
+  },
+  {
     icon: TrendingDown,
-    quote: "Our footprint keeps growing and we cannot tell which sites or suppliers are worst",
-    response: "Portfolio-wide decarbonization screening grounded in RA+ client emissions data, surfacing the highest-impact sites, suppliers, and measures first.",
+    quote: "We cannot tell which sites or suppliers actually drive our exposure",
+    response: "Geographic and asset level deep dives on the same DCF backbone, including supply chain business interruption and carbon cost propagation.",
   },
   {
     icon: Leaf,
-    quote: "We have to hit our SBTi targets and need credible decarbonization moves",
-    response: "Calibrated decarbonization recommendations tied to assurance-ready methodology, feeding CSRD, ISSB, and CDP disclosures from one source.",
+    quote: "We need to size adaptation choices, not just describe them",
+    response: "Gross to net Value at Risk view with adaptation cost and benefit, plugged directly into Schneider Electric energy, efficiency and resilience offers.",
   },
   {
     icon: ShieldCheck,
-    quote: "We do not trust the numbers in our last sustainability report",
-    response: "Transparent assumptions, governed emission factors, and audit trails grounded in GSP methodology that make every figure traceable for assurance.",
+    quote: "Our last climate study is a year old and already out of date",
+    response: "RA+ ClimVar turns the methodology into a continuously refreshable product so scenarios, time horizons and adaptation profiles can be updated on demand.",
   },
   {
     icon: Activity,
-    quote: "Our Scope 3 data sits in spreadsheets and never reaches the people making decisions",
-    response: "RA+ unifies emissions, supplier, and operational data into the same workflow Sustainability Leads and Sera already use.",
+    quote: "Finance, risk and sustainability each have a different climate number",
+    response: "One published methodology, one set of scenarios and one Value at Risk view shared across CFO, CRO, CSO and operational teams.",
   },
   {
     icon: Database,
-    quote: "We want to run our own analyses, not wait for a consultant every time",
-    response: "Self-serve, expert-supported, and fully-managed profiles on one sustainability-powered platform, so clients can self-serve, co-pilot, or stay fully serviced as they mature.",
+    quote: "We want to connect climate risk to disclosures and capital planning",
+    response: "ClimVar outputs feed directly into CSRD, TCFD and TNFD reporting, impairment tests and capital allocation reviews, with traceable assumptions.",
   },
 ];
-
 
 export const ClientPainEngagementSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -42,10 +46,10 @@ export const ClientPainEngagementSection = () => {
       <div className="container px-4 max-w-6xl mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            How Customer Pain Translates Into Engagement
+            How Client Questions Turn Into ClimVar Engagements
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Five recurring signals from customers, five integrated responses from GSP and RA+.
+            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from ClimVar advisory and RA+ ClimVar.
           </p>
         </div>
 

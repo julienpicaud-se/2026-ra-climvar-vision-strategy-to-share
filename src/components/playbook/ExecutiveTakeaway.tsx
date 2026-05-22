@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { executiveTakeaway } from "@/data/playbook-data";
 import { ArrowUp, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -17,15 +15,12 @@ export const ExecutiveTakeaway = () => {
       ref={ref as React.RefObject<HTMLElement>}
       className={`py-16 sm:py-24 section-fade relative overflow-hidden ${isVisible ? "visible" : ""}`}
     >
-      {/* Central ambient glow */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           background: 'radial-gradient(ellipse 60% 50% at 50% 45%, hsl(var(--primary) / 0.2) 0%, transparent 70%)',
         }}
       />
-      
-      {/* Wide edge glow for coverage */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -35,24 +30,20 @@ export const ExecutiveTakeaway = () => {
       
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 sm:mb-10">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Executive Takeaway</span>
           </div>
 
-          {/* Main Headline */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 text-foreground">
-            Sustainability as a{" "}
-            <span className="text-primary">platform capability</span>, with Sera as the interface and the GSP as the expert foundation.
+            Climate risk in{" "}
+            <span className="text-primary">financial terms</span>, adaptation as an investment, and a living view in RA+ ClimVar.
           </h2>
 
-          {/* Description */}
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10 sm:mb-12">
-            Moving from document-driven advisory to a governed RA+ platform turns GSP expertise into a continuous, in-product experience. Sustainability Leads act daily, Data Ops investigate deeply, CSOs disclose with confidence, and Executives see the net-zero progress, all on one foundation.
+            ClimVar advisory delivers the first Climate Value at Risk analysis and sizes the adaptation case in Schneider Electric solutions. RA+ ClimVar turns that work into a continuous, in product capability finance, risk and sustainability teams share, refresh and reuse.
           </p>
 
-          {/* Back to Top Button */}
           <Button
             onClick={scrollToTop}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2.5"
@@ -63,11 +54,10 @@ export const ExecutiveTakeaway = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="mt-16 pt-6 border-t border-border/30">
         <div className="container px-4">
           <p className="text-center text-sm text-muted-foreground">
-            © 2026 Sustainability Transformation • Sustainability Transformation with RA+ • Internal Only and Confidential
+            © 2026 ClimVar • Financial Risk Quantification • Internal Only and Confidential
           </p>
         </div>
       </div>

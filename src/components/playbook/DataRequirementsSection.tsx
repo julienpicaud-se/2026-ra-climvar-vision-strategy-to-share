@@ -1,29 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { dataNeeded, optionalClientContext } from "@/data/playbook-data";
-import { 
-  Layers, 
-  FileText, 
-  Building2, 
-  Sliders, 
-  Target, 
+import {
+  Layers,
+  FileText,
+  Building2,
+  Sliders,
+  Target,
   TrendingUp,
   BarChart3,
   Scale,
-  CheckCircle2
+  CheckCircle2,
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const iconMap: Record<string, React.ElementType> = {
-  "Sustainability Taxonomy": Layers,
-  "Default Assumptions": Sliders,
-  "Site Descriptors": Building2,
-  "Constraint Inputs": Target,
-  "Goal Mappings": TrendingUp,
-  "Pattern Data": BarChart3,
-  "Assurance Outcomes": CheckCircle2,
-  "Regulatory Links": Scale,
-  "Operational Data": TrendingUp,
-  "Supply Chain Data": Building2,
+  "Entity Financials": Sliders,
+  "Site and Asset Footprint": Building2,
+  "Sector and Geography": Layers,
+  "Emissions": BarChart3,
+  "Scenarios": TrendingUp,
+  "Supply Chain": Building2,
 };
 
 export const DataRequirementsSection = () => {
@@ -41,16 +37,14 @@ export const DataRequirementsSection = () => {
             Data Foundation
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Data Required for Sustainability Capabilities
+            Data Required for ClimVar
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Core data objects needed to power decarbonization recommendations, generate disclosure-ready deliverables,
-            and surface credible sustainability guidance across advisory, delivery, and customer journeys.
+            The core data objects needed to produce a defensible Climate Value at Risk waterfall, plus optional client context that sharpens the view and unlocks deeper site, supplier and adaptation analysis.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* Core Required Data */}
           <div className="mb-12">
             <h3 className="text-lg font-semibold text-foreground mb-6 flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -81,11 +75,10 @@ export const DataRequirementsSection = () => {
             </div>
           </div>
 
-          {/* Optional Client Context */}
           <div className="mb-12">
             <h3 className="text-lg font-semibold text-foreground mb-6 flex items-center gap-2">
               <span className="w-5 h-5 rounded-full border-2 border-amber-400 flex items-center justify-center text-xs text-amber-400">+</span>
-              Optional Client Context (High-Value)
+              Optional Client Context (High Value)
             </h3>
             <div className="grid sm:grid-cols-2 gap-4 max-w-md">
               {optionalClientContext.map((item, index) => {
@@ -112,7 +105,6 @@ export const DataRequirementsSection = () => {
             </div>
           </div>
 
-          {/* Data Foundation Capabilities Callout */}
           <Card className="border-primary/30 bg-primary/5">
             <CardContent className="p-6 sm:p-8">
               <h3 className="text-xl font-semibold gradient-text mb-4">
@@ -121,27 +113,27 @@ export const DataRequirementsSection = () => {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Surface client-relevant decarbonization recommendations</span>
+                  <span className="text-sm text-foreground">Produce a defensible Climate Value at Risk per scenario</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Generate abatement ranges with confidence bands</span>
+                  <span className="text-sm text-foreground">Decompose exposure by driver, geography and asset</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Apply Scope 1, 2, 3 stacking and supplier roll-up logic</span>
+                  <span className="text-sm text-foreground">Model revenue, OPEX and COGS impacts out to 2050</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Pre-fill assumptions for advisory and disclosure quotes</span>
+                  <span className="text-sm text-foreground">Size adaptation cases as gross to net Value at Risk</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Power CSRD, ISSB, CDP, TCFD, and TNFD outputs from one source</span>
+                  <span className="text-sm text-foreground">Feed CSRD, IFRS S2, TCFD and TNFD outputs from one source</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">Enable in-product sustainability advisory across the client lifecycle</span>
+                  <span className="text-sm text-foreground">Refresh scenarios and adaptation profiles in RA+ ClimVar</span>
                 </div>
               </div>
             </CardContent>

@@ -141,7 +141,7 @@ export const AppendixSection = () => {
             Appendix
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-            Sustainability Transformation Details
+            ClimVar Playbook Details
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mt-4">
             Deep dive into the operating model, capability evolution, quarterly plans, and supporting metrics.
@@ -334,7 +334,7 @@ export const AppendixSection = () => {
                   Reference Customer
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  SE Corporate: GSP Reference Customer
+                  Reference Customer Pattern
                 </h3>
               </div>
             </AccordionTrigger>
@@ -490,7 +490,7 @@ export const AppendixSection = () => {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6">
               <p className="text-sm text-muted-foreground max-w-3xl mb-6">
-                How each capability evolves across delivery phases, from foundational data work to the full RA+ Sustainability product.
+                How each capability evolves across delivery phases, from foundational data work to the full RA+ ClimVar product.
               </p>
 
               {/* Desktop table */}
@@ -682,7 +682,7 @@ export const AppendixSection = () => {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6">
               <p className="text-sm text-muted-foreground max-w-2xl mb-6">
-                Key metrics that measure our progress toward the Sustainability Transformation vision.
+                Key metrics that measure our progress toward the ClimVar vision.
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {supportingScorecard.map((item, index) => (

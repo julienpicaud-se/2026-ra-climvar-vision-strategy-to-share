@@ -24,7 +24,7 @@ import {
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const iconMap: Record<string, React.ElementType> = {
-  "GSP Methodologies": Download,
+  "ClimVar Methodology": Download,
   "Vendor Software Stack": Calculator,
   "Existing Carbon and ESG Tools": Settings,
   "DIH Digital Assets": Monitor,
@@ -46,10 +46,10 @@ export const ExistingToolsSection = () => {
             Current State & Vision
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Sustainability Technology Landscape
+            Risk Quantification Landscape
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Where we are today, what the market demands, and how GSP IP becomes part of the RA+ sustainability spine.
+            Where we are today, what the market demands, and how ClimVar advisory IP becomes a living capability inside RA+ ClimVar.
           </p>
         </div>
 

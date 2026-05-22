@@ -4,47 +4,49 @@ import { Search } from "lucide-react";
 
 const glossaryTerms = [
   {
-    category: "Sustainability domain",
+    category: "ClimVar core concepts",
     terms: [
-      { abbr: "GSP", full: "Global Sustainability Practice (Schneider Electric's sustainability advisory business)" },
-      { abbr: "GHG Protocol", full: "Greenhouse Gas Protocol (corporate accounting and reporting standard)" },
-      { abbr: "SBTi", full: "Science Based Targets initiative" },
+      { abbr: "ClimVar", full: "Climate Value at Risk: financial quantification of climate, transition and nature risk on enterprise value, revenue, OPEX and COGS" },
+      { abbr: "RA+ ClimVar", full: "The in product RA+ module that turns the ClimVar methodology into a continuously refreshable capability" },
+      { abbr: "DCF", full: "Discounted Cash Flow, the financial modelling backbone of the ClimVar methodology" },
+      { abbr: "Gross VaR", full: "Climate Value at Risk before any adaptation measure is applied" },
+      { abbr: "Net VaR", full: "Climate Value at Risk after Schneider Electric adaptation measures are deployed" },
+      { abbr: "Waterfall", full: "View that decomposes total Value at Risk across drivers, geographies, assets or scenarios" },
+    ],
+  },
+  {
+    category: "Risk drivers and scenarios",
+    terms: [
+      { abbr: "Physical risk", full: "Risk from acute and chronic climate hazards such as floods, heat, drought, storms" },
+      { abbr: "Transition risk", full: "Risk from the shift to a low carbon economy: carbon pricing, demand shift, technology, litigation, reputation" },
+      { abbr: "Nature risk", full: "Risk from biodiversity loss, water stress and ecosystem dependencies" },
+      { abbr: "NGFS", full: "Network for Greening the Financial System, source of reference climate scenarios" },
+      { abbr: "IPCC RCP", full: "IPCC Representative Concentration Pathways, reference physical climate scenarios" },
+      { abbr: "Business as usual", full: "Scenario where current policies and behaviours continue largely unchanged" },
+      { abbr: "Net zero", full: "Scenario aligned with limiting warming to 1.5C by mid century" },
+      { abbr: "Worst case", full: "High warming scenario used to size tail exposure" },
+    ],
+  },
+  {
+    category: "Disclosure and finance",
+    terms: [
       { abbr: "CSRD", full: "Corporate Sustainability Reporting Directive (EU)" },
-      { abbr: "ISSB", full: "International Sustainability Standards Board" },
-      { abbr: "CDP", full: "Carbon Disclosure Project" },
-      { abbr: "TCFD", full: "Task Force on Climate-related Financial Disclosures" },
-      { abbr: "TNFD", full: "Taskforce on Nature-related Financial Disclosures" },
-      { abbr: "PCAF", full: "Partnership for Carbon Accounting Financials" },
-      { abbr: "ISO 14064", full: "Standard for GHG inventories and verification" },
-      { abbr: "ISSA 5000", full: "Sustainability assurance standard" },
-      { abbr: "NTBS", full: "Nature-based and Technology-based Solutions (offsetting)" },
-      { abbr: "tCO2", full: "Tonnes of carbon dioxide equivalent" },
-      { abbr: "Scope 1 / 2 / 3", full: "Direct, energy-related, and value-chain emissions categories" },
+      { abbr: "IFRS S2", full: "ISSB climate related disclosures standard" },
+      { abbr: "TCFD", full: "Task Force on Climate related Financial Disclosures" },
+      { abbr: "TNFD", full: "Taskforce on Nature related Financial Disclosures" },
+      { abbr: "Impairment", full: "Financial test for write down of asset value, increasingly informed by climate risk" },
+      { abbr: "Capital allocation", full: "Decision on where to deploy capital, including resilience and adaptation CAPEX" },
     ],
   },
   {
-    category: "RA+ platform & technology",
+    category: "Roles and platform",
     terms: [
-      { abbr: "RA+", full: "Resource Advisor Plus (Schneider Electric's sustainability platform)" },
-      { abbr: "Sustainability graph", full: "Shared semantic data spine connecting entities, emissions, targets, and lineage" },
-      { abbr: "EF library", full: "Emission Factor library with automated matching to activity data" },
-      { abbr: "Lineage", full: "End-to-end traceability from source data through calculations to disclosures" },
-      { abbr: "SERA", full: "RA+ agentic assistant guiding sustainability workflows" },
-      { abbr: "Ingest & transform", full: "Governed pipelines for onboarding and normalizing client data" },
-      { abbr: "AI quality system", full: "Evaluation harness and feedback loops governing agent outputs" },
-      { abbr: "Zeigo / ZCP", full: "Schneider Electric sustainability tools connected to RA+" },
-      { abbr: "Unified / Proactive / Adaptive", full: "The three RA+ platform pillars" },
-    ],
-  },
-  {
-    category: "Product / Delivery",
-    terms: [
+      { abbr: "RA+", full: "Schneider Electric's integrated platform for sustainability, energy and risk" },
+      { abbr: "CFO", full: "Chief Financial Officer" },
+      { abbr: "CRO", full: "Chief Risk Officer" },
+      { abbr: "CSO", full: "Chief Sustainability Officer" },
       { abbr: "VOC", full: "Voice of Customer" },
       { abbr: "JTBD", full: "Jobs To Be Done" },
-      { abbr: "CSO", full: "Chief Sustainability Officer" },
-      { abbr: "CoE", full: "Center of Excellence" },
-      { abbr: "PoC", full: "Proof of Concept" },
-      { abbr: "SLA", full: "Service Level Agreement" },
     ],
   },
 ];
@@ -77,7 +79,7 @@ export const GlossarySection = () => {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search terms (e.g. SBTi, SERA, EF library)..."
+          placeholder="Search terms (e.g. ClimVar, NGFS, TCFD)..."
           className="pl-9"
           aria-label="Search glossary"
         />

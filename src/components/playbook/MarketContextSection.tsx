@@ -1,49 +1,48 @@
-import { Zap, TrendingUp, Layers, Sparkles, Leaf, ShieldCheck, Database, Activity } from "lucide-react";
+import { TrendingUp, Layers, Sparkles, Leaf, ShieldCheck, Database, Activity, DollarSign, Globe } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const forces = [
   {
+    icon: DollarSign,
+    title: "Finance Demands a Number",
+    body: "CFOs, treasurers and investors expect climate exposure in the same language as any other risk: enterprise value, revenue, OPEX and COGS, not qualitative heatmaps.",
+  },
+  {
     icon: TrendingUp,
-    title: "Regulatory Acceleration",
-    body: "CSRD, ISSB, EU Taxonomy, and SEC climate rules turn voluntary reporting into mandatory, audit-grade disclosure with tight deadlines.",
+    title: "Disclosure Tightens",
+    body: "CSRD, IFRS S2, TCFD and TNFD push climate and nature risk into audited financial statements, raising the bar on methodology, transparency and traceability.",
   },
   {
-    icon: Leaf,
-    title: "Net-Zero Commitments",
-    body: "SBTi-validated targets are now table stakes. Boards expect credible transition plans backed by measurable abatement, not pledges.",
-  },
-  {
-    icon: Layers,
-    title: "Scope 3 Complexity",
-    body: "Up to 90% of corporate footprints sit in supply chains and product use. Customers need scalable supplier engagement and activity-based data.",
-  },
-  {
-    icon: Sparkles,
-    title: "AI & Self-Service Expectations",
-    body: "Sustainability Leads expect guided, in-product recommendations and natural-language analysis, not static reports delivered weeks after the cycle closes.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Assurance & Trust",
-    body: "Limited and reasonable assurance (ISAE 3000, ISSA 5000) raise the bar on methodology transparency, audit trails, and data lineage.",
+    icon: Globe,
+    title: "Physical Risk Materialises",
+    body: "Floods, heat, drought and storms are already hitting assets, supply chains and continuity. Clients need site and supplier level views, not country averages.",
   },
   {
     icon: Activity,
-    title: "Nature & Climate Risk",
-    body: "TNFD, physical risk, and transition risk disclosures require new data sources, scenario analysis, and biodiversity context alongside emissions.",
+    title: "Transition Exposure Grows",
+    body: "Carbon pricing, demand shifts, technology change, litigation and reputational risk all move enterprise value. They have to be modelled together, not in silos.",
   },
   {
-    icon: Zap,
-    title: "Decarbonization Investment",
-    body: "Customers are deploying capital into renewables, electrification, and NTBS offsetting and need prioritized, abatement-ranked guidance.",
+    icon: Leaf,
+    title: "Nature Joins the Agenda",
+    body: "Biodiversity, water and ecosystem dependencies are moving from voluntary to mandatory. ClimVar wires nature risk into the same Value at Risk waterfall as climate.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Auditability is Non Negotiable",
+    body: "Boards and auditors want public references, traceable assumptions and reproducible scenarios. NGFS and IPCC RCP scenarios anchor every ClimVar run.",
+  },
+  {
+    icon: Sparkles,
+    title: "Adaptation Becomes Capital Allocation",
+    body: "Once risk is in financial terms, adaptation choices compete with any other CAPEX. Clients need a gross to net Value at Risk view to prioritise.",
   },
   {
     icon: Database,
-    title: "Sustainability Data Everywhere",
-    body: "Emissions, supplier, operational, and financial data sit in fragmented systems. Customers expect a unified, agent-ready foundation Sera can reason over.",
+    title: "From Decks to Living Models",
+    body: "One off PowerPoint risk studies no longer fit a yearly disclosure and quarterly capital cadence. Clients want a continuously refreshable view in product.",
   },
 ];
-
 
 export const MarketContextSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -60,10 +59,10 @@ export const MarketContextSection = () => {
             Market Context
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Forces Shaping Customer Needs
+            Forces Pulling Climate Risk Into Finance
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Customers face the most demanding sustainability landscape in a generation. These pressures define where GSP and RA+ must deliver.
+            Eight converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures ClimVar is built to meet.
           </p>
         </div>
 
