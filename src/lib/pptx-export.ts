@@ -120,7 +120,7 @@ export const exportToPptx = async () => {
 
   const buildKeyChallenges = () => {
     const s = newSlide();
-    addTitle(s, "KEY CHALLENGES", "Pressure, Confusion, Structure, Value, Scale, Impact");
+    addTitle(s, "KEY CHALLENGES", "Why Now for ClimVar");
     whyNowColumns.forEach((col, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.85 + Math.floor(i / 3) * 1.95;
