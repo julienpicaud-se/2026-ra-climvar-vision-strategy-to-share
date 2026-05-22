@@ -1,64 +1,50 @@
-import { Building2, Check, Award } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Award, Shield, TrendingUp, Trophy, Building2 } from "lucide-react";
 
-const players = [
+const competitors = [
   {
-    name: "ERM",
-    scope: "GLOBAL",
-    note: "Largest pure-play sustainability consultancy with deep climate and transition advisory, but no proprietary platform that turns engagement IP into a continuous client data layer.",
+    name: "Risilience",
+    scope: "Climate risk platform",
+    note: "Strong on climate scenario modelling for finance but limited integration with carbon performance and operational monitoring on a single Schneider Electric backbone.",
   },
   {
-    name: "Accenture / Deloitte Sustainability",
-    scope: "GLOBAL",
-    note: "Strong transformation reach and regulatory advisory, yet decarbonization methodology lives in decks and partner tools rather than a productized platform.",
+    name: "S&P / Sustainalytics / MSCI",
+    scope: "Ratings and data",
+    note: "Trusted data and ratings sources, but no productised gross-to-net Value at Risk framing tied to concrete adaptation levers.",
   },
   {
-    name: "Watershed",
-    scope: "GLOBAL",
-    note: "Modern carbon accounting and disclosure software with strong Scope 3, but limited assurance-grade methodology IP and no advisory bench at GSP scale.",
+    name: "Big 4 (Deloitte, EY, PwC, KPMG)",
+    scope: "Advisory",
+    note: "Deep climate and disclosure advisory benches, yet risk methodology stays inside decks rather than a refreshable in product capability.",
   },
   {
-    name: "Persefoni",
-    scope: "GLOBAL",
-    note: "Climate management platform built for finance and disclosure workflows. Thin on operational decarbonization guidance and supplier engagement depth.",
+    name: "Carbon accounting platforms",
+    scope: "Disclosure software",
+    note: "Strong on emissions and disclosure automation, weak on financial quantification of physical and nature risk.",
   },
   {
-    name: "Sweep / Salesforce Net Zero Cloud",
-    scope: "GLOBAL",
-    note: "Suite-aligned carbon and ESG modules. Good reporting workflow coverage, but limited methodology depth and no integrated advisory practice.",
-  },
-  {
-    name: "EcoVadis / CDP",
-    scope: "GLOBAL",
-    note: "Trusted supplier rating and disclosure networks. They sit alongside our offer rather than competing with embedded sustainability advisory inside RA+.",
+    name: "Internal SE risk models",
+    scope: "Bespoke",
+    note: "Site by site internal exposure models exist but are not productised, not refreshable on demand, and not anchored on a published methodology.",
   },
 ];
 
-const whyWeWin = [
-  "GSP advisory plus RA+ platform, not a slideware-only consultancy or a reporting-only software product",
-  "#1-ranked sustainability practice (400+ experts, 7,500+ projects, 426.54M tCO2 managed, 2,000+ carbon footprints) feeding the platform with real engagement IP",
-  "Covers 3 of 8 SE Advisory Services families end-to-end: Sustainable Business Transformation, Sustainable Supply Chain, Risk Management & Resilience",
-  "Client emissions and operational data blended with GSP methodology as a trusted context layer pure software players cannot reach",
-  "Decades of advisory IP reactivated as structured, reusable decarbonization intelligence inside the product",
-  "Sera as a unified guided interface reasoning over RA+ sustainability data across CSOs, Sustainability Leads, Data Ops, and Procurement",
-  "Three engagement profiles (self-serve, expert-supported, fully-managed) on a single sustainability-powered platform, opening segments competitors cannot serve",
-  "Assurance-ready methodologies (GHG Protocol, SBTi, CSRD, ISSB) governed centrally instead of rebuilt per engagement",
-  "NTBS offsetting (400+ projects, 55+ countries, 200+ local partners) pulled into the same workflow, closing the loop from disclosure to action",
+const differentiators = [
+  "Published Discounted Cash Flow methodology that turns climate, transition and nature risk into one Climate Value at Risk per scenario",
+  "Gross to net Value at Risk view that prices Schneider Electric adaptation levers in financial terms",
+  "Variable granularity from country and sector down to site, asset and supplier",
+  "Living in product capability through RA+ ClimVar instead of a one off study refreshed yearly",
+  "Bridge into the wider RA+ portfolio across Carbon Performance, Supply Chain, Climate Risk and Energy",
+  "Internal Schneider Electric use cases on data centres and SE sites validate the model at scale",
 ];
 
-const accreditations = [
-  { name: "CDP Accredited Provider Gold", detail: "15 consecutive years" },
-  { name: "SBTi Expert Advisory Group", detail: "Active member" },
-  { name: "ICROA", detail: "Founding member" },
-  { name: "MSCI ESG Ratings AAA", detail: "Schneider Electric" },
-  { name: "PCAF Accredited Partner", detail: "2025" },
-  { name: "GRESB Premier Partner", detail: "Real Estate & Infrastructure" },
-  { name: "Gold Standard", detail: "Strategic partner for the Global Goals" },
-  { name: "Dow Jones Sustainability Indices", detail: "13 consecutive years" },
-  { name: "Ethisphere World's Most Ethical", detail: "14 consecutive years" },
-  { name: "TIME World's Most Sustainable", detail: "2025" },
+const trustSignals = [
+  { name: "Published methodology", detail: "DCF backbone, public references" },
+  { name: "NGFS / IPCC RCP", detail: "Anchored on recognised scenarios" },
+  { name: "Internal proof at SE", detail: "Validated on Schneider Electric sites" },
+  { name: "Blue ocean position", detail: "No competitor on integrated risk plus carbon to finance" },
 ];
-
 
 export const CompetitiveLandscapeSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -67,76 +53,69 @@ export const CompetitiveLandscapeSection = () => {
     <section
       id="competitive-landscape"
       ref={ref as React.RefObject<HTMLElement>}
-      className={`py-20 sm:py-24 section-fade ${isVisible ? "visible" : ""}`}
+      className={`py-12 section-fade ${isVisible ? "visible" : ""}`}
     >
-      <div className="container px-4 max-w-6xl mx-auto">
-        <div className="text-center mb-12 max-w-3xl mx-auto">
-          <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 block">
-            Competitive Landscape
-          </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Serious Players, Differentiated Position
-          </h2>
-          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Credible competitors exist across sustainability advisory, carbon accounting software, and suite-aligned ESG plays. Our differentiator is the world's #1-ranked GSP practice paired with RA+ as a living sustainability data and recommendation engine.
+      <div className="container px-4">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mb-8 leading-relaxed">
+            Climate risk advisory, carbon accounting software and platform-only players each cover part of the picture. None combine integrated risk, carbon performance and operational monitoring with a financial Value at Risk view the way ClimVar does.
           </p>
-        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-          {players.map((p) => (
-            <div
-              key={p.name}
-              className="rounded-xl border border-border/50 bg-muted/20 p-5"
-            >
-              <div className="flex items-start gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-muted/60 border border-border/50 flex items-center justify-center shrink-0">
-                  <Building2 className="w-4 h-4 text-muted-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-foreground leading-tight">{p.name}</h3>
-                  <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">
-                    {p.scope}
-                  </span>
-                </div>
-              </div>
-              <p className="text-xs text-muted-foreground leading-relaxed">{p.note}</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+            {competitors.map((c) => (
+              <Card key={c.name} className="bg-card border-border/50">
+                <CardContent className="p-5">
+                  <div className="flex items-start justify-between mb-2 gap-2">
+                    <h4 className="font-semibold text-foreground text-sm">{c.name}</h4>
+                    <span className="text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full whitespace-nowrap">{c.scope}</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.note}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <Card className="bg-primary/5 border-primary/30 mb-8">
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
+                <TrendingUp className="w-4 h-4 text-primary" />
+                Why ClimVar Wins
+              </h3>
+              <ul className="space-y-2">
+                {differentiators.map((d, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-2" />
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-foreground italic mt-4 pt-4 border-t border-border/40">
+                Not a slide deck study. Not a generic ratings feed. A published methodology delivered as advisory and industrialised as RA+ ClimVar.
+              </p>
+            </CardContent>
+          </Card>
+
+          <div>
+            <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
+              <Shield className="w-4 h-4 text-primary" />
+              Trust Signals
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+              {trustSignals.map((t) => (
+                <Card key={t.name} className="bg-card border-border/50">
+                  <CardContent className="p-4">
+                    <div className="flex items-center gap-2 mb-1">
+                      <Award className="w-4 h-4 text-primary" />
+                      <h4 className="font-semibold text-foreground text-xs">{t.name}</h4>
+                    </div>
+                    <p className="text-xs text-muted-foreground">{t.detail}</p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
-          ))}
-        </div>
-
-        <div className="rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 sm:p-8">
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">Why We Win</h3>
-          <p className="italic text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
-            Not just a consultancy. Not just a reporting tool. A governed GSP capability inside RA+ that compounds value with every engagement, every disclosure cycle, and every client.
-          </p>
-          <div className="grid md:grid-cols-2 gap-x-6 gap-y-3">
-            {whyWeWin.map((point) => (
-              <div key={point} className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                <p className="text-sm text-foreground leading-relaxed">{point}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-10 rounded-xl border border-border/60 bg-card p-6 sm:p-8">
-          <div className="flex items-center gap-2 mb-5">
-            <Award className="w-5 h-5 text-primary" />
-            <h3 className="text-lg sm:text-xl font-bold text-foreground">External Validation & Accreditations</h3>
-          </div>
-          <p className="text-xs sm:text-sm text-muted-foreground mb-5 max-w-3xl">
-            Independent recognition that underwrites the credibility GSP brings to every RA+ engagement.
-          </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {accreditations.map((a) => (
-              <div key={a.name} className="flex items-start gap-2.5 rounded-lg border border-border/40 bg-muted/20 p-3">
-                <Check className="w-3.5 h-3.5 text-primary mt-1 shrink-0" />
-                <div>
-                  <p className="text-xs font-semibold text-foreground leading-tight">{a.name}</p>
-                  <p className="text-[11px] text-muted-foreground mt-0.5">{a.detail}</p>
-                </div>
-              </div>
-            ))}
+            <p className="text-xs text-muted-foreground italic">
+              Independent anchors that underwrite the credibility of every ClimVar engagement.
+            </p>
           </div>
         </div>
       </div>
