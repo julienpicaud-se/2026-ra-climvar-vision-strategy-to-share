@@ -291,19 +291,19 @@ export const exportToPptx = async () => {
     addTitle(
       s1,
       "HUMAN IN THE LOOP",
-      "Expert Services Layer on the RA+ Spine",
-      "AI executes, humans apply judgment. Same RA+ spine, two ways to consume it.",
+      "Advisory Layer on the RA+ ClimVar Spine",
+      "Methodology and product are one. Experts deliver the first analysis and judgment; RA+ ClimVar industrialises it.",
     );
     const archetypes = [
       {
-        title: "Self-Serve Operator",
-        tagline: "FULL AUTONOMY, AI-DRIVEN",
-        body: "Wants the keys. Runs RA+ analytics, builds ECM scenarios, and acts on Sera recommendations without waiting for a human. RA+ is their cockpit; expert services are a-la-carte.",
+        title: "Self-Serve Climate Team",
+        tagline: "FULL AUTONOMY ON RA+ CLIMVAR",
+        body: "Sustainability, risk and finance teams operate RA+ ClimVar themselves. They refresh scenarios, edit adaptation levers and drill into sites without waiting for a human in the loop.",
       },
       {
         title: "Guided Decision Client",
-        tagline: "HUMAN IN THE LOOP",
-        body: "Wants a trusted Schneider expert in the room for high-stakes calls. The platform drives the work; the expert validates, interprets, and translates RA+ outputs into board-ready decisions.",
+        tagline: "ADVISORY IN THE ROOM",
+        body: "Wants a trusted Schneider Electric advisor for the first analysis and for high stakes calls. RA+ ClimVar runs the work; the advisor validates the methodology and frames the financial story for the board.",
       },
     ];
     archetypes.forEach((a, i) => {
@@ -322,14 +322,14 @@ export const exportToPptx = async () => {
     addTitle(
       s2,
       "JUDGMENT LAYER",
-      "Where Schneider Experts Add Value",
-      "Service advisors become the judgment layer on top of RA+ and Sera , across four roles, across three engagement tiers.",
+      "Where ClimVar Advisors Add Value",
+      "Advisors are the judgment layer on top of the published methodology and RA+ ClimVar.",
     );
     const pillars = [
-      { t: "Validation", d: "Pressure-test RA+ baselines, ECM assumptions, and Sera outputs against engineering and field reality." },
-      { t: "Interpretation", d: "Turn RA+ telemetry and ECM stacks into a clear portfolio narrative and realistic envelope of action." },
-      { t: "Risk translation", d: "Frame downside, tenant impact, compliance, and execution risk around RA+ surfaced measures." },
-      { t: "Exec communication", d: "Package RA+ evidence and Sera reasoning into board-grade recommendations and capital narratives." },
+      { t: "Methodology framing", d: "Translate the Discounted Cash Flow methodology into the client's industry, geography and risk profile." },
+      { t: "Scenario design", d: "Anchor scenarios on NGFS and IPCC RCP references, layer in client specific risk drivers." },
+      { t: "Adaptation sizing", d: "Frame each adaptation lever as a financial choice with gross vs net VaR and a clear Schneider Electric offer." },
+      { t: "Exec communication", d: "Package ClimVar outputs into CFO and board ready impairment, capital and disclosure narratives." },
     ];
     pillars.forEach((p, i) => {
       const xPos = 0.5 + i * 2.3;
@@ -342,12 +342,12 @@ export const exportToPptx = async () => {
     });
 
     const tiers = [
-      ["Self-Serve", "Self-Serve Operator", "On demand", "Experts a-la-carte", "Full RA+ + RA+ + Sera"],
-      ["Assisted", "Mixed maturity", "Async + QBRs", "Expert validates RA+ outputs", "Shared RA+ workspace, annotated RA+ readouts"],
-      ["Advisory", "Guided Decision Client", "Embedded", "Named expert owns interpretation", "Co-piloted RA+ + RA+ with expert IP"],
+      ["Advisory", "First Climate Value at Risk", "Engagement", "Advisor led", "ClimVar methodology + scoped scenarios"],
+      ["Assisted", "Refresh and disclosure cycles", "Async + reviews", "Advisor validates outputs", "Shared RA+ ClimVar workspace, annotated readouts"],
+      ["Self-Serve", "Continuous monitoring", "Always on", "Client team operates the model", "Full RA+ ClimVar with on demand advisor access"],
     ];
     const tableY = 3.75;
-    const headers = ["Tier", "Best for", "Cadence", "Human role", "Platform / RA+"];
+    const headers = ["Tier", "Best for", "Cadence", "Human role", "Platform / RA+ ClimVar"];
     const colWidths = [1.1, 1.7, 1.3, 2.3, 2.8];
     let xCursor = 0.5;
     headers.forEach((h, i) => {
@@ -364,7 +364,7 @@ export const exportToPptx = async () => {
         xCursor += colWidths[ci];
       });
     });
-    s2.addText("One RA+ spine, one RA+ workspace. Clients move between tiers without losing context or model continuity.", {
+    s2.addText("One methodology, one RA+ ClimVar spine. Clients move between tiers without losing context or model continuity.", {
       x: 0.5, y: 5.4, w: 9, h: 0.3, fontSize: 8, italic: true, color: BRAND_GREEN, align: "center", fit: "shrink",
     });
   };
