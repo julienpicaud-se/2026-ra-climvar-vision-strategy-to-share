@@ -197,7 +197,7 @@ export const exportToPptx = async () => {
 
   const buildJTBD = () => {
     const s = newSlide();
-    addTitle(s, "JOBS TO BE DONE", "What Users Hire Energy Efficiency to Do", jobsToBeDone.intro);
+    addTitle(s, "JOBS TO BE DONE", "What Users Hire ClimVar to Do", jobsToBeDone.intro);
     jobsToBeDone.jobs.slice(0, 11).forEach((j, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 0.55;
@@ -207,7 +207,7 @@ export const exportToPptx = async () => {
       s.addText(j.type, { x: xPos + 3.6, y: yPos, w: 1, h: 0.22, fontSize: 6, bold: true, color: typeColor, align: "right" });
       s.addText(j.description, { x: xPos + 0.4, y: yPos + 0.25, w: 4.1, h: 0.28, fontSize: 6, color: TEXT_MUTED, fit: "shrink" });
     });
-    s.addText(`Where ECMs fit. ${jobsToBeDone.ecmInsight}`, { x: 0.5, y: 5.4, w: 9, h: 0.4, fontSize: 7.5, italic: true, color: BRAND_GREEN, fit: "shrink" });
+    s.addText(`Where adaptation fits. ${jobsToBeDone.ecmInsight}`, { x: 0.5, y: 5.4, w: 9, h: 0.4, fontSize: 7.5, italic: true, color: BRAND_GREEN, fit: "shrink" });
   };
 
   const buildStrategicPillars = () => {
