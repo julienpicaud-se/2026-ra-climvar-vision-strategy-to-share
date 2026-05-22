@@ -486,7 +486,7 @@ export const exportToPptx = async () => {
     const s = newSlide();
     addTitle(s, "EXECUTIVE TAKEAWAY", "Why This, Why Now");
     s.addText(
-      "Efficiency Transformation turns proven CoE expertise into a governed RA+ capability: earlier customer reach, faster guided action, continuous improvement.",
+      "ClimVar turns climate and nature risk into a defensible financial number. Advisory delivers the first analysis, RA+ ClimVar industrialises it, and adaptation becomes a sized, prioritised portfolio of Schneider Electric offers.",
       { x: 0.5, y: 2.0, w: 9, h: 2.5, fontSize: 16, color: TEXT_WHITE, align: "center", fit: "shrink" },
     );
   };
