@@ -53,8 +53,8 @@ export const exportToPptx = async () => {
   const pptx = new PptxGenJS();
 
   pptx.author = "Schneider Electric";
-  pptx.title = "Efficiency Transformation with RA+";
-  pptx.subject = "Efficiency Transformation with RA+";
+  pptx.title = "ClimVar Playbook — Financial Risk Quantification";
+  pptx.subject = "ClimVar Playbook — Financial Risk Quantification";
   pptx.company = "Schneider Electric";
 
   pptx.defineSlideMaster({
