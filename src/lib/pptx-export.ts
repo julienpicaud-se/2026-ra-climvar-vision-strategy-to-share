@@ -87,9 +87,9 @@ export const exportToPptx = async () => {
 
   const buildTitle = () => {
     const s = newSlide();
-    s.addText("Efficiency Transformation", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
-    s.addText("Efficiency Transformation", { x: 0.5, y: 2.5, w: 9, h: 0.8, fontSize: 40, bold: true, color: BRAND_GREEN, align: "center" });
-    s.addText("with RA+", { x: 0.5, y: 3.2, w: 9, h: 0.8, fontSize: 40, bold: true, color: TEXT_WHITE, align: "center" });
+    s.addText("ClimVar", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("Climate Value at Risk", { x: 0.5, y: 2.5, w: 9, h: 0.8, fontSize: 40, bold: true, color: BRAND_GREEN, align: "center" });
+    s.addText("Advisory + RA+ ClimVar", { x: 0.5, y: 3.2, w: 9, h: 0.8, fontSize: 40, bold: true, color: TEXT_WHITE, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4.5, w: 9, h: 0.5, fontSize: 14, color: TEXT_MUTED, align: "center" });
   };
 
