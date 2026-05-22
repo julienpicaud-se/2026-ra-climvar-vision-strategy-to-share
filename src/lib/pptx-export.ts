@@ -566,7 +566,7 @@ export const exportToPptx = async () => {
 
   const buildPainInventory = () => {
     const s = newSlide();
-    addTitle(s, "APPENDIX · PAIN INVENTORY", "What the Efficiency Transformation Eliminates", painInventory.intro);
+    addTitle(s, "APPENDIX · PAIN INVENTORY", "What ClimVar Eliminates", painInventory.intro);
     painInventory.pains.forEach((p, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 1.2;
