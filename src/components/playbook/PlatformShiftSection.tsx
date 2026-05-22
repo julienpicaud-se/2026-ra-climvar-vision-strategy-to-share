@@ -16,10 +16,10 @@ export const PlatformShiftSection = () => {
         <div className="mb-12 max-w-3xl">
             <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 flex items-center gap-2">
               <Layers className="w-4 h-4" />
-              Efficiency Transformation
+              Methodology + Product
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Efficiency Transformation with RA+
+              From Decks and Bespoke Models to a Continuous Capability
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
             {platformShift.intro}
