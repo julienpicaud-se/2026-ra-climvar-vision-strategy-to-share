@@ -456,15 +456,15 @@ export const exportToPptx = async () => {
     const s = newSlide();
     addTitle(s, "START / STOP", "Where We Stop, How We Operate", "The boundary list keeps scope honest. The operating rules keep customer-facing advice trustworthy.");
     const outOfScope = [
-      { title: "Contractual Guarantees", detail: "Performance guarantees and contractual commitments require separate validation." },
-      { title: "Detailed Engineering", detail: "Detailed engineering design without expert validation stays outside scope." },
-      { title: "Asset Planning", detail: "Baseline modeling, M&V, and capital planning live in a separate Asset Planning discovery." },
+      { title: "ROI Charts", detail: "ClimVar is not a savings calculator. We frame Value at Risk and adaptation cost vs benefit, not headline ROI charts." },
+      { title: "Pricing and Discounting", detail: "Commercial terms and discounting policies live outside this playbook." },
+      { title: "Regulatory Commitments", detail: "ClimVar informs CSRD, TCFD, TNFD and impairment work; it does not replace regulatory sign off." },
     ];
     const guardrails = [
-      { title: "Transparency & Scope", detail: "Label advice as guidance, show ranges with confidence levels, surface assumptions and gaps." },
-      { title: "Data Quality & Applicability", detail: "Enforce data checks, show applicability rules, filter by geography, segment, and asset tags." },
-      { title: "Risk & Compliance", detail: "No auto-suggest where licensed sign-off is required. Maintain audit trails. Link to standards." },
-      { title: "User Experience & Escalation", detail: "Expert escalation from any advice card. Rationale snippets and similar-site evidence." },
+      { title: "Methodology Transparency", detail: "Published Discounted Cash Flow methodology with public reference scenarios, traceable assumptions and audit trails." },
+      { title: "Finance First Framing", detail: "Lead with Value at Risk on enterprise value, then layer the sustainability narrative once the financial case is set." },
+      { title: "Integrated Risk", detail: "Physical, transition and nature in one waterfall. No siloed analyses, no partial pictures." },
+      { title: "Adaptation Sizing", detail: "Every lever framed as gross vs net VaR with an explicit Schneider Electric offer linkage." },
     ];
     s.addText("Stop", { x: 0.5, y: 1.95, w: 4.4, h: 0.3, fontSize: 11, bold: true, color: ORANGE });
     outOfScope.forEach((item, i) => {
