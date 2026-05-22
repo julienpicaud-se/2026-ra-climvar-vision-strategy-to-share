@@ -19,7 +19,7 @@ export const JobsToBeDoneSection = () => {
             Jobs to Be Done
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            What Users Hire Energy Efficiency to Do
+            What Users Hire ClimVar to Do
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{jobsToBeDone.intro}</p>
         </div>
@@ -51,7 +51,7 @@ export const JobsToBeDoneSection = () => {
           <CardContent className="p-5 flex items-start gap-3">
             <Sparkles className="w-5 h-5 text-primary shrink-0 mt-0.5" />
             <p className="text-sm text-foreground leading-relaxed">
-              <span className="font-semibold text-primary">Where decarbonization levers fit. </span>
+              <span className="font-semibold text-primary">Where adaptation fits. </span>
               {jobsToBeDone.ecmInsight}
             </p>
           </CardContent>

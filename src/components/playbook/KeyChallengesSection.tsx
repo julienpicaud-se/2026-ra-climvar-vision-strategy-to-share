@@ -58,7 +58,7 @@ export const KeyChallengesSection = () => {
             Why Now
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            From external pressure and internal confusion to structured value, scale, and measurable impact
+            Why climate risk is moving from narrative to a defensible financial metric — and why ClimVar plus RA+ ClimVar are positioned to lead it
           </p>
         </div>
 

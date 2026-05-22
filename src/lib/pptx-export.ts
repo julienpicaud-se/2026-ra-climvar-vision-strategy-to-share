@@ -20,16 +20,16 @@ import {
 
 const executiveSummarySlides = [
   {
-    title: "Efficiency CoE expertise is proven, but not yet scaled through RA+",
-    body: "The Efficiency CoE already delivers trusted advisory, implementation, IDM, and Global Energy Bureau capabilities across public and private sectors. The RA+ opportunity is to convert that operating strength into a repeatable platform capability that reaches customers earlier, guides action faster, and supports continuous improvement.",
+    title: "ClimVar is the published methodology, RA+ ClimVar is the product",
+    body: "ClimVar Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ ClimVar industrialises the same methodology as a continuous, in product capability.",
   },
   {
-    title: "A governed Efficiency CoE capability embedded in RA+",
-    body: "The north star is an authoritative efficiency foundation inside RA+ that connects IDM as the trusted interval-data system of record, expert CoE knowledge, and guided workflows. It should power goal-based Strategy recommendations, site-level Building View discovery, structured deliverables, and a clear path from early insight to expert engagement.",
+    title: "Finance is the entry door for the climate conversation",
+    body: "CFOs and treasurers want a single Value at Risk number tied to enterprise value, impairment and capital allocation. ClimVar leads with finance, then layers the sustainability narrative once the financial case is on the table.",
   },
   {
-    title: "Efficiency becomes a continuous RA+ operating model",
-    body: "The end state is a credible, governed efficiency layer in RA+ that links strategy, design, execution, and continuous improvement. Customers receive contextual recommendations, teams reuse a consistent knowledge base, and expert services are pulled in at the right moments for deeper analysis without turning early guidance into a contractual commitment.",
+    title: "Adaptation is sized as gross vs net Value at Risk",
+    body: "Each Schneider Electric offer (PPA, efficiency, resilience, supply chain) is tied to a measurable VaR reduction. Boards see adaptation as investment choices with a clear cost and benefit, not as narrative.",
   },
 ];
 
@@ -53,8 +53,8 @@ export const exportToPptx = async () => {
   const pptx = new PptxGenJS();
 
   pptx.author = "Schneider Electric";
-  pptx.title = "Efficiency Transformation with RA+";
-  pptx.subject = "Efficiency Transformation with RA+";
+  pptx.title = "ClimVar Playbook — Financial Risk Quantification";
+  pptx.subject = "ClimVar Playbook — Financial Risk Quantification";
   pptx.company = "Schneider Electric";
 
   pptx.defineSlideMaster({
@@ -87,9 +87,9 @@ export const exportToPptx = async () => {
 
   const buildTitle = () => {
     const s = newSlide();
-    s.addText("Efficiency Transformation", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
-    s.addText("Efficiency Transformation", { x: 0.5, y: 2.5, w: 9, h: 0.8, fontSize: 40, bold: true, color: BRAND_GREEN, align: "center" });
-    s.addText("with RA+", { x: 0.5, y: 3.2, w: 9, h: 0.8, fontSize: 40, bold: true, color: TEXT_WHITE, align: "center" });
+    s.addText("ClimVar", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("Climate Value at Risk", { x: 0.5, y: 2.5, w: 9, h: 0.8, fontSize: 40, bold: true, color: BRAND_GREEN, align: "center" });
+    s.addText("Advisory + RA+ ClimVar", { x: 0.5, y: 3.2, w: 9, h: 0.8, fontSize: 40, bold: true, color: TEXT_WHITE, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4.5, w: 9, h: 0.5, fontSize: 14, color: TEXT_MUTED, align: "center" });
   };
 
@@ -120,7 +120,7 @@ export const exportToPptx = async () => {
 
   const buildKeyChallenges = () => {
     const s = newSlide();
-    addTitle(s, "KEY CHALLENGES", "Pressure, Confusion, Structure, Value, Scale, Impact");
+    addTitle(s, "KEY CHALLENGES", "Why Now for ClimVar");
     whyNowColumns.forEach((col, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.85 + Math.floor(i / 3) * 1.95;
@@ -138,14 +138,15 @@ export const exportToPptx = async () => {
 
   const buildWhatIf = () => {
     const whatIfScenarios = [
-      { title: "Show opportunities in minutes", description: "Walk into a first meeting and show site-relevant efficiency opportunities in RA+ within minutes." },
-      { title: "Replace PowerPoint with platform", description: "Replace audit PowerPoint decks with structured, visual, interactive deliverables in the platform." },
-      { title: "Centralize context once", description: "Centralize all client context once on the RA+ spine and reuse it across audits, quotes, and follow-ups." },
-      { title: "One-click audit requests", description: "Let customers discover early efficiency insights, then request deeper expert audits with one click." },
-      { title: "Continuous improvement", description: "Turn every delivered audit into data that improves future recommendations." },
+      { title: "Defensible Value at Risk in days", description: "Walk into a CFO meeting with a Climate Value at Risk number anchored on NGFS and IPCC scenarios, not on a bespoke model." },
+      { title: "One waterfall, three lenses", description: "Show physical, transition and nature risks aggregated into a single integrated Value at Risk view." },
+      { title: "Adaptation with a price tag", description: "Size each adaptation lever as gross vs net VaR and tie it to a specific Schneider Electric offer." },
+      { title: "Continuous refresh, not yearly", description: "Refresh the analysis on demand inside RA+ ClimVar instead of rebuilding the model from scratch." },
+      { title: "Drill from portfolio to site", description: "Move from country sector view to site level deep dive without leaving the platform." },
+      { title: "Supply chain risk without a survey", description: "Use multi regional input output modelling to size supply chain exposure without a full supplier campaign." },
     ];
     const s = newSlide();
-    addTitle(s, "WHAT IF TOMORROW", "Aspirations the Platform Unlocks");
+    addTitle(s, "WHAT IF TOMORROW", "Aspirations ClimVar Unlocks");
     whatIfScenarios.forEach((sc, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.95 + Math.floor(i / 3) * 1.55;
@@ -160,7 +161,7 @@ export const exportToPptx = async () => {
 
   const buildPlatformShift = () => {
     const s = newSlide();
-    addTitle(s, "PLATFORM SHIFT", "Efficiency Transformation with RA+", platformShift.intro);
+    addTitle(s, "PLATFORM SHIFT", "Methodology + Product, Integrated by Design", platformShift.intro);
     [platformShift.classic, platformShift.raPlus].forEach((col, i) => {
       const xPos = 0.5 + i * 4.6;
       s.addShape("rect" as PptxGenJS.ShapeType, {
@@ -196,7 +197,7 @@ export const exportToPptx = async () => {
 
   const buildJTBD = () => {
     const s = newSlide();
-    addTitle(s, "JOBS TO BE DONE", "What Users Hire Energy Efficiency to Do", jobsToBeDone.intro);
+    addTitle(s, "JOBS TO BE DONE", "What Users Hire ClimVar to Do", jobsToBeDone.intro);
     jobsToBeDone.jobs.slice(0, 11).forEach((j, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 0.55;
@@ -206,7 +207,7 @@ export const exportToPptx = async () => {
       s.addText(j.type, { x: xPos + 3.6, y: yPos, w: 1, h: 0.22, fontSize: 6, bold: true, color: typeColor, align: "right" });
       s.addText(j.description, { x: xPos + 0.4, y: yPos + 0.25, w: 4.1, h: 0.28, fontSize: 6, color: TEXT_MUTED, fit: "shrink" });
     });
-    s.addText(`Where ECMs fit. ${jobsToBeDone.ecmInsight}`, { x: 0.5, y: 5.4, w: 9, h: 0.4, fontSize: 7.5, italic: true, color: BRAND_GREEN, fit: "shrink" });
+    s.addText(`Where adaptation fits. ${jobsToBeDone.ecmInsight}`, { x: 0.5, y: 5.4, w: 9, h: 0.4, fontSize: 7.5, italic: true, color: BRAND_GREEN, fit: "shrink" });
   };
 
   const buildStrategicPillars = () => {
@@ -227,7 +228,7 @@ export const exportToPptx = async () => {
 
   const buildTechnologyLandscape = () => {
     const s = newSlide();
-    addTitle(s, "TECHNOLOGY LANDSCAPE", "Where We Are Today, Where IDM Goes Next", "Existing tools that anchor today's efficiency work, with IDM evolving into the RA+ data backbone.");
+    addTitle(s, "TECHNOLOGY LANDSCAPE", "From Bespoke Models to a Shared Backbone", "Existing tools that anchor today's climate risk work, with RA+ ClimVar evolving them into a continuous, in product capability.");
     existingTools.forEach((t, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 1.55;
@@ -244,15 +245,15 @@ export const exportToPptx = async () => {
 
   const buildCapabilityMapping = () => {
     const s = newSlide();
-    addTitle(s, "CAPABILITY MAPPING", "ECM Library across the Efficiency Journey", "How the ECM knowledge base plugs into each stage of the customer journey.");
+    addTitle(s, "CAPABILITY MAPPING", "ClimVar across the Client Journey", "How ClimVar Advisory and RA+ ClimVar plug into each stage of the journey, from first conversation to continuous monitoring.");
     const journeyStages = [
-      { name: "Lead Intake", note: "Surface relevant opportunities by sector and geography" },
-      { name: "Data Collection", note: "Match required inputs to available IDM, BMS, and utility feeds" },
-      { name: "On-Site Audit", note: "Suggest measures to verify; capture findings into the library" },
-      { name: "Analysis & Guidance", note: "Pre-compute savings ranges from historic distributions" },
-      { name: "Recommendations", note: "Generate structured, defensible deliverables" },
-      { name: "Implementation", note: "Hand off scope to delivery teams or partners" },
-      { name: "Monitoring", note: "Close the loop with M&V to feed library updates" },
+      { name: "Discovery", note: "CFO led framing of climate exposure on enterprise value" },
+      { name: "Scoping", note: "Pick scenarios, horizons, asset granularity and risk drivers" },
+      { name: "Data Foundation", note: "Reuse public references and Schneider Electric internal data, avoid heavy supplier surveys" },
+      { name: "Modelling", note: "Integrated Value at Risk waterfall across physical, transition and nature" },
+      { name: "Adaptation Sizing", note: "Quantify gross vs net VaR, tie levers to Schneider Electric offers" },
+      { name: "RA+ ClimVar Activation", note: "Industrialise the analysis as a continuously refreshable capability" },
+      { name: "Continuous Monitoring", note: "Refresh, drill, compare scenarios and feed disclosure cycles" },
     ];
     journeyStages.forEach((stage, i) => {
       const yPos = 1.85 + i * 0.5;
@@ -290,19 +291,19 @@ export const exportToPptx = async () => {
     addTitle(
       s1,
       "HUMAN IN THE LOOP",
-      "Expert Services Layer on the RA+ Spine",
-      "AI executes, humans apply judgment. Same RA+ spine, two ways to consume it.",
+      "Advisory Layer on the RA+ ClimVar Spine",
+      "Methodology and product are one. Experts deliver the first analysis and judgment; RA+ ClimVar industrialises it.",
     );
     const archetypes = [
       {
-        title: "Self-Serve Operator",
-        tagline: "FULL AUTONOMY, AI-DRIVEN",
-        body: "Wants the keys. Runs RA+ analytics, builds ECM scenarios, and acts on Sera recommendations without waiting for a human. RA+ is their cockpit; expert services are a-la-carte.",
+        title: "Self-Serve Climate Team",
+        tagline: "FULL AUTONOMY ON RA+ CLIMVAR",
+        body: "Sustainability, risk and finance teams operate RA+ ClimVar themselves. They refresh scenarios, edit adaptation levers and drill into sites without waiting for a human in the loop.",
       },
       {
         title: "Guided Decision Client",
-        tagline: "HUMAN IN THE LOOP",
-        body: "Wants a trusted Schneider expert in the room for high-stakes calls. The platform drives the work; the expert validates, interprets, and translates RA+ outputs into board-ready decisions.",
+        tagline: "ADVISORY IN THE ROOM",
+        body: "Wants a trusted Schneider Electric advisor for the first analysis and for high stakes calls. RA+ ClimVar runs the work; the advisor validates the methodology and frames the financial story for the board.",
       },
     ];
     archetypes.forEach((a, i) => {
@@ -321,14 +322,14 @@ export const exportToPptx = async () => {
     addTitle(
       s2,
       "JUDGMENT LAYER",
-      "Where Schneider Experts Add Value",
-      "Service advisors become the judgment layer on top of RA+ and Sera , across four roles, across three engagement tiers.",
+      "Where ClimVar Advisors Add Value",
+      "Advisors are the judgment layer on top of the published methodology and RA+ ClimVar.",
     );
     const pillars = [
-      { t: "Validation", d: "Pressure-test RA+ baselines, ECM assumptions, and Sera outputs against engineering and field reality." },
-      { t: "Interpretation", d: "Turn RA+ telemetry and ECM stacks into a clear portfolio narrative and realistic envelope of action." },
-      { t: "Risk translation", d: "Frame downside, tenant impact, compliance, and execution risk around RA+ surfaced measures." },
-      { t: "Exec communication", d: "Package RA+ evidence and Sera reasoning into board-grade recommendations and capital narratives." },
+      { t: "Methodology framing", d: "Translate the Discounted Cash Flow methodology into the client's industry, geography and risk profile." },
+      { t: "Scenario design", d: "Anchor scenarios on NGFS and IPCC RCP references, layer in client specific risk drivers." },
+      { t: "Adaptation sizing", d: "Frame each adaptation lever as a financial choice with gross vs net VaR and a clear Schneider Electric offer." },
+      { t: "Exec communication", d: "Package ClimVar outputs into CFO and board ready impairment, capital and disclosure narratives." },
     ];
     pillars.forEach((p, i) => {
       const xPos = 0.5 + i * 2.3;
@@ -341,12 +342,12 @@ export const exportToPptx = async () => {
     });
 
     const tiers = [
-      ["Self-Serve", "Self-Serve Operator", "On demand", "Experts a-la-carte", "Full RA+ + RA+ + Sera"],
-      ["Assisted", "Mixed maturity", "Async + QBRs", "Expert validates RA+ outputs", "Shared RA+ workspace, annotated RA+ readouts"],
-      ["Advisory", "Guided Decision Client", "Embedded", "Named expert owns interpretation", "Co-piloted RA+ + RA+ with expert IP"],
+      ["Advisory", "First Climate Value at Risk", "Engagement", "Advisor led", "ClimVar methodology + scoped scenarios"],
+      ["Assisted", "Refresh and disclosure cycles", "Async + reviews", "Advisor validates outputs", "Shared RA+ ClimVar workspace, annotated readouts"],
+      ["Self-Serve", "Continuous monitoring", "Always on", "Client team operates the model", "Full RA+ ClimVar with on demand advisor access"],
     ];
     const tableY = 3.75;
-    const headers = ["Tier", "Best for", "Cadence", "Human role", "Platform / RA+"];
+    const headers = ["Tier", "Best for", "Cadence", "Human role", "Platform / RA+ ClimVar"];
     const colWidths = [1.1, 1.7, 1.3, 2.3, 2.8];
     let xCursor = 0.5;
     headers.forEach((h, i) => {
@@ -363,19 +364,19 @@ export const exportToPptx = async () => {
         xCursor += colWidths[ci];
       });
     });
-    s2.addText("One RA+ spine, one RA+ workspace. Clients move between tiers without losing context or model continuity.", {
+    s2.addText("One methodology, one RA+ ClimVar spine. Clients move between tiers without losing context or model continuity.", {
       x: 0.5, y: 5.4, w: 9, h: 0.3, fontSize: 8, italic: true, color: BRAND_GREEN, align: "center", fit: "shrink",
     });
   };
 
   const buildPhasing = () => {
     const phases = [
-      { phase: "Phase 1", title: "IDM Evolution", tagline: "Urgent, no-regret", timing: "MVP Q4 2025 / Q1 2026", summary: "Re-platform IDM into RA+ to drive market differentiation through agentic capabilities, richer context, and SaaS-ready delivery." },
-      { phase: "Phase 2", title: "ECM Library", tagline: "Cross-COE feeder", timing: "Sequenced with Pricing & Savings Accelerator", summary: "Connects efficiency, consultancy, and construction services into one knowledge backbone that powers Sera reasoning." },
-      { phase: "Phase 3", title: "AkitaBox", tagline: "Build vs. integrate decision", timing: "Sequencing TBD", summary: "Confirmed no-regret strategic move. Open question on build inside RA+ vs. standalone module and differentiation vs. BDP / Foresight." },
+      { phase: "Phase 1", title: "ClimVar Advisory at Scale", tagline: "Methodology in market", timing: "2025 — 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
+      { phase: "Phase 2", title: "RA+ ClimVar MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ module: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
+      { phase: "Phase 3", title: "Cross Module Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the ClimVar backbone across RA+ Sustainability and Energy modules. Position RA+ ClimVar as the replacement for legacy risk tooling across the Schneider Electric estate." },
     ];
     const s = newSlide();
-    addTitle(s, "PHASING", "What Ships, in What Order, Why", "Capability depth grows along the axis: Phase 1 is in flight, Phase 2 is sequenced, Phase 3 is an open question.");
+    addTitle(s, "PHASING", "What Ships, in What Order, Why", "From the published methodology in market today to a continuous, cross module capability inside RA+.");
     phases.forEach((p, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, {
@@ -391,25 +392,25 @@ export const exportToPptx = async () => {
   };
 
   const buildIdmVision = () => {
-    const idmUseCases = [
-      { title: "Program Management & M&V", body: "Follow up on actions, track KPIs, run causal analysis across factories, sites, and buildings. IPMVP-aligned savings validation built in." },
-      { title: "Optimization Discovery", body: "Use interval data to surface staging opportunities, compressed air inefficiencies, and control re-architecture that consultants find manually today." },
-      { title: "Cross-Functional Data Reuse", body: "Make interval data natively available for sourcing, budgeting, forecasting, and risk management. One source of truth, many use cases." },
+    const useCases = [
+      { title: "Integrated Risk Quantification", body: "Express physical, transition and nature exposure as a single Climate Value at Risk on enterprise value, revenue, OPEX and COGS." },
+      { title: "Adaptation Sizing", body: "Move from a narrative adaptation plan to a sized portfolio of levers with gross vs net VaR and clear linkage to Schneider Electric offers." },
+      { title: "Continuous Monitoring", body: "Refresh scenarios, drill from portfolio to site, compare business as usual, net zero and worst case, and feed disclosures." },
     ];
-    const idmProfiles = [
-      { title: "Give Me", subtitle: "Full self-serve", body: "Internal expertise; runs analyses, configures KPIs, manages programs in RA+." },
-      { title: "Help Me", subtitle: "Hybrid", body: "Platform autonomy plus targeted Schneider expertise for complex moments." },
-      { title: "Do It For Me", subtitle: "Full service", body: "Schneider continues to handle data, KPIs, analysis, and program management." },
+    const profiles = [
+      { title: "Give Me", subtitle: "Self serve", body: "Internal climate, risk and finance teams operate RA+ ClimVar themselves and refresh on their own cadence." },
+      { title: "Help Me", subtitle: "Hybrid", body: "Client team runs RA+ ClimVar with Schneider Electric advisors stepping in for scenario design, refreshes and board readouts." },
+      { title: "Do It For Me", subtitle: "Full advisory", body: "Schneider Electric runs the analysis end to end with the published methodology and delivers refresh cycles as a service." },
     ];
     const s = newSlide();
-    addTitle(s, "RA+ VISION", "Embedded, Differentiated, Agentic", "Client-autonomy axis: from full self-serve to fully delivered. RA+ supports all three without forcing one path.");
-    idmUseCases.forEach((u, i) => {
+    addTitle(s, "RA+ CLIMVAR VISION", "Embedded, Defensible, Continuous", "Client autonomy axis: from full self serve to fully delivered. RA+ ClimVar supports all three on the same methodology.");
+    useCases.forEach((u, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, { x: xPos, y: 1.95, w: 2.95, h: 1.5, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 } });
       s.addText(u.title, { x: xPos + 0.15, y: 2.05, w: 2.65, h: 0.3, fontSize: 10, bold: true, color: BRAND_GREEN });
       s.addText(u.body, { x: xPos + 0.15, y: 2.4, w: 2.65, h: 1.0, fontSize: 7.5, color: TEXT_MUTED, fit: "shrink" });
     });
-    idmProfiles.forEach((p, i) => {
+    profiles.forEach((p, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, { x: xPos, y: 3.6, w: 2.95, h: 1.7, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 } });
       s.addText(p.title, { x: xPos + 0.15, y: 3.7, w: 2.65, h: 0.3, fontSize: 11, bold: true, color: TEXT_WHITE });
@@ -420,13 +421,13 @@ export const exportToPptx = async () => {
 
   const buildSuccessMetrics = () => {
     const s = newSlide();
-    addTitle(s, "QUANTITATIVE KPIS", "Success Looks Like", "Measurable signals that translate the Strategic Pillars into trackable indicators. Each KPI defines what we measure, not a committed target.");
+    addTitle(s, "QUANTITATIVE KPIS", "Success Looks Like", "Measurable signals that translate the strategic pillars into trackable indicators. Each KPI defines what we measure, not a committed target.");
     const quantKPIs = [
-      { label: "Audit Cycle Time", signal: "Days per audit (trend)" },
-      { label: "Advisory-to-Audit Conversion", signal: "% prompts → audits" },
-      { label: "Time to Quote", signal: "Hours to quote (median)" },
-      { label: "Recommendation Adoption", signal: "% recs actioned (90d)" },
-      { label: "RA+ Revenue Contribution", signal: "% of RA+ ARR" },
+      { label: "First Climate VaR", signal: "Weeks from kickoff to delivery" },
+      { label: "Scenario Refresh Cycle", signal: "Days per refresh in RA+ ClimVar" },
+      { label: "Adaptation Coverage", signal: "% VaR addressed by sized levers" },
+      { label: "Cross Module Reuse", signal: "ClimVar clients consuming adjacent modules" },
+      { label: "RA+ ClimVar Recurring Use", signal: "Active client teams (90d)" },
     ];
     quantKPIs.forEach((k, i) => {
       const xPos = 0.5 + i * 1.85;
@@ -437,7 +438,7 @@ export const exportToPptx = async () => {
       s.addText(k.label, { x: xPos + 0.1, y: 2.0, w: 1.55, h: 0.45, fontSize: 9, bold: true, color: TEXT_WHITE, fit: "shrink" });
       s.addText(k.signal, { x: xPos + 0.1, y: 2.45, w: 1.55, h: 0.45, fontSize: 7.5, color: BRAND_GREEN, fit: "shrink" });
     });
-    s.addText("Sera Interface Signals", { x: 0.5, y: 3.15, w: 9, h: 0.3, fontSize: 11, bold: true, color: BRAND_GREEN });
+    s.addText("RA+ ClimVar Adoption Signals", { x: 0.5, y: 3.15, w: 9, h: 0.3, fontSize: 11, bold: true, color: BRAND_GREEN });
     s.addText(seraKPIs.intro, { x: 0.5, y: 3.45, w: 9, h: 0.35, fontSize: 8, italic: true, color: TEXT_MUTED, fit: "shrink" });
     seraKPIs.kpis.forEach((k, i) => {
       const xPos = 0.5 + (i % 3) * 3.05;
@@ -455,15 +456,15 @@ export const exportToPptx = async () => {
     const s = newSlide();
     addTitle(s, "START / STOP", "Where We Stop, How We Operate", "The boundary list keeps scope honest. The operating rules keep customer-facing advice trustworthy.");
     const outOfScope = [
-      { title: "Contractual Guarantees", detail: "Performance guarantees and contractual commitments require separate validation." },
-      { title: "Detailed Engineering", detail: "Detailed engineering design without expert validation stays outside scope." },
-      { title: "Asset Planning", detail: "Baseline modeling, M&V, and capital planning live in a separate Asset Planning discovery." },
+      { title: "ROI Charts", detail: "ClimVar is not a savings calculator. We frame Value at Risk and adaptation cost vs benefit, not headline ROI charts." },
+      { title: "Pricing and Discounting", detail: "Commercial terms and discounting policies live outside this playbook." },
+      { title: "Regulatory Commitments", detail: "ClimVar informs CSRD, TCFD, TNFD and impairment work; it does not replace regulatory sign off." },
     ];
     const guardrails = [
-      { title: "Transparency & Scope", detail: "Label advice as guidance, show ranges with confidence levels, surface assumptions and gaps." },
-      { title: "Data Quality & Applicability", detail: "Enforce data checks, show applicability rules, filter by geography, segment, and asset tags." },
-      { title: "Risk & Compliance", detail: "No auto-suggest where licensed sign-off is required. Maintain audit trails. Link to standards." },
-      { title: "User Experience & Escalation", detail: "Expert escalation from any advice card. Rationale snippets and similar-site evidence." },
+      { title: "Methodology Transparency", detail: "Published Discounted Cash Flow methodology with public reference scenarios, traceable assumptions and audit trails." },
+      { title: "Finance First Framing", detail: "Lead with Value at Risk on enterprise value, then layer the sustainability narrative once the financial case is set." },
+      { title: "Integrated Risk", detail: "Physical, transition and nature in one waterfall. No siloed analyses, no partial pictures." },
+      { title: "Adaptation Sizing", detail: "Every lever framed as gross vs net VaR with an explicit Schneider Electric offer linkage." },
     ];
     s.addText("Stop", { x: 0.5, y: 1.95, w: 4.4, h: 0.3, fontSize: 11, bold: true, color: ORANGE });
     outOfScope.forEach((item, i) => {
@@ -485,7 +486,7 @@ export const exportToPptx = async () => {
     const s = newSlide();
     addTitle(s, "EXECUTIVE TAKEAWAY", "Why This, Why Now");
     s.addText(
-      "Efficiency Transformation turns proven CoE expertise into a governed RA+ capability: earlier customer reach, faster guided action, continuous improvement.",
+      "ClimVar turns climate and nature risk into a defensible financial number. Advisory delivers the first analysis, RA+ ClimVar industrialises it, and adaptation becomes a sized, prioritised portfolio of Schneider Electric offers.",
       { x: 0.5, y: 2.0, w: 9, h: 2.5, fontSize: 16, color: TEXT_WHITE, align: "center", fit: "shrink" },
     );
   };
@@ -565,7 +566,7 @@ export const exportToPptx = async () => {
 
   const buildPainInventory = () => {
     const s = newSlide();
-    addTitle(s, "APPENDIX · PAIN INVENTORY", "What the Efficiency Transformation Eliminates", painInventory.intro);
+    addTitle(s, "APPENDIX · PAIN INVENTORY", "What ClimVar Eliminates", painInventory.intro);
     painInventory.pains.forEach((p, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 1.2;
@@ -594,7 +595,7 @@ export const exportToPptx = async () => {
   const buildThankYou = () => {
     const s = newSlide();
     s.addText("Thank You", { x: 0.5, y: 2, w: 9, h: 1, fontSize: 44, bold: true, color: TEXT_WHITE, align: "center" });
-    s.addText("Efficiency Transformation with RA+", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("ClimVar · Climate Value at Risk", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4, w: 9, h: 0.5, fontSize: 12, color: TEXT_MUTED, align: "center" });
   };
 
@@ -642,5 +643,5 @@ export const exportToPptx = async () => {
 
   buildThankYou();
 
-  await pptx.writeFile({ fileName: "Efficiency-Transformation-with-RA-Plus.pptx" });
+  await pptx.writeFile({ fileName: "ClimVar-Playbook.pptx" });
 };
