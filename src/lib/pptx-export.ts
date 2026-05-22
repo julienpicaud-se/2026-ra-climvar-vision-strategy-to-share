@@ -161,7 +161,7 @@ export const exportToPptx = async () => {
 
   const buildPlatformShift = () => {
     const s = newSlide();
-    addTitle(s, "PLATFORM SHIFT", "Efficiency Transformation with RA+", platformShift.intro);
+    addTitle(s, "PLATFORM SHIFT", "Methodology + Product, Integrated by Design", platformShift.intro);
     [platformShift.classic, platformShift.raPlus].forEach((col, i) => {
       const xPos = 0.5 + i * 4.6;
       s.addShape("rect" as PptxGenJS.ShapeType, {
