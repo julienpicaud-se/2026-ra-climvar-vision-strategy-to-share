@@ -19,7 +19,7 @@ export const JobsToBeDoneSection = () => {
             Jobs to Be Done
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            What Users Hire Energy Efficiency to Do
+            What Users Hire ClimVar to Do
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{jobsToBeDone.intro}</p>
         </div>
