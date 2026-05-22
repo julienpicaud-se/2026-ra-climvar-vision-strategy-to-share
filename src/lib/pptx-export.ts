@@ -20,16 +20,16 @@ import {
 
 const executiveSummarySlides = [
   {
-    title: "Efficiency CoE expertise is proven, but not yet scaled through RA+",
-    body: "The Efficiency CoE already delivers trusted advisory, implementation, IDM, and Global Energy Bureau capabilities across public and private sectors. The RA+ opportunity is to convert that operating strength into a repeatable platform capability that reaches customers earlier, guides action faster, and supports continuous improvement.",
+    title: "ClimVar is the published methodology, RA+ ClimVar is the product",
+    body: "ClimVar Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ ClimVar industrialises the same methodology as a continuous, in product capability.",
   },
   {
-    title: "A governed Efficiency CoE capability embedded in RA+",
-    body: "The north star is an authoritative efficiency foundation inside RA+ that connects IDM as the trusted interval-data system of record, expert CoE knowledge, and guided workflows. It should power goal-based Strategy recommendations, site-level Building View discovery, structured deliverables, and a clear path from early insight to expert engagement.",
+    title: "Finance is the entry door for the climate conversation",
+    body: "CFOs and treasurers want a single Value at Risk number tied to enterprise value, impairment and capital allocation. ClimVar leads with finance, then layers the sustainability narrative once the financial case is on the table.",
   },
   {
-    title: "Efficiency becomes a continuous RA+ operating model",
-    body: "The end state is a credible, governed efficiency layer in RA+ that links strategy, design, execution, and continuous improvement. Customers receive contextual recommendations, teams reuse a consistent knowledge base, and expert services are pulled in at the right moments for deeper analysis without turning early guidance into a contractual commitment.",
+    title: "Adaptation is sized as gross vs net Value at Risk",
+    body: "Each Schneider Electric offer (PPA, efficiency, resilience, supply chain) is tied to a measurable VaR reduction. Boards see adaptation as investment choices with a clear cost and benefit, not as narrative.",
   },
 ];
 
