@@ -371,12 +371,12 @@ export const exportToPptx = async () => {
 
   const buildPhasing = () => {
     const phases = [
-      { phase: "Phase 1", title: "IDM Evolution", tagline: "Urgent, no-regret", timing: "MVP Q4 2025 / Q1 2026", summary: "Re-platform IDM into RA+ to drive market differentiation through agentic capabilities, richer context, and SaaS-ready delivery." },
-      { phase: "Phase 2", title: "ECM Library", tagline: "Cross-COE feeder", timing: "Sequenced with Pricing & Savings Accelerator", summary: "Connects efficiency, consultancy, and construction services into one knowledge backbone that powers Sera reasoning." },
-      { phase: "Phase 3", title: "AkitaBox", tagline: "Build vs. integrate decision", timing: "Sequencing TBD", summary: "Confirmed no-regret strategic move. Open question on build inside RA+ vs. standalone module and differentiation vs. BDP / Foresight." },
+      { phase: "Phase 1", title: "ClimVar Advisory at Scale", tagline: "Methodology in market", timing: "2025 — 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
+      { phase: "Phase 2", title: "RA+ ClimVar MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ module: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
+      { phase: "Phase 3", title: "Cross Module Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the ClimVar backbone across RA+ Sustainability and Energy modules. Position RA+ ClimVar as the replacement for legacy risk tooling across the Schneider Electric estate." },
     ];
     const s = newSlide();
-    addTitle(s, "PHASING", "What Ships, in What Order, Why", "Capability depth grows along the axis: Phase 1 is in flight, Phase 2 is sequenced, Phase 3 is an open question.");
+    addTitle(s, "PHASING", "What Ships, in What Order, Why", "From the published methodology in market today to a continuous, cross module capability inside RA+.");
     phases.forEach((p, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, {
@@ -392,25 +392,25 @@ export const exportToPptx = async () => {
   };
 
   const buildIdmVision = () => {
-    const idmUseCases = [
-      { title: "Program Management & M&V", body: "Follow up on actions, track KPIs, run causal analysis across factories, sites, and buildings. IPMVP-aligned savings validation built in." },
-      { title: "Optimization Discovery", body: "Use interval data to surface staging opportunities, compressed air inefficiencies, and control re-architecture that consultants find manually today." },
-      { title: "Cross-Functional Data Reuse", body: "Make interval data natively available for sourcing, budgeting, forecasting, and risk management. One source of truth, many use cases." },
+    const useCases = [
+      { title: "Integrated Risk Quantification", body: "Express physical, transition and nature exposure as a single Climate Value at Risk on enterprise value, revenue, OPEX and COGS." },
+      { title: "Adaptation Sizing", body: "Move from a narrative adaptation plan to a sized portfolio of levers with gross vs net VaR and clear linkage to Schneider Electric offers." },
+      { title: "Continuous Monitoring", body: "Refresh scenarios, drill from portfolio to site, compare business as usual, net zero and worst case, and feed disclosures." },
     ];
-    const idmProfiles = [
-      { title: "Give Me", subtitle: "Full self-serve", body: "Internal expertise; runs analyses, configures KPIs, manages programs in RA+." },
-      { title: "Help Me", subtitle: "Hybrid", body: "Platform autonomy plus targeted Schneider expertise for complex moments." },
-      { title: "Do It For Me", subtitle: "Full service", body: "Schneider continues to handle data, KPIs, analysis, and program management." },
+    const profiles = [
+      { title: "Give Me", subtitle: "Self serve", body: "Internal climate, risk and finance teams operate RA+ ClimVar themselves and refresh on their own cadence." },
+      { title: "Help Me", subtitle: "Hybrid", body: "Client team runs RA+ ClimVar with Schneider Electric advisors stepping in for scenario design, refreshes and board readouts." },
+      { title: "Do It For Me", subtitle: "Full advisory", body: "Schneider Electric runs the analysis end to end with the published methodology and delivers refresh cycles as a service." },
     ];
     const s = newSlide();
-    addTitle(s, "RA+ VISION", "Embedded, Differentiated, Agentic", "Client-autonomy axis: from full self-serve to fully delivered. RA+ supports all three without forcing one path.");
-    idmUseCases.forEach((u, i) => {
+    addTitle(s, "RA+ CLIMVAR VISION", "Embedded, Defensible, Continuous", "Client autonomy axis: from full self serve to fully delivered. RA+ ClimVar supports all three on the same methodology.");
+    useCases.forEach((u, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, { x: xPos, y: 1.95, w: 2.95, h: 1.5, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 } });
       s.addText(u.title, { x: xPos + 0.15, y: 2.05, w: 2.65, h: 0.3, fontSize: 10, bold: true, color: BRAND_GREEN });
       s.addText(u.body, { x: xPos + 0.15, y: 2.4, w: 2.65, h: 1.0, fontSize: 7.5, color: TEXT_MUTED, fit: "shrink" });
     });
-    idmProfiles.forEach((p, i) => {
+    profiles.forEach((p, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, { x: xPos, y: 3.6, w: 2.95, h: 1.7, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 } });
       s.addText(p.title, { x: xPos + 0.15, y: 3.7, w: 2.65, h: 0.3, fontSize: 11, bold: true, color: TEXT_WHITE });
