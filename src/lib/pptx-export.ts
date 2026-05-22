@@ -138,14 +138,15 @@ export const exportToPptx = async () => {
 
   const buildWhatIf = () => {
     const whatIfScenarios = [
-      { title: "Show opportunities in minutes", description: "Walk into a first meeting and show site-relevant efficiency opportunities in RA+ within minutes." },
-      { title: "Replace PowerPoint with platform", description: "Replace audit PowerPoint decks with structured, visual, interactive deliverables in the platform." },
-      { title: "Centralize context once", description: "Centralize all client context once on the RA+ spine and reuse it across audits, quotes, and follow-ups." },
-      { title: "One-click audit requests", description: "Let customers discover early efficiency insights, then request deeper expert audits with one click." },
-      { title: "Continuous improvement", description: "Turn every delivered audit into data that improves future recommendations." },
+      { title: "Defensible Value at Risk in days", description: "Walk into a CFO meeting with a Climate Value at Risk number anchored on NGFS and IPCC scenarios, not on a bespoke model." },
+      { title: "One waterfall, three lenses", description: "Show physical, transition and nature risks aggregated into a single integrated Value at Risk view." },
+      { title: "Adaptation with a price tag", description: "Size each adaptation lever as gross vs net VaR and tie it to a specific Schneider Electric offer." },
+      { title: "Continuous refresh, not yearly", description: "Refresh the analysis on demand inside RA+ ClimVar instead of rebuilding the model from scratch." },
+      { title: "Drill from portfolio to site", description: "Move from country sector view to site level deep dive without leaving the platform." },
+      { title: "Supply chain risk without a survey", description: "Use multi regional input output modelling to size supply chain exposure without a full supplier campaign." },
     ];
     const s = newSlide();
-    addTitle(s, "WHAT IF TOMORROW", "Aspirations the Platform Unlocks");
+    addTitle(s, "WHAT IF TOMORROW", "Aspirations ClimVar Unlocks");
     whatIfScenarios.forEach((sc, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.95 + Math.floor(i / 3) * 1.55;
