@@ -595,7 +595,7 @@ export const exportToPptx = async () => {
   const buildThankYou = () => {
     const s = newSlide();
     s.addText("Thank You", { x: 0.5, y: 2, w: 9, h: 1, fontSize: 44, bold: true, color: TEXT_WHITE, align: "center" });
-    s.addText("Efficiency Transformation with RA+", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("ClimVar · Climate Value at Risk", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4, w: 9, h: 0.5, fontSize: 12, color: TEXT_MUTED, align: "center" });
   };
 
