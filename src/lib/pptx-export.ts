@@ -643,5 +643,5 @@ export const exportToPptx = async () => {
 
   buildThankYou();
 
-  await pptx.writeFile({ fileName: "Efficiency-Transformation-with-RA-Plus.pptx" });
+  await pptx.writeFile({ fileName: "ClimVar-Playbook.pptx" });
 };
