@@ -228,7 +228,7 @@ export const exportToPptx = async () => {
 
   const buildTechnologyLandscape = () => {
     const s = newSlide();
-    addTitle(s, "TECHNOLOGY LANDSCAPE", "Where We Are Today, Where IDM Goes Next", "Existing tools that anchor today's efficiency work, with IDM evolving into the RA+ data backbone.");
+    addTitle(s, "TECHNOLOGY LANDSCAPE", "From Bespoke Models to a Shared Backbone", "Existing tools that anchor today's climate risk work, with RA+ ClimVar evolving them into a continuous, in product capability.");
     existingTools.forEach((t, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 1.55;
@@ -245,15 +245,15 @@ export const exportToPptx = async () => {
 
   const buildCapabilityMapping = () => {
     const s = newSlide();
-    addTitle(s, "CAPABILITY MAPPING", "ECM Library across the Efficiency Journey", "How the ECM knowledge base plugs into each stage of the customer journey.");
+    addTitle(s, "CAPABILITY MAPPING", "ClimVar across the Client Journey", "How ClimVar Advisory and RA+ ClimVar plug into each stage of the journey, from first conversation to continuous monitoring.");
     const journeyStages = [
-      { name: "Lead Intake", note: "Surface relevant opportunities by sector and geography" },
-      { name: "Data Collection", note: "Match required inputs to available IDM, BMS, and utility feeds" },
-      { name: "On-Site Audit", note: "Suggest measures to verify; capture findings into the library" },
-      { name: "Analysis & Guidance", note: "Pre-compute savings ranges from historic distributions" },
-      { name: "Recommendations", note: "Generate structured, defensible deliverables" },
-      { name: "Implementation", note: "Hand off scope to delivery teams or partners" },
-      { name: "Monitoring", note: "Close the loop with M&V to feed library updates" },
+      { name: "Discovery", note: "CFO led framing of climate exposure on enterprise value" },
+      { name: "Scoping", note: "Pick scenarios, horizons, asset granularity and risk drivers" },
+      { name: "Data Foundation", note: "Reuse public references and Schneider Electric internal data, avoid heavy supplier surveys" },
+      { name: "Modelling", note: "Integrated Value at Risk waterfall across physical, transition and nature" },
+      { name: "Adaptation Sizing", note: "Quantify gross vs net VaR, tie levers to Schneider Electric offers" },
+      { name: "RA+ ClimVar Activation", note: "Industrialise the analysis as a continuously refreshable capability" },
+      { name: "Continuous Monitoring", note: "Refresh, drill, compare scenarios and feed disclosure cycles" },
     ];
     journeyStages.forEach((stage, i) => {
       const yPos = 1.85 + i * 0.5;
