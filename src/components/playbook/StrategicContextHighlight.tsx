@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const kpis = [
   {
     icon: DollarSign,
-    value: "One metric",
+    value: "One estimation",
     label: "Climate Value at Risk",
     detail: "Unifying physical, transition and nature drivers into a single financial figure per scenario",
   },
