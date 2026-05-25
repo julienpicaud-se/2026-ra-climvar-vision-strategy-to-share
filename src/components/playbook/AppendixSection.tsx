@@ -144,7 +144,7 @@ export const AppendixSection = () => {
             ClimVar Playbook Details
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mt-4">
-            Deep dive into the operating model, capability evolution, quarterly plans, and supporting metrics.
+            Deep dive into the ClimVar methodology, RA+ ClimVar product scope, customer maturity, adaptation engine, and supporting evidence.
           </p>
         </div>
 
