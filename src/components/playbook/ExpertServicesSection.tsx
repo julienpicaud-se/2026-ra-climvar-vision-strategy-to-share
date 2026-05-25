@@ -97,7 +97,7 @@ export const ExpertServicesSection = () => {
             Advisory on the RA+ Prism Backbone
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ Prism industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
+            Advisory helps you act on the analysis. Experts deliver the first Climate Value at Risk view, frame the adaptation case and size the investment. Prism then industrialises the same model into a living capability, so methodology continuity is preserved while clients move from engagement to self serve. Software and services together create a continuous path from insight to action.
           </p>
         </div>
 
