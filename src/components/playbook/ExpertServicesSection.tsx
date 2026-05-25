@@ -16,7 +16,7 @@ const archetypes = [
   },
   {
     icon: Bot,
-    title: "Living Platform Client",
+    title: "RA+ Prism Client",
     tagline: "RA+ CLIMVAR, REFRESHED ON DEMAND",
     description:
       "Has been through a first ClimVar engagement and now wants the model inside RA+ Prism so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
