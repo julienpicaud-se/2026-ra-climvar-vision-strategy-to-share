@@ -70,10 +70,10 @@ export const SupplyChainPrismSection = () => {
     return out;
   }, [rings]);
 
-  // Highlighted hub nodes on each "structural" ring (rings 2..5)
+  // Highlighted hub nodes on each "structural" ring (rings 1..5)
   const hubs = useMemo(() => {
     const out: { x: number; y: number; ring: number; idx: number }[] = [];
-    [2, 3, 4, 5].forEach((ri) => {
+    [1, 2, 3, 4, 5].forEach((ri) => {
       const ring = rings[ri];
       const count = ri === 5 ? 6 : ri === 4 ? 7 : 8;
       for (let k = 0; k < count; k++) {
@@ -98,14 +98,14 @@ export const SupplyChainPrismSection = () => {
     return { x: 500 + Math.cos(a) * ring.r, y: 500 + Math.sin(a) * ring.r };
   }, [rings]);
 
-  // Flow segments by phase: pair adjacent rings, draw arrows from outer hub → inner hub
+  // Flow segments by phase: outer ring → inner ring (matches caption)
   const flowSegments = useMemo(() => {
     const pairs: Record<Phase, [number, number] | null> = {
       build: null,
-      flow1: [2, 3], // Rank-1 suppliers → Distribution centers (visually outer→inner)
-      flow2: [3, 5], // Distribution centers → Stores
+      flow1: [1, 2], // Rank-2 Suppliers → Rank-1 Suppliers
+      flow2: [3, 5], // Distribution Centers → Stores
       disrupt: null,
-      reroute: [3, 5],
+      reroute: [1, 5], // Re-routed end-to-end flow
     };
     return pairs;
   }, []);
@@ -126,11 +126,11 @@ export const SupplyChainPrismSection = () => {
             x2={t.x}
             y2={t.y}
             stroke={color}
-            strokeWidth={1.1}
-            strokeDasharray="5 5"
+            strokeWidth={1.8}
+            strokeDasharray="6 4"
             markerEnd={`url(#arr-${color === "hsl(0 84% 60%)" ? "red" : "green"})`}
             style={{ animation: `dashFlow 1.6s linear infinite` }}
-            opacity={0.85}
+            opacity={1}
           />
         );
       }
