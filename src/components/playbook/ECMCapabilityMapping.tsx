@@ -24,7 +24,7 @@ const journeyStages = [
     stage: "A",
     title: "Discovery and Qualification",
     icon: Search,
-    primaryUsers: "Account teams with ClimVar advisory support",
+    primaryUsers: "Sales teams with ClimVar advisory support",
     capabilities: [
       "Finance led discovery from minimal client inputs (sector, geography, revenue, asset value)",
       "Quick applicability checks for physical, transition and nature drivers",

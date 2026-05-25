@@ -54,7 +54,7 @@ export const OperatingModelSection = () => {
             Operating Model
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Advisory Plus a Living Platform Capability
+            Advisory And Software Capability
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
             ClimVar is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ ClimVar inside the platform.

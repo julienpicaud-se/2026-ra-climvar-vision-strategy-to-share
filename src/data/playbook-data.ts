@@ -990,8 +990,8 @@ export const marketTrends = [
 export const serviceModelComparison = [
   {
     model: "Advisory Mode",
-    fullName: "Schneider Electric Advisory Services ClimVar",
-    description: "An engagement led delivery where Schneider Electric experts run the analysis, train the client, scope priorities, and deliver the first Climate Value at Risk view.",
+    fullName: "SE Advisory Services ClimVar",
+    description: "An engagement led delivery where SE experts run the analysis, train the client, scope priorities, and deliver the first Climate Value at Risk view.",
     typicalOutcomes: ["First financial view of climate and nature risk", "Aligned scope and scenarios with client priorities", "Quantified adaptation choices tied to SE offers"],
     dataNeeds: ["Entity revenue, country and sector", "Site geo localisation and asset value", "Optional financial ratios and emissions"],
     verificationLevel: "Published methodology referenced on SSRN and reviewed with Amundi, Institut Louis Bachelier, PIK and Scientific Portfolio.",
@@ -1584,7 +1584,7 @@ export const productScope = {
     {
       name: "ClimVar Advisory",
       tag: "Engagement Mode",
-      summary: "Schneider Electric Advisory Services delivery of the published Discounted Cash Flow methodology. First Climate Value at Risk view, scoped scenarios, and adaptation sized in financial terms.",
+      summary: "SE Advisory Services delivery of the published Discounted Cash Flow methodology. First Climate Value at Risk view, scoped scenarios, and adaptation sized in financial terms.",
       capabilities: [
         "Training and upskilling of client teams on climate, nature and financial concepts",
         "Scoping aligned with business priorities (scenarios, horizons, granularity)",
