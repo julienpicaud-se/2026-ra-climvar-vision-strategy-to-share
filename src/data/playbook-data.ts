@@ -1008,7 +1008,7 @@ export const serviceModelComparison = [
 
 export const intelligenceFlywheel = {
   title: "Risk to Adaptation Flywheel",
-  subtitle: "How RA+ Prism advisory and RA+ Prism combine to turn risk awareness into continuous adaptation value",
+  subtitle: "How Advisory and RA+ Prism combine to turn risk awareness into continuous adaptation value",
   veeExplainer: {
     title: "Intra Scenario Uncertainty",
     description:

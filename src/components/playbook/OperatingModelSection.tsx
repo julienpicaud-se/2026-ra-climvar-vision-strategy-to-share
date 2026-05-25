@@ -34,7 +34,7 @@ const pillars = [
 
 const principles = [
   "Lead with finance: every conversation starts with the financial framing, sustainability follows once Value at Risk is on the table",
-  "One backbone: RA+ Prism advisory and RA+ Prism share one published methodology, one set of scenarios and one data spine",
+  "One backbone: Advisory and RA+ Prism share one published methodology, one set of scenarios and one data spine",
   "Quantify, Adapt, Automate: every engagement maps to all three pillars and seeds the platform for the next refresh",
   "Auditable by default: public scenarios, transparent assumptions and traceable inputs so every output survives finance and audit scrutiny",
 ];

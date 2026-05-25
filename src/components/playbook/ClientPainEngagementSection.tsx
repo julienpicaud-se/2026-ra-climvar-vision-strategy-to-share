@@ -49,7 +49,7 @@ export const ClientPainEngagementSection = () => {
             How Client Questions Turn Into RA+ Prism Engagements
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from RA+ Prism advisory and RA+ Prism.
+            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from Advisory and RA+ Prism.
           </p>
         </div>
 

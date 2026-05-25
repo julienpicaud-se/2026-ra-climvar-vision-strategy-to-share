@@ -245,7 +245,7 @@ export const exportToPptx = async () => {
 
   const buildCapabilityMapping = () => {
     const s = newSlide();
-    addTitle(s, "CAPABILITY MAPPING", "RA+ Prism across the Client Journey", "How RA+ Prism Advisory and RA+ Prism plug into each stage of the journey, from first conversation to continuous monitoring.");
+    addTitle(s, "CAPABILITY MAPPING", "RA+ Prism across the Client Journey", "How Advisory and RA+ Prism plug into each stage of the journey, from first conversation to continuous monitoring.");
     const journeyStages = [
       { name: "Discovery", note: "CFO led framing of climate exposure on enterprise value" },
       { name: "Scoping", note: "Pick scenarios, horizons, asset granularity and risk drivers" },
