@@ -285,7 +285,7 @@ export const AppendixSection = () => {
                   Data Foundation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Data Required for Sustainability Capabilities
+                  Data Required for ClimVar
                 </h3>
               </div>
             </AccordionTrigger>
