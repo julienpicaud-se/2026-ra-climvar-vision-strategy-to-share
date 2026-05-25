@@ -334,7 +334,7 @@ export const AppendixSection = () => {
                   Reference Customer
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Reference Customer Pattern
+                  Schneider Electric as Internal Lighthouse
                 </h3>
               </div>
             </AccordionTrigger>
