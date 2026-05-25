@@ -16,7 +16,7 @@ const archetypes = [
   },
   {
     icon: Bot,
-    title: "Living Platform Client",
+    title: "RA+ Prism Client",
     tagline: "RA+ CLIMVAR, REFRESHED ON DEMAND",
     description:
       "Has been through a first ClimVar engagement and now wants the model inside RA+ Prism so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
@@ -72,7 +72,7 @@ const tiers = [
   },
   {
     name: "RA+ Prism",
-    audience: "Living platform client",
+    audience: "RA+ Prism client",
     cadence: "On demand",
     human: "Expert services available a la carte for new scenarios or deep dives",
     platform: "Full RA+ Prism autonomy on portfolio, country, site and supplier views",
