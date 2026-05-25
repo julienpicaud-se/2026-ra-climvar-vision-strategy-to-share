@@ -22,7 +22,7 @@ export const ArchitectureDecisionSection = () => {
             Plan A vs Plan B: How We Land RA+ by Q4 2026
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Two viable technical paths for the Energy Efficiency build inside RA+. Compare on data model, governance, and shared services only. Sequencing, scope, and customer-facing value are covered in their dedicated sections.
+            Two viable technical paths for the RA+ Prism build. Compare on data model, governance, and shared services only. Sequencing, scope, and customer-facing value are covered in their dedicated sections.
           </p>
         </div>
 
