@@ -1300,7 +1300,7 @@ export const efficiencyStrategicContext = {
     archetypes: [
       {
         name: "Finance Led Buyer",
-        tagline: "CFO, treasurer, risk leadership",
+        tagline: "CFO, financial planner, risk leadership",
         share: "Highest leverage on capital allocation and impairment",
         wants: [
           "A single Value at Risk number tied to enterprise value",

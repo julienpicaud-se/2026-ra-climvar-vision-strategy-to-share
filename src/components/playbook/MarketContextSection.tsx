@@ -5,7 +5,7 @@ const forces = [
   {
     icon: DollarSign,
     title: "Finance Demands a Number",
-    body: "CFOs, treasurers and investors expect climate exposure in the same language as any other risk: enterprise value, revenue, OPEX and COGS, not qualitative heatmaps.",
+    body: "CFOs, financial planners and investors expect climate exposure in the same language as any other risk: enterprise value, revenue, OPEX and COGS, not qualitative heatmaps.",
   },
   {
     icon: TrendingUp,
