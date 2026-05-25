@@ -94,7 +94,7 @@ export const ExpertServicesSection = () => {
             Advisory Plus Platform
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            RA+ Prism Advisory on the RA+ Prism Backbone
+            Advisory on the RA+ Prism Backbone
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
             Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ Prism industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
