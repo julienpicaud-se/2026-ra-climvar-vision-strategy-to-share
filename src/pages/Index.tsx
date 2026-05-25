@@ -57,6 +57,7 @@ const Index = () => {
       />
       <HeroSection />
       <ExecutiveSummary />
+      <PrismNameSection />
       <StrategicContextHighlight />
       <MarketContextSection />
       {/* Problem */}
@@ -76,7 +77,6 @@ const Index = () => {
       {/* How – RA+ Prism Foundation cluster */}
       <ExistingToolsSection />
       <RAPlusPlatformFoundationSection />
-      <PrismNameSection />
       <ECMCapabilityMapping />
       
       
