@@ -844,7 +844,7 @@ export const optionalClientContext = [
 
 export const existingTools = [
   { name: "ClimVar Advisory Tool", description: "The current advisory delivery tool implementing the published methodology", limitation: "Used in engagement mode, not yet available to clients in a self serve continuous experience" },
-  { name: "ECLAIR (physical climate risk)", description: "Schneider Electric tool for physical climate risk used on 100+ SE sites", limitation: "Powerful exposure analysis, but stops short of financial quantification on its own" },
+  { name: "ECLR (physical climate risk)", description: "Schneider Electric tool for physical climate risk used on 100+ SE sites", limitation: "Powerful exposure analysis, but stops short of financial quantification on its own" },
   { name: "Legacy Sustainable Finance Models", description: "Internal financial models supporting impairment and disclosure work", limitation: "Not integrated with risk drivers in a single waterfall" },
   { name: "Third Party Risk Vendors", description: "Risilience and similar vendors used in parts of the SE estate today", limitation: "Limited integrated view of risk plus carbon plus monitoring to finance" },
 ];
@@ -904,7 +904,7 @@ export const idmCapabilities = {
     { value: "25 yr", label: "Forecast horizon", detail: "Net present value typically computed to 2050" },
     { value: "2B+", label: "Calculations", detail: "Behind the country and sector level insights" },
     { value: "30 to 40%", label: "VaR reduction", detail: "Typical adaptation lift seen with SE solutions" },
-    { value: "100+", label: "SE sites", detail: "Already covered by physical risk tooling (ECLAIR)" },
+    { value: "100+", label: "SE sites", detail: "Already covered by physical risk tooling (ECLR)" },
     { value: "Public", label: "Reference scenarios", detail: "NGFS for transition, IPCC RCP for physical" },
   ],
   categories: [
@@ -1340,7 +1340,7 @@ export const efficiencyStrategicContext = {
       },
       {
         label: "SE estate pilots",
-        detail: "ECLAIR on 100+ SE sites, ClimVar pilot on Macon (Power Systems) site, follow up on broader SE sites.",
+        detail: "ECLR on 100+ SE sites, ClimVar pilot on Macon (Power Systems) site, follow up on broader SE sites.",
       },
       {
         label: "Internal scale up",
@@ -1553,7 +1553,7 @@ export const seCorporateBlueprint = {
   title: "Schneider Electric as Internal Lighthouse",
   intro: "",
   scale: [
-    { value: "100+", label: "SE sites covered by ECLAIR", detail: "Physical climate risk tool already deployed across the Schneider Electric estate" },
+    { value: "100+", label: "SE sites covered by ECLR", detail: "Physical climate risk tool already deployed across the Schneider Electric estate" },
     { value: "Macon", label: "First ClimVar pilot", detail: "Power Systems site pilot, anchor for broader internal deployment" },
     { value: "Data centres", label: "Lighthouse use case", detail: "Joint work with the Schneider Electric Research Institute on the global installed base" },
     { value: "2027", label: "RA+ for SE", detail: "Positioned to replace legacy risk tooling across the SE estate" },
