@@ -86,11 +86,11 @@ const sections: Section[] = [
     num: "04",
     id: "way-to-win",
     label: "A Pragmatic Way to Win",
-    title: "Advisory first, then a living capability in RA+ ClimVar",
+    title: "Advisory first, then a living capability in RA+ Prism",
     icon: Wrench,
     tone: "muted",
     body:
-      "Clients start with a ClimVar advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ ClimVar productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
+      "Clients start with a ClimVar advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ Prism productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
   },
   {
     num: "05",
@@ -100,11 +100,11 @@ const sections: Section[] = [
     icon: TrendingUp,
     tone: "secondary",
     body:
-      "Quantify turns climate and nature exposure into a financial number CFOs and boards can act on. Adapt connects that number to concrete Schneider Electric solutions and sizes the net Value at Risk after intervention. Automate lifts the model out of decks and into RA+ ClimVar so every refresh is faster, cheaper and more useful than the last.",
+      "Quantify turns climate and nature exposure into a financial number CFOs and boards can act on. Adapt connects that number to concrete Schneider Electric solutions and sizes the net Value at Risk after intervention. Automate lifts the model out of decks and into RA+ Prism so every refresh is faster, cheaper and more useful than the last.",
     kpis: [
       { value: "One number", label: "Financial framing" },
       { value: "Gross to net", label: "Adaptation impact" },
-      { value: "Living", label: "RA+ ClimVar refresh" },
+      { value: "Living", label: "RA+ Prism refresh" },
     ],
   },
   {
@@ -115,7 +115,7 @@ const sections: Section[] = [
     icon: Rocket,
     tone: "muted",
     body:
-      "No competitor combines climate, nature and transition risk with carbon performance and operational monitoring, all expressed in financial terms, the way ClimVar does. The methodology is published and defensible, internal use cases on Schneider Electric sites prove the model at scale, and RA+ ClimVar gives clients a recurring product wrapper that pulls through the wider RA+ portfolio.",
+      "No competitor combines climate, nature and transition risk with carbon performance and operational monitoring, all expressed in financial terms, the way ClimVar does. The methodology is published and defensible, internal use cases on Schneider Electric sites prove the model at scale, and RA+ Prism gives clients a recurring product wrapper that pulls through the wider RA+ portfolio.",
   },
 ];
 
@@ -128,7 +128,7 @@ const risks: { risk: string; mitigation: string }[] = [
   {
     risk: "Advisory delivery is hard to industrialise inside RA+",
     mitigation:
-      "Sequence the build so the ClimVar advisory model and RA+ ClimVar share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
+      "Sequence the build so the ClimVar advisory model and RA+ Prism share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
   },
 ];
 
@@ -206,7 +206,7 @@ export const ExecutiveSummary = () => {
               Executive Summary
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              How ClimVar advisory and RA+ ClimVar turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
+              How ClimVar advisory and RA+ Prism turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
             </p>
           </header>
 

@@ -81,7 +81,7 @@ const journeyStages = [
   {
     id: "platform",
     stage: "E",
-    title: "RA+ ClimVar Activation",
+    title: "RA+ Prism Activation",
     icon: Monitor,
     primaryUsers: "Finance, risk and sustainability teams on the client side",
     capabilities: [
@@ -91,8 +91,8 @@ const journeyStages = [
       "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy products of RA+",
     ],
     value: "From a one off advisory analysis to a living, in product capability",
-    kpis: ["Active RA+ ClimVar clients", "Refreshes per client per year", "Cross product attach"],
-    foundation: "Quantify and Adapt phases must be stable before RA+ ClimVar takes over the refresh cadence.",
+    kpis: ["Active RA+ Prism clients", "Refreshes per client per year", "Cross product attach"],
+    foundation: "Quantify and Adapt phases must be stable before RA+ Prism takes over the refresh cadence.",
   },
 ];
 
@@ -114,7 +114,7 @@ export const ECMCapabilityMapping = () => {
             ClimVar Capability Mapping
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Mapping ClimVar capabilities across discovery, scoping, modelling, adaptation framing and RA+ ClimVar activation, so every engagement seeds the platform and every refresh reuses the backbone.
+            Mapping ClimVar capabilities across discovery, scoping, modelling, adaptation framing and RA+ Prism activation, so every engagement seeds the platform and every refresh reuses the backbone.
           </p>
         </div>
 
@@ -228,7 +228,7 @@ export const ECMCapabilityMapping = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-2">End to End ClimVar Journey</h3>
                 <p className="text-sm text-muted-foreground">
-                  Every stage feeds the next. Discovery frames the financial conversation, scoping locks the methodology, modelling produces the Value at Risk view, adaptation hooks it to Schneider Electric offers, and RA+ ClimVar keeps the model alive across cycles.
+                  Every stage feeds the next. Discovery frames the financial conversation, scoping locks the methodology, modelling produces the Value at Risk view, adaptation hooks it to Schneider Electric offers, and RA+ Prism keeps the model alive across cycles.
                 </p>
               </div>
             </div>

@@ -29,7 +29,7 @@ const kpis = [
   {
     icon: Repeat,
     value: "Living",
-    label: "RA+ ClimVar refresh",
+    label: "RA+ Prism refresh",
     detail: "From a one off advisory analysis to a continuously refreshable in product capability",
   },
 ];
@@ -55,7 +55,7 @@ export const StrategicContextHighlight = () => {
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
             ClimVar leads with finance. A published Discounted Cash Flow methodology turns physical,
             transition and nature risks into one Climate Value at Risk per scenario, then connects every
-            exposure to a concrete Schneider Electric adaptation lever. RA+ ClimVar turns that work into
+            exposure to a concrete Schneider Electric adaptation lever. RA+ Prism turns that work into
             a living, in product view finance, risk and sustainability teams share over time.
           </p>
         </div>
@@ -95,7 +95,7 @@ export const StrategicContextHighlight = () => {
           <p className="text-sm sm:text-base lg:text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
             Make Climate Value at Risk the default way clients quantify climate, nature and transition
             exposure, frame adaptation as an investment in Schneider Electric solutions, and run it all
-            as a living capability inside RA+ ClimVar.
+            as a living capability inside RA+ Prism.
           </p>
         </div>
       </div>

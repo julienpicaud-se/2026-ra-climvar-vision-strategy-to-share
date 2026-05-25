@@ -46,15 +46,15 @@ const phases = [
     id: "automate",
     phase: "Phase 3",
     title: "Automate",
-    tagline: "Living capability inside RA+ ClimVar",
+    tagline: "Living capability inside RA+ Prism",
     icon: Sparkles,
     status: "exploration" as Status,
     statusLabel: "Industrialising",
     timing: "Rolling out into RA+",
     summary:
-      "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
+      "Take the methodology out of decks and into RA+ Prism so clients refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
-      "RA+ ClimVar product quantifies Value at Risk before and after adaptation",
+      "RA+ Prism product quantifies Value at Risk before and after adaptation",
       "Refreshable scenarios, time horizons and adaptation profiles",
       "Reusable financial and operational inputs across engagements",
       "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy products of RA+",
@@ -93,7 +93,7 @@ export const PhasingSection = () => {
             Phasing: Quantify, Adapt, Automate
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            A clear order of operations for ClimVar. Quantify first as advisory, then Adapt connects risk to Schneider Electric offers, then Automate turns the model into a living capability in RA+ ClimVar.
+            A clear order of operations for ClimVar. Quantify first as advisory, then Adapt connects risk to Schneider Electric offers, then Automate turns the model into a living capability in RA+ Prism.
           </p>
         </div>
 

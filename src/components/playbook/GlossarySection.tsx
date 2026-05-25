@@ -7,7 +7,7 @@ const glossaryTerms = [
     category: "ClimVar core concepts",
     terms: [
       { abbr: "ClimVar", full: "Climate Value at Risk: financial quantification of climate, transition and nature risk on enterprise value, revenue, OPEX and COGS" },
-      { abbr: "RA+ ClimVar", full: "The in product RA+ product that turns the ClimVar methodology into a continuously refreshable capability" },
+      { abbr: "RA+ Prism", full: "The in product RA+ product that turns the ClimVar methodology into a continuously refreshable capability" },
       { abbr: "DCF", full: "Discounted Cash Flow, the financial modelling backbone of the ClimVar methodology" },
       { abbr: "Gross VaR", full: "Climate Value at Risk before any adaptation measure is applied" },
       { abbr: "Net VaR", full: "Climate Value at Risk after Schneider Electric adaptation measures are deployed" },
@@ -42,7 +42,7 @@ const glossaryTerms = [
     category: "Roles and platform",
     terms: [
       { abbr: "RA+", full: "Schneider Electric's integrated platform that hosts ClimVar and adjacent Sustainability and Energy products" },
-      { abbr: "RA+ ClimVar", full: "The in product capability that turns ClimVar advisory analyses into a continuously refreshable risk view" },
+      { abbr: "RA+ Prism", full: "The in product capability that turns ClimVar advisory analyses into a continuously refreshable risk view" },
       { abbr: "ClimVar Advisory", full: "Engagement led delivery of the published ClimVar methodology by SE Advisory Services" },
       { abbr: "CFO", full: "Chief Financial Officer" },
       { abbr: "Financial planner", full: "Finance lead responsible for impairment, capital allocation and forward financial planning" },

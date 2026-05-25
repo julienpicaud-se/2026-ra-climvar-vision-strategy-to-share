@@ -26,7 +26,7 @@ const outOfScopeItems = [
   {
     icon: Boxes,
     title: "Pricing and Discounting",
-    description: "ClimVar advisory commercials and RA+ ClimVar pricing live outside this space. The focus here is methodology, value and product scope.",
+    description: "ClimVar advisory commercials and RA+ Prism pricing live outside this space. The focus here is methodology, value and product scope.",
   },
 ];
 
@@ -62,7 +62,7 @@ const guardrailCategories = [
     icon: Users,
     title: "User Experience and Escalation",
     points: [
-      "Offer a clear path from any RA+ ClimVar output to a ClimVar expert engagement",
+      "Offer a clear path from any RA+ Prism output to a ClimVar expert engagement",
       "Allow finance, risk and sustainability users to annotate, snooze or reject suggestions",
       "Lead every flow with finance framing, with sustainability narrative layered on top",
     ],
@@ -90,7 +90,7 @@ export const BoundariesSection = () => {
             Where ClimVar Stops, How It Operates
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            The boundary list keeps ClimVar scope honest. The operating rules keep every Climate Value at Risk output produced by ClimVar advisory and RA+ ClimVar trustworthy.
+            The boundary list keeps ClimVar scope honest. The operating rules keep every Climate Value at Risk output produced by ClimVar advisory and RA+ Prism trustworthy.
           </p>
         </div>
 

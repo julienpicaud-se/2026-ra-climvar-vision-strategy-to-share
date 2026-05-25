@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            ClimVar quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ ClimVar, the in product product that turns the analysis into a living capability.
+            ClimVar quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ Prism, the in product product that turns the analysis into a living capability.
           </p>
 
           {/* Key pillars preview */}
@@ -92,7 +92,7 @@ export const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-lg glass-card">
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Automate with RA+ ClimVar</span>
+              <span className="text-sm font-medium">Automate with RA+ Prism</span>
             </div>
           </div>
 

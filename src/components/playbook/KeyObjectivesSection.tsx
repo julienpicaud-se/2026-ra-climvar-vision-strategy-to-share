@@ -41,9 +41,9 @@ const keyObjectives = [
     tagIcon: Sparkles,
     title: "Industrialise ClimVar inside RA+ as a recurring product",
     description:
-      "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios on demand, drill from portfolio to site, and reuse the same backbone across disclosure, capital and transition planning cycles.",
+      "Take the methodology out of decks and into RA+ Prism so clients refresh scenarios on demand, drill from portfolio to site, and reuse the same backbone across disclosure, capital and transition planning cycles.",
     keyResults: [
-      "RA+ ClimVar product live with refreshable scenarios, horizons and adaptation profiles",
+      "RA+ Prism product live with refreshable scenarios, horizons and adaptation profiles",
       "Lower marginal cost on every additional Climate Value at Risk refresh",
       "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy products",
     ],
@@ -87,7 +87,7 @@ export const KeyObjectivesSection = () => {
             Key Objectives
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Four objectives that operationalise the Quantify, Adapt and Automate pillars across ClimVar advisory and RA+ ClimVar.
+            Four objectives that operationalise the Quantify, Adapt and Automate pillars across ClimVar advisory and RA+ Prism.
           </p>
         </div>
 

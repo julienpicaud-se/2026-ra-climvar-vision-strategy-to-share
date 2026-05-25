@@ -32,7 +32,7 @@ const scenarios = [
   },
   {
     icon: Repeat,
-    title: "Refresh scenarios on demand in RA+ ClimVar",
+    title: "Refresh scenarios on demand in RA+ Prism",
     description: "Update horizons, scenarios and adaptation profiles whenever a disclosure cycle, capital review or operational change requires it.",
   },
 ];
@@ -50,7 +50,7 @@ export const WhatIfSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 sm:mb-4 block">
-              The Vision · Powered by RA+ ClimVar
+              The Vision · Powered by RA+ Prism
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
               What if you could, <span className="text-primary">tomorrow</span>...
@@ -92,7 +92,7 @@ export const WhatIfSection = () => {
                 <span className="text-sm font-medium text-primary">That is ClimVar</span>
               </div>
               <p className="text-lg text-foreground leading-relaxed max-w-2xl mx-auto">
-                Climate, nature and transition risk in financial terms, adaptation framed as investment in Schneider Electric solutions, and a living view of Climate Value at Risk inside RA+ ClimVar.
+                Climate, nature and transition risk in financial terms, adaptation framed as investment in Schneider Electric solutions, and a living view of Climate Value at Risk inside RA+ Prism.
               </p>
             </CardContent>
           </Card>

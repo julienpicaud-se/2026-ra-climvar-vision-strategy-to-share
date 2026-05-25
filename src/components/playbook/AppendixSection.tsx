@@ -144,7 +144,7 @@ export const AppendixSection = () => {
             ClimVar Playbook Details
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mt-4">
-            Deep dive into the ClimVar methodology, RA+ ClimVar product scope, customer maturity, adaptation engine, and supporting evidence.
+            Deep dive into the ClimVar methodology, RA+ Prism product scope, customer maturity, adaptation engine, and supporting evidence.
           </p>
         </div>
 
@@ -490,7 +490,7 @@ export const AppendixSection = () => {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6">
               <p className="text-sm text-muted-foreground max-w-3xl mb-6">
-                How each capability evolves across delivery phases, from foundational data work to the full RA+ ClimVar product.
+                How each capability evolves across delivery phases, from foundational data work to the full RA+ Prism product.
               </p>
 
               {/* Desktop table */}

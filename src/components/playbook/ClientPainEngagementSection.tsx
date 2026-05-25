@@ -20,7 +20,7 @@ const signals = [
   {
     icon: ShieldCheck,
     quote: "Our last climate study is a year old and already out of date",
-    response: "RA+ ClimVar turns the methodology into a continuously refreshable product so scenarios, time horizons and adaptation profiles can be updated on demand.",
+    response: "RA+ Prism turns the methodology into a continuously refreshable product so scenarios, time horizons and adaptation profiles can be updated on demand.",
   },
   {
     icon: Activity,
@@ -49,7 +49,7 @@ export const ClientPainEngagementSection = () => {
             How Client Questions Turn Into ClimVar Engagements
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from ClimVar advisory and RA+ ClimVar.
+            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from ClimVar advisory and RA+ Prism.
           </p>
         </div>
 

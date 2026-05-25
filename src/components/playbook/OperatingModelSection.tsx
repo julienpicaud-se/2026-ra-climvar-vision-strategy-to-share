@@ -25,16 +25,16 @@ const pillars = [
   },
   {
     icon: Database,
-    title: "RA+ ClimVar Backbone",
+    title: "RA+ Prism Backbone",
     tagline: "LIVING RISK VIEW INSIDE THE PLATFORM",
     description:
-      "RA+ ClimVar industrialises the model so clients refresh scenarios, drill from portfolio to site, and reuse the same financial and operational inputs across disclosure, capital and transition planning cycles.",
+      "RA+ Prism industrialises the model so clients refresh scenarios, drill from portfolio to site, and reuse the same financial and operational inputs across disclosure, capital and transition planning cycles.",
   },
 ];
 
 const principles = [
   "Lead with finance: every conversation starts with the financial framing, sustainability follows once Value at Risk is on the table",
-  "One backbone: ClimVar advisory and RA+ ClimVar share one published methodology, one set of scenarios and one data spine",
+  "One backbone: ClimVar advisory and RA+ Prism share one published methodology, one set of scenarios and one data spine",
   "Quantify, Adapt, Automate: every engagement maps to all three pillars and seeds the platform for the next refresh",
   "Auditable by default: public scenarios, transparent assumptions and traceable inputs so every output survives finance and audit scrutiny",
 ];
@@ -57,7 +57,7 @@ export const OperatingModelSection = () => {
             Advisory And Software Capability
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            ClimVar is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ ClimVar inside the platform.
+            ClimVar is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ Prism inside the platform.
           </p>
         </div>
 
