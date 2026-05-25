@@ -1372,7 +1372,7 @@ export const platformShift = {
     ],
   },
   raPlus: {
-    title: "RA+ Prism + RA+ Prism",
+    title: "RA+ Prism",
     tagline: "Methodology + product, integrated by design",
     points: [
       "Integrated Climate Value at Risk waterfall across physical, transition and nature",
