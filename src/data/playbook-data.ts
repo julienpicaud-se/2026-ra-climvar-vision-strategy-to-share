@@ -1712,7 +1712,7 @@ export const seraKPIs = {
 
 export const raPlusPlatformFoundation = {
   eyebrow: "RA+ Platform Foundation",
-  title: "How RA+ Prism Plugs Into RA+",
+  title: "How Prism Plugs Into RA+",
   intro:
     "RA+ Prism does not build a parallel stack. It plugs the published RA+ Prism methodology into the same Unified, Proactive and Adaptive RA+ foundation that powers the rest of the suite, so every analysis compounds platform intelligence.",
   pillars: [
