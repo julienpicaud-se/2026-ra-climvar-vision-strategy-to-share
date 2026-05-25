@@ -26,7 +26,7 @@ const outOfScopeItems = [
   {
     icon: Boxes,
     title: "Pricing and Discounting",
-    description: "RA+ Prism advisory commercials and RA+ Prism pricing live outside this space. The focus here is methodology, value and product scope.",
+    description: "Advisory commercials and RA+ Prism pricing live outside this space. The focus here is methodology, value and product scope.",
   },
 ];
 

@@ -41,7 +41,7 @@ export const ExecutiveTakeaway = () => {
           </h2>
 
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10 sm:mb-12">
-            RA+ Prism advisory delivers the first Climate Value at Risk analysis and sizes the adaptation case in Schneider Electric solutions. RA+ Prism turns that work into a continuous, in product capability finance, risk and sustainability teams share, refresh and reuse.
+            Advisory delivers the first Climate Value at Risk analysis and sizes the adaptation case in Schneider Electric solutions. RA+ Prism turns that work into a continuous, in product capability finance, risk and sustainability teams share, refresh and reuse.
           </p>
 
           <Button

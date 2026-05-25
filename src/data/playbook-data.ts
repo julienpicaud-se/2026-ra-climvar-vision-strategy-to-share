@@ -50,14 +50,14 @@ export const strategicPillars = [
     id: "continuous",
     title: "Automate",
     tagline: "From one off analysis to a living risk view in RA+ Prism",
-    promise: "After the first RA+ Prism advisory analysis, RA+ Prism turns the model into a continuously updated, in product capability that follows clients across their portfolio.",
+    promise: "After the first advisory analysis, RA+ Prism turns the model into a continuously updated, in product capability that follows clients across their portfolio.",
     description: "RA+ Prism takes the methodology out of decks and into the platform. Clients monitor their Climate Value at Risk over time, refresh assumptions, drill from portfolio to site, and reuse the same trusted spine for disclosures, transition planning and capital reviews.",
     whatLivesHere: [
       "RA+ product that quantifies Value at Risk before and after adaptation",
       "Geographic and asset level deep dives on the same data backbone",
       "Refreshable scenarios, time horizons and adaptation profiles",
       "Reusable financial and operational inputs across engagements",
-      "Bridge from RA+ Prism advisory to the wider Sustainability and Energy products of RA+",
+      "Bridge from advisory to the wider Sustainability and Energy products of RA+",
     ],
     successMetrics: [
       "Recurring use of RA+ Prism by sustainability, risk and finance teams",
@@ -1309,7 +1309,7 @@ export const efficiencyStrategicContext = {
           "Continuous refresh aligned with reporting cycles",
         ],
         risk: "If we lead with sustainability narrative, we lose the conversation. The entry must be financial.",
-        fit: "RA+ Prism advisory anchors the first conversation; RA+ Prism industrialises the refresh.",
+        fit: "Advisory anchors the first conversation; RA+ Prism industrialises the refresh.",
       },
       {
         name: "Sustainability Led Buyer",
@@ -1468,7 +1468,7 @@ export const personas = {
 
 export const jobsToBeDone = {
   intro:
-    "The jobs users hire RA+ Prism to do. Not features, not screens, but outcomes. RA+ Prism advisory delivers the first analysis; RA+ Prism turns it into a continuous capability that finance, sustainability and risk teams share.",
+    "The jobs users hire RA+ Prism to do. Not features, not screens, but outcomes. Advisory delivers the first analysis; RA+ Prism turns it into a continuous capability that finance, sustainability and risk teams share.",
   ecmInsight:
     "Adaptation is not a separate job. It is what happens when jobs 1, 4 and 6 are done well: once the financial stakes are framed, once intervention options are sized in the same terms, once Schneider Electric offers are linked to a measurable Value at Risk reduction.",
   jobs: [
@@ -1643,7 +1643,7 @@ export const architectureDecision = {
       label: "Plan B",
       title: "Bridge from advisory tool",
       summary:
-        "Expose the existing RA+ Prism advisory tool through a controlled bridge into RA+ to hit the Q4 2026 milestone, with a planned migration to native services later.",
+        "Expose the existing advisory tool through a controlled bridge into RA+ to hit the Q4 2026 milestone, with a planned migration to native services later.",
       pros: [
         "Faster path to a usable RA+ Prism MVP",
         "Lower delivery risk for the committed timeline",

@@ -61,7 +61,7 @@ const tiers = [
     audience: "First time Climate Value at Risk",
     cadence: "Project based",
     human: "Senior RA+ Prism team owns scoping, calibration and exec communication",
-    platform: "Bespoke modelling shared back via the RA+ Prism advisory deliverable",
+    platform: "Bespoke modelling shared back via the advisory deliverable",
   },
   {
     name: "Hybrid",

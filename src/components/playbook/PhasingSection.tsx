@@ -14,7 +14,7 @@ const phases = [
     statusLabel: "In production",
     timing: "Live, expanding driver coverage",
     summary:
-      "Establish RA+ Prism advisory as the integrated financial view of climate and nature risk, combining physical, transition and nature drivers into one Climate Value at Risk waterfall.",
+      "Establish advisory as the integrated financial view of climate and nature risk, combining physical, transition and nature drivers into one Climate Value at Risk waterfall.",
     bullets: [
       "Six risk drivers live: four physical, two transition",
       "Nature risk wired into the same waterfall",

@@ -90,7 +90,7 @@ const sections: Section[] = [
     icon: Wrench,
     tone: "muted",
     body:
-      "Clients start with a RA+ Prism advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ Prism productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
+      "Clients start with an advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ Prism productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
   },
   {
     num: "05",
@@ -128,7 +128,7 @@ const risks: { risk: string; mitigation: string }[] = [
   {
     risk: "Advisory delivery is hard to industrialise inside RA+",
     mitigation:
-      "Sequence the build so the RA+ Prism advisory model and RA+ Prism share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
+      "Sequence the build so the advisory model and RA+ Prism share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
   },
 ];
 
