@@ -12,7 +12,7 @@ const sections = [
   { id: "client-pain-engagement", title: "Client Pain to Engagement" },
   // Vision
   { id: "what-if", title: "What If Tomorrow" },
-  { id: "platform-shift", title: "Sustainability Transformation" },
+  { id: "platform-shift", title: "From Advisory to RA+ Prism" },
   { id: "key-challenges", title: "Why Now" },
   // Audience
   { id: "personas", title: "Personas" },
