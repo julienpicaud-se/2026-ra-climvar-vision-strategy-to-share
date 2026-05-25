@@ -380,7 +380,7 @@ export const AppendixSection = () => {
                   VOC Validation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Customer Evidence
+                  ClimVar Customer Evidence
                 </h3>
               </div>
             </AccordionTrigger>
