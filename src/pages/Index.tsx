@@ -88,10 +88,10 @@ const Index = () => {
       {/* Guardrails */}
       <SuccessMetricsSection />
       <StartStopMatrix />
-      {/* Close */}
-      <ExecutiveTakeaway />
       {/* Prism at scale illustration */}
       <SupplyChainPrismSection />
+      {/* Close */}
+      <ExecutiveTakeaway />
       {/* Appendix (reference, last) */}
       <AppendixSection />
       <JumpToTop />
