@@ -262,7 +262,7 @@ export const AppendixSection = () => {
                   Competitive Landscape
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Sustainability Technology Landscape
+                  Where ClimVar Wins
                 </h3>
               </div>
             </AccordionTrigger>
