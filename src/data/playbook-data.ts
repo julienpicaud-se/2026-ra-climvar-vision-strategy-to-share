@@ -990,7 +990,7 @@ export const marketTrends = [
 export const serviceModelComparison = [
   {
     model: "Advisory Mode",
-    fullName: "SE Advisory Services RA+ Prism",
+    fullName: "SE Advisory Services",
     description: "An engagement led delivery where SE experts run the analysis, train the client, scope priorities, and deliver the first Climate Value at Risk view.",
     typicalOutcomes: ["First financial view of climate and nature risk", "Aligned scope and scenarios with client priorities", "Quantified adaptation choices tied to SE offers"],
     dataNeeds: ["Entity revenue, country and sector", "Site geo localisation and asset value", "Optional financial ratios and emissions"],
@@ -998,7 +998,7 @@ export const serviceModelComparison = [
   },
   {
     model: "RA+ Prism",
-    fullName: "RA+ Prism embedded in RA+",
+    fullName: "Prism embedded in RA+",
     description: "A subscription product that turns the same methodology into a continuously refreshable capability inside RA+, with self serve scenarios, adaptation editing and portfolio drill down.",
     typicalOutcomes: ["Continuous Value at Risk monitoring", "Self serve scenario and adaptation editing", "Reuse of the same spine across Sustainability and Energy products"],
     dataNeeds: ["Same mandatory inputs as advisory", "Optional richer financial and operational data over time", "Custom risk profile inputs for client specific drivers"],
