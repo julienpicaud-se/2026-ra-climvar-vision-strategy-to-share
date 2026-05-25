@@ -1,4 +1,4 @@
-// RA+ Prism — Financial Risk Quantification Playbook Data
+// RA+ Prism · Financial Risk Quantification Playbook Data
 // Advisory services + RA+ Prism technology
 
 export const strategicPillars = [
@@ -1322,7 +1322,7 @@ export const efficiencyStrategicContext = {
           "A path into broader RA+ Sustainability products",
         ],
         risk: "A purely qualitative deliverable underwhelms boards. Without financial framing, action stalls.",
-        fit: "Full RA+ Prism plus RA+ Prism deployment, integrated with adjacent sustainability products.",
+        fit: "Full RA+ Prism deployment, integrated with adjacent sustainability products.",
       },
     ],
     tension:
@@ -1358,7 +1358,7 @@ export const efficiencyStrategicContext = {
 
 export const platformShift = {
   intro:
-    "Today climate risk analyses live in PowerPoint, run on bespoke models, and are refreshed once a year. RA+ Prism plus RA+ Prism re platform that work as a published methodology plus a continuous, in product capability that finance, risk and sustainability teams share.",
+    "Today climate risk analyses live in PowerPoint, run on bespoke models, and are refreshed once a year. RA+ Prism re platform that work as a published methodology plus a continuous, in product capability that finance, risk and sustainability teams share.",
   classic: {
     title: "Legacy Risk Delivery",
     tagline: "Decks, models and yearly refresh",
@@ -1384,7 +1384,7 @@ export const platformShift = {
     ],
   },
   thesis:
-    "Every limitation in current risk delivery stems from analyses living as one off models and slides. RA+ Prism plus RA+ Prism turn the same methodology into a continuous, in product capability.",
+    "Every limitation in current risk delivery stems from analyses living as one off models and slides. RA+ Prism turn the same methodology into a continuous, in product capability.",
   bureauAnchor: {
     title: "What RA+ Prism Delivers Today",
     subtitle: "Published methodology, six risk drivers in production, variable granularity, adaptation framing, and a clear path to RA+ Prism.",
@@ -1566,7 +1566,7 @@ export const seCorporateBlueprint = {
 
 export const painInventory = {
   intro:
-    "Legacy risk delivery limitations that RA+ Prism plus RA+ Prism eliminate. Every must fix item stems from analyses living as one off models and slides instead of as a published methodology and a continuous, in product capability.",
+    "Legacy risk delivery limitations that RA+ Prism eliminate. Every must fix item stems from analyses living as one off models and slides instead of as a published methodology and a continuous, in product capability.",
   pains: [
     { id: "P1", severity: "Must fix", title: "Risk analyses are fragmented", detail: "Physical, transition and nature risks are studied in separate silos. Boards see partial pictures that do not aggregate into one number." },
     { id: "P2", severity: "Must fix", title: "Quantification stays qualitative", detail: "Material risk prioritisation stays largely qualitative. CFOs cannot use exposure scores as inputs to capital allocation or impairment." },
