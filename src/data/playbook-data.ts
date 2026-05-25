@@ -843,7 +843,7 @@ export const optionalClientContext = [
 ];
 
 export const existingTools = [
-  { name: "RA+ Prism Advisory Tool", description: "The current advisory delivery tool implementing the published methodology", limitation: "Used in engagement mode, not yet available to clients in a self serve continuous experience" },
+  { name: "Advisory Tool", description: "The current advisory delivery tool implementing the published methodology", limitation: "Used in engagement mode, not yet available to clients in a self serve continuous experience" },
   { name: "ECLR (physical climate risk)", description: "Schneider Electric tool for physical climate risk used on 100+ SE sites", limitation: "Powerful exposure analysis, but stops short of financial quantification on its own" },
   { name: "Legacy Sustainable Finance Models", description: "Internal financial models supporting impairment and disclosure work", limitation: "Not integrated with risk drivers in a single waterfall" },
   { name: "Third Party Risk Vendors", description: "Risilience and similar vendors used in parts of the SE estate today", limitation: "Limited integrated view of risk plus carbon plus monitoring to finance" },
@@ -1391,7 +1391,7 @@ export const platformShift = {
     lines: [
       {
         layer: "Foundation",
-        name: "RA+ Prism Advisory",
+        name: "Advisory",
         detail: "Engagement led delivery using the published methodology. First Climate Value at Risk view, scoped scenarios, and quantified adaptation tied to Schneider Electric offers.",
       },
       {
@@ -1582,7 +1582,7 @@ export const productScope = {
     "RA+ Prism is delivered through two complementary modes within the Sustainability family of Schneider Electric. This playbook covers both: the advisory engagement model and the RA+ Prism in product product.",
   products: [
     {
-      name: "RA+ Prism Advisory",
+      name: "Advisory",
       tag: "Engagement Mode",
       summary: "SE Advisory Services delivery of the published Discounted Cash Flow methodology. First Climate Value at Risk view, scoped scenarios, and adaptation sized in financial terms.",
       capabilities: [
