@@ -45,7 +45,7 @@ const groups: NavGroup[] = [
     label: "Vision",
     items: [
       { id: "what-if", label: "What If Tomorrow" },
-      { id: "platform-shift", label: "RA+ Prism + RA+ Prism" },
+      { id: "platform-shift", label: "RA+ Prism" },
       { id: "key-challenges", label: "Why Now" },
     ],
   },
