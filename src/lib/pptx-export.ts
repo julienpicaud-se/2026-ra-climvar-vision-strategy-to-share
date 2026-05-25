@@ -21,7 +21,7 @@ import {
 const executiveSummarySlides = [
   {
     title: "RA+ Prism is the published methodology, RA+ Prism is the product",
-    body: "RA+ Prism Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ Prism industrialises the same methodology as a continuous, in product capability.",
+    body: "Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ Prism industrialises the same methodology as a continuous, in product capability.",
   },
   {
     title: "Finance is the entry door for the climate conversation",
@@ -371,7 +371,7 @@ export const exportToPptx = async () => {
 
   const buildPhasing = () => {
     const phases = [
-      { phase: "Phase 1", title: "RA+ Prism Advisory at Scale", tagline: "Methodology in market", timing: "2025 to 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
+      { phase: "Phase 1", title: "Advisory at Scale", tagline: "Methodology in market", timing: "2025 to 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
       { phase: "Phase 2", title: "RA+ Prism MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ product: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
       { phase: "Phase 3", title: "Cross Product Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the RA+ Prism backbone across RA+ Sustainability and Energy products. Position RA+ Prism as the replacement for legacy risk tooling across the Schneider Electric estate." },
     ];
