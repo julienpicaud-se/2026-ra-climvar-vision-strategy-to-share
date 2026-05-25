@@ -216,7 +216,7 @@ export const AppendixSection = () => {
                   Guardrails
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Where We Stop, How We Operate
+                  Where ClimVar Stops, How It Operates
                 </h3>
               </div>
             </AccordionTrigger>
