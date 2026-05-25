@@ -1412,7 +1412,7 @@ export const personas = {
     "Lead with finance to open the conversation. Build the daily experience for Sustainability Leads and Risk Officers who refresh the model. Surface CEO and board ready views from the same backbone.",
   roles: [
     {
-      name: "CFO / Treasurer",
+      name: "CFO / Financial planner",
       rank: "Primary",
       context: "Entry point, finance led conversation, capital and impairment owner",
       summary:
@@ -1523,9 +1523,9 @@ export const vocEvidence = {
       quote: "Internal pilots ground the methodology and validate it before broader external scale up.",
     },
     {
-      name: "CFO / Treasurer Conversations",
+      name: "CFO / Financial planner Conversations",
       contact: "Multiple enterprise accounts",
-      context: "Conversations with CFOs and treasurers on impairment and capital allocation",
+      context: "Conversations with CFOs and financial planners on impairment and capital allocation",
       findings: [
         "Strong demand for a single Value at Risk number tied to enterprise value",
         "Weighted average across scenarios needed to test goodwill against climate change",
