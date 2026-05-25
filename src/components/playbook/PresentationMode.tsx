@@ -23,6 +23,7 @@ const sections = [
   // How
   { id: "existing-tools", title: "Technology Landscape" },
   { id: "raplus-platform-foundation", title: "RA+ Platform Foundation" },
+  { id: "prism-name", title: "Why RA+ Prism" },
   { id: "ecm-mapping", title: "Capability Mapping" },
   { id: "regional-journeys", title: "Regional Journeys" },
   { id: "operating-model", title: "Operating Model" },
