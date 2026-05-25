@@ -42,7 +42,7 @@ const glossaryTerms = [
     category: "Roles and platform",
     terms: [
       { abbr: "RA+", full: "Schneider Electric's integrated platform that hosts RA+ Prism and adjacent Sustainability and Energy products" },
-      { abbr: "RA+ Prism", full: "The in product capability that turns RA+ Prism advisory analyses into a continuously refreshable risk view" },
+      { abbr: "RA+ Prism", full: "The in product capability that turns advisory analyses into a continuously refreshable risk view" },
       { abbr: "RA+ Prism Advisory", full: "Engagement led delivery of the published RA+ Prism methodology by SE Advisory Services" },
       { abbr: "CFO", full: "Chief Financial Officer" },
       { abbr: "Financial planner", full: "Finance lead responsible for impairment, capital allocation and forward financial planning" },

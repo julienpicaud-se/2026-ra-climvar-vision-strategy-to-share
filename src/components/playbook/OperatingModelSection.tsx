@@ -7,7 +7,7 @@ const pillars = [
     title: "Climate Risk Experts",
     tagline: "METHODOLOGY, JUDGMENT, CFO LANGUAGE",
     description:
-      "Senior climate, nature and financial risk specialists who own the RA+ Prism advisory engagement, calibrate scenarios, and translate Value at Risk results into board ready narratives for finance, risk and sustainability leaders.",
+      "Senior climate, nature and financial risk specialists who own the advisory engagement, calibrate scenarios, and translate Value at Risk results into board ready narratives for finance, risk and sustainability leaders.",
   },
   {
     icon: Bot,

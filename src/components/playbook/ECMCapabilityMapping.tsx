@@ -24,7 +24,7 @@ const journeyStages = [
     stage: "A",
     title: "Discovery and Qualification",
     icon: Search,
-    primaryUsers: "Sales teams with RA+ Prism advisory support",
+    primaryUsers: "Sales teams with advisory support",
     capabilities: [
       "Finance led discovery from minimal client inputs (sector, geography, revenue, asset value)",
       "Quick applicability checks for physical, transition and nature drivers",
@@ -68,7 +68,7 @@ const journeyStages = [
     stage: "D",
     title: "Adaptation Framing and SE Offer Hook",
     icon: Truck,
-    primaryUsers: "RA+ Prism advisory plus Schneider Electric offer teams",
+    primaryUsers: "Advisory plus Schneider Electric offer teams",
     capabilities: [
       "Gross versus net Value at Risk view per adaptation lever",
       "Direct hook from drivers to Schneider Electric energy, efficiency, PPA, supply chain and resilience offers",
