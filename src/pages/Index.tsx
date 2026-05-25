@@ -38,6 +38,7 @@ import { StrategicContextHighlight } from "@/components/playbook/StrategicContex
 import { MarketContextSection } from "@/components/playbook/MarketContextSection";
 import { ClientPainEngagementSection } from "@/components/playbook/ClientPainEngagementSection";
 import { ExpertServicesSection } from "@/components/playbook/ExpertServicesSection";
+import { SupplyChainPrismSection } from "@/components/playbook/SupplyChainPrismSection";
 
 import { ReadingProgressBar } from "@/components/playbook/ReadingProgressBar";
 import { PresentationMode } from "@/components/playbook/PresentationMode";
@@ -89,6 +90,8 @@ const Index = () => {
       <StartStopMatrix />
       {/* Close */}
       <ExecutiveTakeaway />
+      {/* Prism at scale illustration */}
+      <SupplyChainPrismSection />
       {/* Appendix (reference, last) */}
       <AppendixSection />
       <JumpToTop />
