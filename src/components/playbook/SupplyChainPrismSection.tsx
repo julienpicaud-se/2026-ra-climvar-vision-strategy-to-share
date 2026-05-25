@@ -126,11 +126,11 @@ export const SupplyChainPrismSection = () => {
             x2={t.x}
             y2={t.y}
             stroke={color}
-            strokeWidth={1.1}
-            strokeDasharray="5 5"
+            strokeWidth={1.8}
+            strokeDasharray="6 4"
             markerEnd={`url(#arr-${color === "hsl(0 84% 60%)" ? "red" : "green"})`}
             style={{ animation: `dashFlow 1.6s linear infinite` }}
-            opacity={0.85}
+            opacity={1}
           />
         );
       }
