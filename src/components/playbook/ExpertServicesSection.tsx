@@ -72,7 +72,7 @@ const tiers = [
   },
   {
     name: "RA+ Prism",
-    audience: "Living platform client",
+    audience: "RA+ Prism client",
     cadence: "On demand",
     human: "Expert services available a la carte for new scenarios or deep dives",
     platform: "Full RA+ Prism autonomy on portfolio, country, site and supplier views",
