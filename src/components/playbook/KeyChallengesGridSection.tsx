@@ -104,7 +104,7 @@ const colorStyles: Record<string, { border: string; bg: string; iconBg: string; 
 };
 
 const kpis = [
-  { value: "One metric", label: "Climate Value at Risk unifying physical, transition and nature drivers", color: "text-rose-400" },
+  { value: "One estimation", label: "Climate Value at Risk unifying physical, transition and nature drivers", color: "text-rose-400" },
   { value: "Yearly", label: "Typical refresh cadence of existing bespoke risk models", color: "text-amber-400" },
   { value: "Gross → Net", label: "Adaptation framing missing from most climate risk outputs today", color: "text-sky-400" },
   { value: "1 backbone", label: "Shared DCF methodology across advisory and RA+ Prism", color: "text-orange-400" },
