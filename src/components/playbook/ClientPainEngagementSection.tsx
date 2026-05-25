@@ -5,7 +5,7 @@ const signals = [
   {
     icon: DollarSign,
     quote: "Our board wants climate risk in the same language as every other risk",
-    response: "ClimVar expresses physical, transition and nature exposure as a single Climate Value at Risk, broken down by driver and scenario, in enterprise value, revenue, OPEX and COGS terms.",
+    response: "RA+ Prism expresses physical, transition and nature exposure as a single Climate Value at Risk, broken down by driver and scenario, in enterprise value, revenue, OPEX and COGS terms.",
   },
   {
     icon: TrendingDown,
@@ -30,7 +30,7 @@ const signals = [
   {
     icon: Database,
     quote: "We want to connect climate risk to disclosures and capital planning",
-    response: "ClimVar outputs feed directly into CSRD, TCFD and TNFD reporting, impairment tests and capital allocation reviews, with traceable assumptions.",
+    response: "RA+ Prism outputs feed directly into CSRD, TCFD and TNFD reporting, impairment tests and capital allocation reviews, with traceable assumptions.",
   },
 ];
 
@@ -46,10 +46,10 @@ export const ClientPainEngagementSection = () => {
       <div className="container px-4 max-w-6xl mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            How Client Questions Turn Into ClimVar Engagements
+            How Client Questions Turn Into RA+ Prism Engagements
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from ClimVar advisory and RA+ Prism.
+            Six recurring questions from CFOs, CROs, CSOs and operational leaders. Six concrete answers from RA+ Prism advisory and RA+ Prism.
           </p>
         </div>
 

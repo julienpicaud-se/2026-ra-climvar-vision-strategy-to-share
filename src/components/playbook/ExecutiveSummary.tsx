@@ -60,7 +60,7 @@ const sections: Section[] = [
     icon: Activity,
     tone: "muted",
     body:
-      "CFOs, investors, regulators and operational leaders all need a single, defensible answer to one question: how much enterprise value, revenue, OPEX and COGS is exposed to physical, transition and nature risks, and how much of that exposure can be reduced. Today that answer lives in scattered consulting decks, qualitative heatmaps and one off models. ClimVar exists to make it quantified, comparable and actionable.",
+      "CFOs, investors, regulators and operational leaders all need a single, defensible answer to one question: how much enterprise value, revenue, OPEX and COGS is exposed to physical, transition and nature risks, and how much of that exposure can be reduced. Today that answer lives in scattered consulting decks, qualitative heatmaps and one off models. RA+ Prism exists to make it quantified, comparable and actionable.",
   },
   {
     num: "02",
@@ -80,7 +80,7 @@ const sections: Section[] = [
     icon: Compass,
     tone: "primary",
     body:
-      "ClimVar uses a published Discounted Cash Flow methodology to express physical, transition and nature risks as one Climate Value at Risk number per scenario, broken down by driver, geography and asset. Finance becomes the entry door for the climate conversation, and sustainability follows once the financial case is on the table.",
+      "RA+ Prism uses a published Discounted Cash Flow methodology to express physical, transition and nature risks as one Climate Value at Risk number per scenario, broken down by driver, geography and asset. Finance becomes the entry door for the climate conversation, and sustainability follows once the financial case is on the table.",
   },
   {
     num: "04",
@@ -90,7 +90,7 @@ const sections: Section[] = [
     icon: Wrench,
     tone: "muted",
     body:
-      "Clients start with a ClimVar advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ Prism productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
+      "Clients start with a RA+ Prism advisory engagement that sizes their Climate Value at Risk across business as usual, net zero and worst case scenarios. From there, RA+ Prism productises the model so the same view is refreshable on demand, drillable from portfolio to site, and reusable across disclosure, capital and transition planning cycles.",
   },
   {
     num: "05",
@@ -115,20 +115,20 @@ const sections: Section[] = [
     icon: Rocket,
     tone: "muted",
     body:
-      "No competitor combines climate, nature and transition risk with carbon performance and operational monitoring, all expressed in financial terms, the way ClimVar does. The methodology is published and defensible, internal use cases on Schneider Electric sites prove the model at scale, and RA+ Prism gives clients a recurring product wrapper that pulls through the wider RA+ portfolio.",
+      "No competitor combines climate, nature and transition risk with carbon performance and operational monitoring, all expressed in financial terms, the way RA+ Prism does. The methodology is published and defensible, internal use cases on Schneider Electric sites prove the model at scale, and RA+ Prism gives clients a recurring product wrapper that pulls through the wider RA+ portfolio.",
   },
 ];
 
 const risks: { risk: string; mitigation: string }[] = [
   {
-    risk: "Clients perceive ClimVar as another qualitative climate study",
+    risk: "Clients perceive RA+ Prism as another qualitative climate study",
     mitigation:
       "Lead every conversation with the financial framing and a worked Climate Value at Risk waterfall, then bring in the sustainability narrative only once finance is on the table.",
   },
   {
     risk: "Advisory delivery is hard to industrialise inside RA+",
     mitigation:
-      "Sequence the build so the ClimVar advisory model and RA+ Prism share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
+      "Sequence the build so the RA+ Prism advisory model and RA+ Prism share one published methodology, one data backbone and one set of scenarios, so every engagement seeds the platform.",
   },
 ];
 
@@ -200,13 +200,13 @@ export const ExecutiveSummary = () => {
         <div className="mx-auto max-w-6xl">
           <header className="mb-12 text-center sm:mb-16">
             <div className="mb-4 font-mono text-[11px] font-semibold uppercase tracking-widest text-primary">
-              Briefing / ClimVar Executive Narrative
+              Briefing / RA+ Prism Executive Narrative
             </div>
             <h2 className="text-4xl font-bold leading-tight text-foreground sm:text-5xl">
               Executive Summary
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              How ClimVar advisory and RA+ Prism turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
+              How RA+ Prism advisory and RA+ Prism turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
             </p>
           </header>
 

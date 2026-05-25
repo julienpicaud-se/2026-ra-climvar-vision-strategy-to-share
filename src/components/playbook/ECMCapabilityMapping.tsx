@@ -24,7 +24,7 @@ const journeyStages = [
     stage: "A",
     title: "Discovery and Qualification",
     icon: Search,
-    primaryUsers: "Sales teams with ClimVar advisory support",
+    primaryUsers: "Sales teams with RA+ Prism advisory support",
     capabilities: [
       "Finance led discovery from minimal client inputs (sector, geography, revenue, asset value)",
       "Quick applicability checks for physical, transition and nature drivers",
@@ -38,7 +38,7 @@ const journeyStages = [
     stage: "B",
     title: "Scoping and Methodology Alignment",
     icon: PenTool,
-    primaryUsers: "ClimVar experts with CFO, CRO and CSO sponsors",
+    primaryUsers: "RA+ Prism experts with CFO, CRO and CSO sponsors",
     capabilities: [
       "Driver selection across physical, transition and nature risk",
       "Scenario selection anchored on NGFS and IPCC RCP references",
@@ -53,7 +53,7 @@ const journeyStages = [
     stage: "C",
     title: "Modelling and Value at Risk Production",
     icon: FileText,
-    primaryUsers: "ClimVar modelling team with finance and risk reviewers",
+    primaryUsers: "RA+ Prism modelling team with finance and risk reviewers",
     capabilities: [
       "DCF based Climate Value at Risk waterfall per scenario",
       "Revenue, OPEX and COGS impacts modelled out to 2050",
@@ -68,7 +68,7 @@ const journeyStages = [
     stage: "D",
     title: "Adaptation Framing and SE Offer Hook",
     icon: Truck,
-    primaryUsers: "ClimVar advisory plus Schneider Electric offer teams",
+    primaryUsers: "RA+ Prism advisory plus Schneider Electric offer teams",
     capabilities: [
       "Gross versus net Value at Risk view per adaptation lever",
       "Direct hook from drivers to Schneider Electric energy, efficiency, PPA, supply chain and resilience offers",
@@ -111,10 +111,10 @@ export const ECMCapabilityMapping = () => {
             Capability Framework
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            ClimVar Capability Mapping
+            RA+ Prism Capability Mapping
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Mapping ClimVar capabilities across discovery, scoping, modelling, adaptation framing and RA+ Prism activation, so every engagement seeds the platform and every refresh reuses the backbone.
+            Mapping RA+ Prism capabilities across discovery, scoping, modelling, adaptation framing and RA+ Prism activation, so every engagement seeds the platform and every refresh reuses the backbone.
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export const ECMCapabilityMapping = () => {
                     <div>
                       <h4 className="font-semibold mb-3 flex items-center gap-2">
                         <Zap className="w-4 h-4 text-primary" />
-                        ClimVar Capabilities
+                        RA+ Prism Capabilities
                       </h4>
                       <ul className="space-y-2">
                         {stage.capabilities.map((capability, i) => (
@@ -226,7 +226,7 @@ export const ECMCapabilityMapping = () => {
                 <Users className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">End to End ClimVar Journey</h3>
+                <h3 className="font-semibold text-foreground mb-2">End to End RA+ Prism Journey</h3>
                 <p className="text-sm text-muted-foreground">
                   Every stage feeds the next. Discovery frames the financial conversation, scoping locks the methodology, modelling produces the Value at Risk view, adaptation hooks it to Schneider Electric offers, and RA+ Prism keeps the model alive across cycles.
                 </p>

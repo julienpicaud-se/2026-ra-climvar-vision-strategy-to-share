@@ -53,7 +53,7 @@ export const StrategicContextHighlight = () => {
             Climate risk wins the room when it shows up as a financial number
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            ClimVar leads with finance. A published Discounted Cash Flow methodology turns physical,
+            RA+ Prism leads with finance. A published Discounted Cash Flow methodology turns physical,
             transition and nature risks into one Climate Value at Risk per scenario, then connects every
             exposure to a concrete Schneider Electric adaptation lever. RA+ Prism turns that work into
             a living, in product view finance, risk and sustainability teams share over time.

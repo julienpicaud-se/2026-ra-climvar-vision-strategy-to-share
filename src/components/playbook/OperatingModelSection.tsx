@@ -7,7 +7,7 @@ const pillars = [
     title: "Climate Risk Experts",
     tagline: "METHODOLOGY, JUDGMENT, CFO LANGUAGE",
     description:
-      "Senior climate, nature and financial risk specialists who own the ClimVar advisory engagement, calibrate scenarios, and translate Value at Risk results into board ready narratives for finance, risk and sustainability leaders.",
+      "Senior climate, nature and financial risk specialists who own the RA+ Prism advisory engagement, calibrate scenarios, and translate Value at Risk results into board ready narratives for finance, risk and sustainability leaders.",
   },
   {
     icon: Bot,
@@ -34,7 +34,7 @@ const pillars = [
 
 const principles = [
   "Lead with finance: every conversation starts with the financial framing, sustainability follows once Value at Risk is on the table",
-  "One backbone: ClimVar advisory and RA+ Prism share one published methodology, one set of scenarios and one data spine",
+  "One backbone: RA+ Prism advisory and RA+ Prism share one published methodology, one set of scenarios and one data spine",
   "Quantify, Adapt, Automate: every engagement maps to all three pillars and seeds the platform for the next refresh",
   "Auditable by default: public scenarios, transparent assumptions and traceable inputs so every output survives finance and audit scrutiny",
 ];
@@ -57,7 +57,7 @@ export const OperatingModelSection = () => {
             Advisory And Software Capability
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            ClimVar is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ Prism inside the platform.
+            RA+ Prism is not a one off study and it is not a pure software product. It is a published methodology delivered first as expert advisory and then industrialised as RA+ Prism inside the platform.
           </p>
         </div>
 

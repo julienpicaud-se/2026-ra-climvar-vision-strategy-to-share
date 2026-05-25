@@ -45,7 +45,7 @@ const groups: NavGroup[] = [
     label: "Vision",
     items: [
       { id: "what-if", label: "What If Tomorrow" },
-      { id: "platform-shift", label: "ClimVar + RA+ Prism" },
+      { id: "platform-shift", label: "RA+ Prism + RA+ Prism" },
       { id: "key-challenges", label: "Why Now" },
     ],
   },
@@ -177,7 +177,7 @@ export const Navigation = ({ onPresentationMode }: NavigationProps) => {
               <span className="text-primary-foreground font-bold text-sm">SE</span>
             </div>
             <div className="hidden sm:block">
-              <div className="font-semibold text-foreground text-sm">ClimVar · Financial Risk Quantification</div>
+              <div className="font-semibold text-foreground text-sm">RA+ Prism · Financial Risk Quantification</div>
             </div>
           </div>
 
@@ -264,7 +264,7 @@ export const Navigation = ({ onPresentationMode }: NavigationProps) => {
                       <span className="text-primary-foreground font-bold text-sm">SE</span>
                     </div>
                     <div>
-                      <SheetTitle className="text-foreground text-sm">ClimVar</SheetTitle>
+                      <SheetTitle className="text-foreground text-sm">RA+ Prism</SheetTitle>
                     </div>
                   </div>
                 </SheetHeader>

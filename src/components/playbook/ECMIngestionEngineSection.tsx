@@ -32,7 +32,7 @@ export const ECMIngestionEngineSection = () => {
             How a Value at Risk Is Produced
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            ClimVar Calculation Engine
+            RA+ Prism Calculation Engine
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
             {intro}

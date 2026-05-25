@@ -1,4 +1,4 @@
-// ClimVar — Financial Risk Quantification Playbook Data
+// RA+ Prism · Financial Risk Quantification Playbook Data
 // Advisory services + RA+ Prism technology
 
 export const strategicPillars = [
@@ -7,7 +7,7 @@ export const strategicPillars = [
     title: "Quantify",
     tagline: "Climate and nature risk in financial terms",
     promise: "We translate physical, transition and nature risks into a single, forward-looking Climate Value at Risk that boards, CFOs and investors can act on.",
-    description: "ClimVar uses a published Discounted Cash Flow methodology to express climate and nature risks as a measurable impact on enterprise value, revenue, OPEX and COGS. Finance becomes the entry door for the sustainability conversation, not the other way around.",
+    description: "RA+ Prism uses a published Discounted Cash Flow methodology to express climate and nature risks as a measurable impact on enterprise value, revenue, OPEX and COGS. Finance becomes the entry door for the sustainability conversation, not the other way around.",
     whatLivesHere: [
       "Climate Value at Risk waterfall across physical, transition and nature drivers",
       "Revenue, OPEX and COGS impacts modelled out to 2050",
@@ -29,7 +29,7 @@ export const strategicPillars = [
     title: "Adapt",
     tagline: "Turn risk reduction into investment options",
     promise: "We unlock concrete adaptation choices by quantifying how much risk each Schneider Electric solution removes across operations and supply chain.",
-    description: "Once risk is in financial terms, adaptation can be appraised on the same footing as any other capital investment. ClimVar moves the conversation from awareness to action by sizing the gross Value at Risk, the adaptation cost, and the net Value at Risk after Schneider Electric measures are deployed.",
+    description: "Once risk is in financial terms, adaptation can be appraised on the same footing as any other capital investment. RA+ Prism moves the conversation from awareness to action by sizing the gross Value at Risk, the adaptation cost, and the net Value at Risk after Schneider Electric measures are deployed.",
     whatLivesHere: [
       "Gross vs net Value at Risk view including adaptation costs and benefits",
       "Direct hook from quantified risk to PPA, efficiency, supply chain and resilience offers",
@@ -50,14 +50,14 @@ export const strategicPillars = [
     id: "continuous",
     title: "Automate",
     tagline: "From one off analysis to a living risk view in RA+ Prism",
-    promise: "After the first ClimVar advisory analysis, RA+ Prism turns the model into a continuously updated, in product capability that follows clients across their portfolio.",
+    promise: "After the first RA+ Prism advisory analysis, RA+ Prism turns the model into a continuously updated, in product capability that follows clients across their portfolio.",
     description: "RA+ Prism takes the methodology out of decks and into the platform. Clients monitor their Climate Value at Risk over time, refresh assumptions, drill from portfolio to site, and reuse the same trusted spine for disclosures, transition planning and capital reviews.",
     whatLivesHere: [
       "RA+ product that quantifies Value at Risk before and after adaptation",
       "Geographic and asset level deep dives on the same data backbone",
       "Refreshable scenarios, time horizons and adaptation profiles",
       "Reusable financial and operational inputs across engagements",
-      "Bridge from ClimVar advisory to the wider Sustainability and Energy products of RA+",
+      "Bridge from RA+ Prism advisory to the wider Sustainability and Energy products of RA+",
     ],
     successMetrics: [
       "Recurring use of RA+ Prism by sustainability, risk and finance teams",
@@ -73,7 +73,7 @@ export const strategicPillars = [
 export const objectives = [
   {
     id: "O1",
-    title: "Establish ClimVar as the integrated financial view of climate and nature risk",
+    title: "Establish RA+ Prism as the integrated financial view of climate and nature risk",
     linkedPillar: "quantify",
     customerOutcome: "Clients see one defensible Climate Value at Risk that combines physical, transition and nature drivers.",
     businessValue: "A clear, published methodology that positions Schneider Electric as the reference for financial quantification of climate risk.",
@@ -85,7 +85,7 @@ export const objectives = [
   },
   {
     id: "O2",
-    title: "Activate ClimVar as an upsell engine for Schneider Electric offers",
+    title: "Activate RA+ Prism as an upsell engine for Schneider Electric offers",
     linkedPillar: "adapt",
     customerOutcome: "Clients move from risk awareness to a ranked set of adaptation investments tied to a measurable Value at Risk reduction.",
     businessValue: "Higher attach rate of efficiency, PPA, supply chain and resilience offers, justified in financial terms.",
@@ -97,7 +97,7 @@ export const objectives = [
   },
   {
     id: "O3",
-    title: "Industrialise ClimVar inside RA+ as a recurring product",
+    title: "Industrialise RA+ Prism inside RA+ as a recurring product",
     linkedPillar: "continuous",
     customerOutcome: "Clients refresh their Climate Value at Risk on demand in RA+ Prism, drill from portfolio to site, and reuse the same spine for disclosures.",
     businessValue: "Recurring RA+ revenue and a defensible position in the financial risk quantification space.",
@@ -111,7 +111,7 @@ export const objectives = [
 
 export const roadmapBets = {
   now: [
-    { title: "Lock the published ClimVar methodology", pillar: "quantify", outcome: "Reference DCF approach maintained and versioned", objective: "O1", kr: "KR1" },
+    { title: "Lock the published RA+ Prism methodology", pillar: "quantify", outcome: "Reference DCF approach maintained and versioned", objective: "O1", kr: "KR1" },
     { title: "Cover the six core risk drivers in production", pillar: "quantify", outcome: "4 physical and 2 transition risks live with auditable assumptions", objective: "O1", kr: "KR1" },
     { title: "Anchor scenarios on public references", pillar: "quantify", outcome: "NGFS for transition, IPCC RCP for physical", objective: "O1", kr: "KR3" },
     { title: "Ship gross vs net Value at Risk", pillar: "adapt", outcome: "Adaptation cost and benefit visible in the waterfall", objective: "O2", kr: "KR4" },
@@ -129,7 +129,7 @@ export const roadmapBets = {
   later: [
     { title: "Extend transition risks beyond carbon and customer shift", pillar: "quantify", outcome: "Energy prices, reputational, litigation, investor and technology risks", objective: "O1", kr: "KR1" },
     { title: "Adaptation profile editor", pillar: "adapt", outcome: "CAPEX, OPEX and risk reduction profile per intervention", objective: "O2", kr: "KR5" },
-    { title: "Cross product reuse with Carbon Performance and Climate Risk", pillar: "continuous", outcome: "One client spine across ClimVar and adjacent RA+ products", objective: "O3", kr: "KR9" },
+    { title: "Cross product reuse with Carbon Performance and Climate Risk", pillar: "continuous", outcome: "One client spine across RA+ Prism and adjacent RA+ products", objective: "O3", kr: "KR9" },
     { title: "Portfolio level investor reporting view", pillar: "continuous", outcome: "Multi entity Value at Risk consolidation for asset owners", objective: "O3", kr: "KR9" },
     { title: "Internal Schneider Electric deployment on SE sites", pillar: "continuous", outcome: "Replace legacy risk tools with RA+ Prism across SE estate", objective: "O3", kr: "KR9" },
     { title: "Continuous outcome tracking", pillar: "adapt", outcome: "Realised vs modelled risk reduction after adaptation", objective: "O2", kr: "KR6" },
@@ -313,8 +313,8 @@ export const valuePillars = [
 
 export const strategicContext = {
   summary: "Today risk analyses are highly fragmented across physical, transition and nature lenses. Access to integrated financial data is limited, and material risk prioritisation stays largely qualitative. Clients see exposure, not enterprise value impact.",
-  northStarTitle: "ClimVar as the integrated financial view of climate and nature risk",
-  northStar: "ClimVar quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. RA+ Prism embeds that capability in the platform, so risk quantification becomes a living capability that powers adaptation choices, cross sell into Schneider Electric offers, and continuous improvement.",
+  northStarTitle: "RA+ Prism as the integrated financial view of climate and nature risk",
+  northStar: "RA+ Prism quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. RA+ Prism embeds that capability in the platform, so risk quantification becomes a living capability that powers adaptation choices, cross sell into Schneider Electric offers, and continuous improvement.",
 };
 
 export const supportingScorecard = [
@@ -329,11 +329,11 @@ export const roiScorecard = [
   { metric: "Value at Risk Surfaced", definition: "Share of enterprise value at risk under each scenario", target: "Quantified" },
   { metric: "Adaptation Reduction", definition: "Value at Risk removed by Schneider Electric adaptation measures", target: "30 to 40%" },
   { metric: "Refresh Cadence", definition: "Frequency of Value at Risk refresh inside RA+ Prism", target: "On demand" },
-  { metric: "Upsell Attach", definition: "Schneider Electric offers tied to a ClimVar adaptation lever", target: "Increasing" },
+  { metric: "Upsell Attach", definition: "Schneider Electric offers tied to a RA+ Prism adaptation lever", target: "Increasing" },
 ];
 
 export const executiveTakeaway = {
-  summary: "ClimVar turns climate and nature risk into a financial conversation. It combines a published Discounted Cash Flow methodology, an integrated view across physical, transition and nature drivers, and an adaptation engine that links Schneider Electric offers to a measurable Value at Risk reduction.",
+  summary: "RA+ Prism turns climate and nature risk into a financial conversation. It combines a published Discounted Cash Flow methodology, an integrated view across physical, transition and nature drivers, and an adaptation engine that links Schneider Electric offers to a measurable Value at Risk reduction.",
   conclusion: "Advisory delivers the first analysis. RA+ Prism industrialises it as a living capability inside the platform, so risk quantification, adaptation choices and continuous improvement run on one trusted spine.",
 };
 
@@ -368,7 +368,7 @@ export const appendixPillars = [
     pillar: "Adapt",
     focus: [
       "Link each adaptation lever to a Value at Risk reduction",
-      "Tie ClimVar adaptation to the Schneider Electric offer catalogue",
+      "Tie RA+ Prism adaptation to the Schneider Electric offer catalogue",
       "Make adaptation cost and benefit visible in the same view",
       "Prioritise interventions by Value at Risk removed per euro invested",
     ],
@@ -393,7 +393,7 @@ export const appendixPillars = [
   {
     pillar: "Automate",
     focus: [
-      "Productise ClimVar inside RA+ as RA+ Prism",
+      "Productise RA+ Prism inside RA+ as RA+ Prism",
       "Enable continuous refresh across portfolio and time",
       "Reuse the same client spine across adjacent RA+ products",
       "Bring self serve scenario and adaptation editing to clients",
@@ -420,7 +420,7 @@ export const appendixPillars = [
 
 export const roadmapSummary = {
   investmentPriorities: [
-    { number: 1, text: "Lock and publish the ClimVar methodology with full coverage of physical, transition and (next) nature risks" },
+    { number: 1, text: "Lock and publish the RA+ Prism methodology with full coverage of physical, transition and (next) nature risks" },
     { number: 2, text: "Industrialise the adaptation engine that links Value at Risk reduction to Schneider Electric offers" },
     { number: 3, text: "Ship RA+ Prism as the continuous, in product version of the same methodology" },
   ],
@@ -810,7 +810,7 @@ export const quarterlyRoadmap = [
     deliverables: [
       "Pilot RA+ Prism on Schneider Electric internal sites (extend Macon pilot)",
       "Refine adaptation profiles and SE offer linkage based on usage",
-      "Connect ClimVar spine with Carbon Performance, Climate Risk and Supply Chain products",
+      "Connect RA+ Prism spine with Carbon Performance, Climate Risk and Supply Chain products",
       "Expand transition risk coverage beyond carbon and customer shift",
       "Stand up the portfolio level investor reporting view",
     ],
@@ -843,7 +843,7 @@ export const optionalClientContext = [
 ];
 
 export const existingTools = [
-  { name: "ClimVar Advisory Tool", description: "The current advisory delivery tool implementing the published methodology", limitation: "Used in engagement mode, not yet available to clients in a self serve continuous experience" },
+  { name: "RA+ Prism Advisory Tool", description: "The current advisory delivery tool implementing the published methodology", limitation: "Used in engagement mode, not yet available to clients in a self serve continuous experience" },
   { name: "ECLR (physical climate risk)", description: "Schneider Electric tool for physical climate risk used on 100+ SE sites", limitation: "Powerful exposure analysis, but stops short of financial quantification on its own" },
   { name: "Legacy Sustainable Finance Models", description: "Internal financial models supporting impairment and disclosure work", limitation: "Not integrated with risk drivers in a single waterfall" },
   { name: "Third Party Risk Vendors", description: "Risilience and similar vendors used in parts of the SE estate today", limitation: "Limited integrated view of risk plus carbon plus monitoring to finance" },
@@ -851,7 +851,7 @@ export const existingTools = [
 
 export const idmCapabilities = {
   tagline:
-    "ClimVar combines a published Discounted Cash Flow methodology, public reference scenarios, and a reusable client spine. RA+ Prism industrialises it inside the platform so risk quantification becomes a living capability across the portfolio.",
+    "RA+ Prism combines a published Discounted Cash Flow methodology, public reference scenarios, and a reusable client spine. RA+ Prism industrialises it inside the platform so risk quantification becomes a living capability across the portfolio.",
   positioning: {
     title: "Climate Value at Risk Backbone",
     subtitle: "From risk awareness to risk valuation, then to adaptation.",
@@ -860,7 +860,7 @@ export const idmCapabilities = {
         label: "Step Zero",
         role: "Frame the financial stakes",
         description:
-          "ClimVar turns climate and nature risks into a single Value at Risk number, surfacing the share of enterprise value that is exposed.",
+          "RA+ Prism turns climate and nature risks into a single Value at Risk number, surfacing the share of enterprise value that is exposed.",
         outcome: "A credible financial trigger for the adaptation conversation.",
       },
       {
@@ -877,7 +877,7 @@ export const idmCapabilities = {
   bmsBypass: {
     title: "Adoption Bypass: No Supplier Data Collection Required",
     subtitle:
-      "The biggest blocker for many clients is the cost and lead time of collecting supplier and site data. ClimVar removes that barrier with country sector defaults powered by multi regional input output modelling.",
+      "The biggest blocker for many clients is the cost and lead time of collecting supplier and site data. RA+ Prism removes that barrier with country sector defaults powered by multi regional input output modelling.",
     benefits: [
       {
         label: "No supplier data collection required",
@@ -897,7 +897,7 @@ export const idmCapabilities = {
       },
     ],
     fallback:
-      "Where richer data exists, ClimVar refines its estimates at the site and supplier level. Data collection becomes an upgrade, not a prerequisite.",
+      "Where richer data exists, RA+ Prism refines its estimates at the site and supplier level. Data collection becomes an upgrade, not a prerequisite.",
   },
   stats: [
     { value: "6", label: "Risk drivers covered", detail: "4 physical + 2 transition, nature in progress" },
@@ -990,7 +990,7 @@ export const marketTrends = [
 export const serviceModelComparison = [
   {
     model: "Advisory Mode",
-    fullName: "SE Advisory Services ClimVar",
+    fullName: "SE Advisory Services RA+ Prism",
     description: "An engagement led delivery where SE experts run the analysis, train the client, scope priorities, and deliver the first Climate Value at Risk view.",
     typicalOutcomes: ["First financial view of climate and nature risk", "Aligned scope and scenarios with client priorities", "Quantified adaptation choices tied to SE offers"],
     dataNeeds: ["Entity revenue, country and sector", "Site geo localisation and asset value", "Optional financial ratios and emissions"],
@@ -998,7 +998,7 @@ export const serviceModelComparison = [
   },
   {
     model: "RA+ Prism",
-    fullName: "ClimVar embedded in RA+",
+    fullName: "RA+ Prism embedded in RA+",
     description: "A subscription product that turns the same methodology into a continuously refreshable capability inside RA+, with self serve scenarios, adaptation editing and portfolio drill down.",
     typicalOutcomes: ["Continuous Value at Risk monitoring", "Self serve scenario and adaptation editing", "Reuse of the same spine across Sustainability and Energy products"],
     dataNeeds: ["Same mandatory inputs as advisory", "Optional richer financial and operational data over time", "Custom risk profile inputs for client specific drivers"],
@@ -1008,7 +1008,7 @@ export const serviceModelComparison = [
 
 export const intelligenceFlywheel = {
   title: "Risk to Adaptation Flywheel",
-  subtitle: "How ClimVar advisory and RA+ Prism combine to turn risk awareness into continuous adaptation value",
+  subtitle: "How RA+ Prism advisory and RA+ Prism combine to turn risk awareness into continuous adaptation value",
   veeExplainer: {
     title: "Intra Scenario Uncertainty",
     description:
@@ -1047,10 +1047,10 @@ export const marketConstraints = [
 ];
 
 export const executiveNarrative = {
-  whatsHappening: "ClimVar is Schneider Electric's dedicated financial risk quantification offering, combining advisory services and a technology product (RA+ Prism) that turns climate and nature risks into a single Value at Risk view.",
+  whatsHappening: "RA+ Prism is Schneider Electric's dedicated financial risk quantification offering, combining advisory services and a technology product (RA+ Prism) that turns climate and nature risks into a single Value at Risk view.",
   trueProblem: "Risk analyses today are fragmented across physical, transition and nature lenses. Material risk prioritisation is largely qualitative, and adaptation choices are debated without a financial price tag.",
-  northStarTitle: "ClimVar as the integrated financial view of climate and nature risk",
-  northStar: "ClimVar quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. RA+ Prism embeds that capability in the platform, so risk quantification, adaptation choices and continuous improvement run on one trusted spine.",
+  northStarTitle: "RA+ Prism as the integrated financial view of climate and nature risk",
+  northStar: "RA+ Prism quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. RA+ Prism embeds that capability in the platform, so risk quantification, adaptation choices and continuous improvement run on one trusted spine.",
   pragmaticWay: "We deliver the first analysis through advisory, then industrialise it through RA+ Prism. We start with country sector defaults, refine with site and supplier data over time, and tie adaptation to Schneider Electric offers.",
   economicImpact: [
     "A single Climate Value at Risk number per scenario",
@@ -1058,10 +1058,10 @@ export const executiveNarrative = {
     "Stronger cross sell into PPA, efficiency, supply chain and resilience programmes",
     "Recurring use and revenue through RA+ Prism",
   ],
-  strategicUpside: "ClimVar positions Schneider Electric in a blue ocean: no competitor on par on integrated risk plus carbon plus monitoring to finance. Internal use cases (data centres, SE sites) demonstrate scale.",
+  strategicUpside: "RA+ Prism positions Schneider Electric in a blue ocean: no competitor on par on integrated risk plus carbon plus monitoring to finance. Internal use cases (data centres, SE sites) demonstrate scale.",
   risks: [
     { risk: "False precision", mitigation: "Surface intra scenario uncertainty explicitly and use public reference scenarios" },
-    { risk: "Scope creep into regulatory commitments", mitigation: "Keep ClimVar focused on quantification and adaptation framing, not commitments" },
+    { risk: "Scope creep into regulatory commitments", mitigation: "Keep RA+ Prism focused on quantification and adaptation framing, not commitments" },
     { risk: "Adoption barriers from data collection", mitigation: "Country sector defaults remove the data collection blocker; refinement is optional" },
     { risk: "Disconnect from SE offers", mitigation: "Tie every adaptation lever to a specific Schneider Electric offer and a measurable VaR reduction" },
   ],
@@ -1108,7 +1108,7 @@ export const timeline = {
 
 export const regionalJourneys = {
   intro:
-    "Clients enter ClimVar from different angles. Some start from a CFO impairment question, others from a sustainability disclosure cycle, others from a resilience or capital allocation review. ClimVar supports all entries on the same backbone.",
+    "Clients enter RA+ Prism from different angles. Some start from a CFO impairment question, others from a sustainability disclosure cycle, others from a resilience or capital allocation review. RA+ Prism supports all entries on the same backbone.",
   stages: [
     "Scoping",
     "Inputs",
@@ -1205,14 +1205,14 @@ export const regionalJourneys = {
     },
   ],
   designPrinciple:
-    "Build one ClimVar backbone with flexible entry and exit points. Same methodology, same scenarios, same waterfall, served to CFOs, CSOs, COOs and infrastructure operators in their own language.",
+    "Build one RA+ Prism backbone with flexible entry and exit points. Same methodology, same scenarios, same waterfall, served to CFOs, CSOs, COOs and infrastructure operators in their own language.",
 };
 
 export const ecmIngestionEngine = {
   intro:
-    "ClimVar is built on a published Discounted Cash Flow methodology. The engine ingests client inputs, blends them with public reference scenarios and Schneider Electric methodological IP, and produces an integrated Climate Value at Risk waterfall.",
+    "RA+ Prism is built on a published Discounted Cash Flow methodology. The engine ingests client inputs, blends them with public reference scenarios and Schneider Electric methodological IP, and produces an integrated Climate Value at Risk waterfall.",
   prototype: {
-    title: "ClimVar Calculation Engine",
+    title: "RA+ Prism Calculation Engine",
     subtitle: "How a Value at Risk is produced end to end.",
     flow: [
       {
@@ -1267,7 +1267,7 @@ export const ecmIngestionEngine = {
 
 export const efficiencyStrategicContext = {
   intro:
-    "Three forces make ClimVar strategic now: client demand for finance led climate conversations, lack of integrated alternatives in the market, and an internal lighthouse opportunity (data centres, SE sites) that demonstrates scale.",
+    "Three forces make RA+ Prism strategic now: client demand for finance led climate conversations, lack of integrated alternatives in the market, and an internal lighthouse opportunity (data centres, SE sites) that demonstrates scale.",
   raClassicSunset: {
     title: "Finance as the Entry Door",
     badge: "Market Window",
@@ -1277,7 +1277,7 @@ export const efficiencyStrategicContext = {
     implications: [
       {
         label: "Lead with finance",
-        detail: "ClimVar puts a single Value at Risk number on the table from day one.",
+        detail: "RA+ Prism puts a single Value at Risk number on the table from day one.",
       },
       {
         label: "Phased evolution",
@@ -1296,7 +1296,7 @@ export const efficiencyStrategicContext = {
   customerArchetypes: {
     title: "Two Buyer Archetypes",
     subtitle:
-      "ClimVar serves both finance led and sustainability led buyers. The platform must respect both, not collapse them into one experience.",
+      "RA+ Prism serves both finance led and sustainability led buyers. The platform must respect both, not collapse them into one experience.",
     archetypes: [
       {
         name: "Finance Led Buyer",
@@ -1309,7 +1309,7 @@ export const efficiencyStrategicContext = {
           "Continuous refresh aligned with reporting cycles",
         ],
         risk: "If we lead with sustainability narrative, we lose the conversation. The entry must be financial.",
-        fit: "ClimVar advisory anchors the first conversation; RA+ Prism industrialises the refresh.",
+        fit: "RA+ Prism advisory anchors the first conversation; RA+ Prism industrialises the refresh.",
       },
       {
         name: "Sustainability Led Buyer",
@@ -1322,11 +1322,11 @@ export const efficiencyStrategicContext = {
           "A path into broader RA+ Sustainability products",
         ],
         risk: "A purely qualitative deliverable underwhelms boards. Without financial framing, action stalls.",
-        fit: "Full ClimVar plus RA+ Prism deployment, integrated with adjacent sustainability products.",
+        fit: "Full RA+ Prism deployment, integrated with adjacent sustainability products.",
       },
     ],
     tension:
-      "The two archetypes must converge on the same adaptation conversation. ClimVar's job is to bring them together around one Value at Risk view.",
+      "The two archetypes must converge on the same adaptation conversation. RA+ Prism's job is to bring them together around one Value at Risk view.",
   },
   ghgTailwind: {
     title: "Lighthouse Use Cases",
@@ -1340,7 +1340,7 @@ export const efficiencyStrategicContext = {
       },
       {
         label: "SE estate pilots",
-        detail: "ECLR on 100+ SE sites, ClimVar pilot on Macon (Power Systems) site, follow up on broader SE sites.",
+        detail: "ECLR on 100+ SE sites, RA+ Prism pilot on Macon (Power Systems) site, follow up on broader SE sites.",
       },
       {
         label: "Internal scale up",
@@ -1358,7 +1358,7 @@ export const efficiencyStrategicContext = {
 
 export const platformShift = {
   intro:
-    "Today climate risk analyses live in PowerPoint, run on bespoke models, and are refreshed once a year. ClimVar plus RA+ Prism re platform that work as a published methodology plus a continuous, in product capability that finance, risk and sustainability teams share.",
+    "Today climate risk analyses live in PowerPoint, run on bespoke models, and are refreshed once a year. RA+ Prism re platform that work as a published methodology plus a continuous, in product capability that finance, risk and sustainability teams share.",
   classic: {
     title: "Legacy Risk Delivery",
     tagline: "Decks, models and yearly refresh",
@@ -1372,7 +1372,7 @@ export const platformShift = {
     ],
   },
   raPlus: {
-    title: "ClimVar + RA+ Prism",
+    title: "RA+ Prism + RA+ Prism",
     tagline: "Methodology + product, integrated by design",
     points: [
       "Integrated Climate Value at Risk waterfall across physical, transition and nature",
@@ -1384,14 +1384,14 @@ export const platformShift = {
     ],
   },
   thesis:
-    "Every limitation in current risk delivery stems from analyses living as one off models and slides. ClimVar plus RA+ Prism turn the same methodology into a continuous, in product capability.",
+    "Every limitation in current risk delivery stems from analyses living as one off models and slides. RA+ Prism turn the same methodology into a continuous, in product capability.",
   bureauAnchor: {
-    title: "What ClimVar Delivers Today",
+    title: "What RA+ Prism Delivers Today",
     subtitle: "Published methodology, six risk drivers in production, variable granularity, adaptation framing, and a clear path to RA+ Prism.",
     lines: [
       {
         layer: "Foundation",
-        name: "ClimVar Advisory",
+        name: "RA+ Prism Advisory",
         detail: "Engagement led delivery using the published methodology. First Climate Value at Risk view, scoped scenarios, and quantified adaptation tied to Schneider Electric offers.",
       },
       {
@@ -1407,7 +1407,7 @@ export const platformShift = {
 
 export const personas = {
   intro:
-    "Four roles interact with ClimVar. We design for all of them, with a deliberate sequence: the CFO conversation leads, but the Sustainability Lead and Risk Officer drive day to day use, and the CEO consumes outcomes.",
+    "Four roles interact with RA+ Prism. We design for all of them, with a deliberate sequence: the CFO conversation leads, but the Sustainability Lead and Risk Officer drive day to day use, and the CEO consumes outcomes.",
   designPrinciple:
     "Lead with finance to open the conversation. Build the daily experience for Sustainability Leads and Risk Officers who refresh the model. Surface CEO and board ready views from the same backbone.",
   roles: [
@@ -1429,7 +1429,7 @@ export const personas = {
       rank: "Primary",
       context: "Daily operator, owns the integrated climate and nature risk narrative",
       summary:
-        "Runs the refresh cycles, manages scenarios, and connects ClimVar with transition plans and disclosures. Primary user of RA+ Prism in continuous mode.",
+        "Runs the refresh cycles, manages scenarios, and connects RA+ Prism with transition plans and disclosures. Primary user of RA+ Prism in continuous mode.",
       outcomes: [
         "Integrated physical, transition and nature view",
         "Continuous refresh aligned with disclosure cycles",
@@ -1442,7 +1442,7 @@ export const personas = {
       rank: "Secondary",
       context: "Operations and risk side, asset and supply chain focus",
       summary:
-        "Uses ClimVar to size resilience choices at site and supply chain level, and to prioritise adaptation across the portfolio.",
+        "Uses RA+ Prism to size resilience choices at site and supply chain level, and to prioritise adaptation across the portfolio.",
       outcomes: [
         "Site level Value at Risk for material exposures",
         "Supply chain risk insight without a full supplier survey",
@@ -1468,7 +1468,7 @@ export const personas = {
 
 export const jobsToBeDone = {
   intro:
-    "The jobs users hire ClimVar to do. Not features, not screens, but outcomes. ClimVar advisory delivers the first analysis; RA+ Prism turns it into a continuous capability that finance, sustainability and risk teams share.",
+    "The jobs users hire RA+ Prism to do. Not features, not screens, but outcomes. RA+ Prism advisory delivers the first analysis; RA+ Prism turns it into a continuous capability that finance, sustainability and risk teams share.",
   ecmInsight:
     "Adaptation is not a separate job. It is what happens when jobs 1, 4 and 6 are done well: once the financial stakes are framed, once intervention options are sized in the same terms, once Schneider Electric offers are linked to a measurable Value at Risk reduction.",
   jobs: [
@@ -1482,7 +1482,7 @@ export const jobsToBeDone = {
     { num: 8, type: "Analytical", title: "Quantify supply chain exposure", description: "When supply chain risk needs framing, use multi regional input output modelling to size business interruption and carbon cost propagation without a full supplier survey." },
     { num: 9, type: "Analytical", title: "Compare scenarios side by side", description: "When stakeholders need to understand range, compare business as usual, net zero and worst case in the same view, with intra scenario uncertainty surfaced." },
     { num: 10, type: "Analytical", title: "Plug custom client risk drivers", description: "When a client specific risk matters, input a custom risk profile into the waterfall so it shows up in all downstream views." },
-    { num: 11, type: "Analytical", title: "Feed disclosures and impairment work", description: "When CSRD, TCFD, TNFD or impairment cycles run, feed ClimVar outputs into those processes with traceable assumptions." },
+    { num: 11, type: "Analytical", title: "Feed disclosures and impairment work", description: "When CSRD, TCFD, TNFD or impairment cycles run, feed RA+ Prism outputs into those processes with traceable assumptions." },
     { num: 12, type: "Operational", title: "Share one number across finance, risk and sustainability", description: "When different teams talk about climate risk, make sure they reference the same Value at Risk view from the same backbone." },
     { num: 13, type: "Analytical", title: "Track adaptation outcomes over time", description: "When adaptation measures are deployed, track realised vs modelled Value at Risk reduction so the investment case is provable." },
   ],
@@ -1490,7 +1490,7 @@ export const jobsToBeDone = {
 
 export const vocEvidence = {
   intro:
-    "Voice of customer evidence drawn from ClimVar engagements and internal lighthouse work. Each example validates the demand for integrated financial risk quantification and adaptation framing.",
+    "Voice of customer evidence drawn from RA+ Prism engagements and internal lighthouse work. Each example validates the demand for integrated financial risk quantification and adaptation framing.",
   signals: [
     { label: "Finance Entry Validation", value: "High", detail: "Clients want the financial framing first, sustainability narrative second" },
     { label: "Integrated Risk Demand", value: "High", detail: "Boards ask for physical, transition and nature in one view" },
@@ -1513,7 +1513,7 @@ export const vocEvidence = {
     {
       name: "Industrial Client (Macon Pilot)",
       contact: "Power Systems pilot site",
-      context: "First ClimVar pilot on a Schneider Electric internal industrial site",
+      context: "First RA+ Prism pilot on a Schneider Electric internal industrial site",
       findings: [
         "Site level quantification of physical risk drivers",
         "Carbon cost modelling tied to direct emissions",
@@ -1539,12 +1539,12 @@ export const vocEvidence = {
       contact: "Amundi, Institut Louis Bachelier, PIK, Scientific Portfolio",
       context: "Review and discussion of the published methodology",
       findings: [
-        "ClimVar puts climate as a first class citizen in the financial world",
+        "RA+ Prism puts climate as a first class citizen in the financial world",
         "Transparency and auditability of inputs are key strengths",
         "Discounted Cash Flow framing resonates with sustainable finance practice",
         "Integration of physical, transition and nature in one view is differentiated",
       ],
-      quote: "ClimVar is a real differentiator: it integrates climate into financial modelling in a transparent and auditable way, helping clients take better informed decisions.",
+      quote: "RA+ Prism is a real differentiator: it integrates climate into financial modelling in a transparent and auditable way, helping clients take better informed decisions.",
     },
   ],
 };
@@ -1554,19 +1554,19 @@ export const seCorporateBlueprint = {
   intro: "",
   scale: [
     { value: "100+", label: "SE sites covered by ECLR", detail: "Physical climate risk tool already deployed across the Schneider Electric estate" },
-    { value: "Macon", label: "First ClimVar pilot", detail: "Power Systems site pilot, anchor for broader internal deployment" },
+    { value: "Macon", label: "First RA+ Prism pilot", detail: "Power Systems site pilot, anchor for broader internal deployment" },
     { value: "Data centres", label: "Lighthouse use case", detail: "Joint work with the Schneider Electric Research Institute on the global installed base" },
     { value: "2027", label: "RA+ for SE", detail: "Positioned to replace legacy risk tooling across the SE estate" },
   ],
   trainingSignal:
-    "Internal Schneider Electric use cases are the lighthouse for ClimVar: they demonstrate scale, validate the methodology, and feed a continuous improvement loop that benefits every external client engagement.",
+    "Internal Schneider Electric use cases are the lighthouse for RA+ Prism: they demonstrate scale, validate the methodology, and feed a continuous improvement loop that benefits every external client engagement.",
   phaseMap: [] as { phase: string; detail: string }[],
   conclusion: "",
 };
 
 export const painInventory = {
   intro:
-    "Legacy risk delivery limitations that ClimVar plus RA+ Prism eliminate. Every must fix item stems from analyses living as one off models and slides instead of as a published methodology and a continuous, in product capability.",
+    "Legacy risk delivery limitations that RA+ Prism eliminate. Every must fix item stems from analyses living as one off models and slides instead of as a published methodology and a continuous, in product capability.",
   pains: [
     { id: "P1", severity: "Must fix", title: "Risk analyses are fragmented", detail: "Physical, transition and nature risks are studied in separate silos. Boards see partial pictures that do not aggregate into one number." },
     { id: "P2", severity: "Must fix", title: "Quantification stays qualitative", detail: "Material risk prioritisation stays largely qualitative. CFOs cannot use exposure scores as inputs to capital allocation or impairment." },
@@ -1579,10 +1579,10 @@ export const painInventory = {
 
 export const productScope = {
   intro:
-    "ClimVar is delivered through two complementary modes within the Sustainability family of Schneider Electric. This playbook covers both: the advisory engagement model and the RA+ Prism in product product.",
+    "RA+ Prism is delivered through two complementary modes within the Sustainability family of Schneider Electric. This playbook covers both: the advisory engagement model and the RA+ Prism in product product.",
   products: [
     {
-      name: "ClimVar Advisory",
+      name: "RA+ Prism Advisory",
       tag: "Engagement Mode",
       summary: "SE Advisory Services delivery of the published Discounted Cash Flow methodology. First Climate Value at Risk view, scoped scenarios, and adaptation sized in financial terms.",
       capabilities: [
@@ -1627,11 +1627,11 @@ export const architectureDecision = {
       label: "Plan A",
       title: "Native RA+ Prism product",
       summary:
-        "Stand up ClimVar quantification, adaptation and monitoring as first class RA+ services consumed by the new product and shared with adjacent ones.",
+        "Stand up RA+ Prism quantification, adaptation and monitoring as first class RA+ services consumed by the new product and shared with adjacent ones.",
       pros: [
         "Cleanest long term architecture and shared services across products",
         "Best foundation for cross product reuse with Carbon Performance, Climate Risk and Supply Chain",
-        "Single client spine across ClimVar and the wider RA+ suite",
+        "Single client spine across RA+ Prism and the wider RA+ suite",
       ],
       cons: [
         "Heavier upfront engineering investment",
@@ -1643,7 +1643,7 @@ export const architectureDecision = {
       label: "Plan B",
       title: "Bridge from advisory tool",
       summary:
-        "Expose the existing ClimVar advisory tool through a controlled bridge into RA+ to hit the Q4 2026 milestone, with a planned migration to native services later.",
+        "Expose the existing RA+ Prism advisory tool through a controlled bridge into RA+ to hit the Q4 2026 milestone, with a planned migration to native services later.",
       pros: [
         "Faster path to a usable RA+ Prism MVP",
         "Lower delivery risk for the committed timeline",
@@ -1667,7 +1667,7 @@ export const architectureDecision = {
 
 export const maturityLadder = {
   intro:
-    "Client maturity on integrated financial risk quantification progresses through four stages. ClimVar meets clients where they are and pulls them up the ladder over time.",
+    "Client maturity on integrated financial risk quantification progresses through four stages. RA+ Prism meets clients where they are and pulls them up the ladder over time.",
   stages: [
     {
       num: "01",
@@ -1679,7 +1679,7 @@ export const maturityLadder = {
       num: "02",
       label: "First Quantification",
       description:
-        "Clients run a first ClimVar assessment, typically at country sector level. Climate Value at Risk shows up as a single number per scenario.",
+        "Clients run a first RA+ Prism assessment, typically at country sector level. Climate Value at Risk shows up as a single number per scenario.",
     },
     {
       num: "03",
@@ -1706,15 +1706,15 @@ export const seraKPIs = {
     { label: "Refresh frequency", description: "Number of Value at Risk refreshes per account over the period" },
     { label: "Adaptation profiles edited", description: "Self serve adaptation editing actually used, not just available" },
     { label: "Granularity uplift", description: "Share of accounts moving from country sector to site or supply chain level" },
-    { label: "Cross product reuse", description: "Use of the same client spine across ClimVar and adjacent RA+ products" },
+    { label: "Cross product reuse", description: "Use of the same client spine across RA+ Prism and adjacent RA+ products" },
   ],
 };
 
 export const raPlusPlatformFoundation = {
   eyebrow: "RA+ Platform Foundation",
-  title: "How ClimVar Plugs Into RA+",
+  title: "How RA+ Prism Plugs Into RA+",
   intro:
-    "RA+ Prism does not build a parallel stack. It plugs the published ClimVar methodology into the same Unified, Proactive and Adaptive RA+ foundation that powers the rest of the suite, so every analysis compounds platform intelligence.",
+    "RA+ Prism does not build a parallel stack. It plugs the published RA+ Prism methodology into the same Unified, Proactive and Adaptive RA+ foundation that powers the rest of the suite, so every analysis compounds platform intelligence.",
   pillars: [
     {
       id: "unified",
@@ -1722,7 +1722,7 @@ export const raPlusPlatformFoundation = {
       tagline: "One platform, one client spine",
       icon: "Layers",
       components: [
-        "Shared client entity and site model across ClimVar and adjacent products",
+        "Shared client entity and site model across RA+ Prism and adjacent products",
         "Ingest and transform services that standardise client financial and operational inputs",
         "Scenario library anchored on public references (NGFS, IPCC RCP)",
         "Connectors to Carbon Performance, Climate Risk and Supply Chain products",
@@ -1760,5 +1760,5 @@ export const raPlusPlatformFoundation = {
     },
   ],
   soWhat:
-    "Every ClimVar capability lands on the same RA+ pillars. That is what turns advisory hours into recurring platform value, not another tool to maintain.",
+    "Every RA+ Prism capability lands on the same RA+ pillars. That is what turns advisory hours into recurring platform value, not another tool to maintain.",
 };

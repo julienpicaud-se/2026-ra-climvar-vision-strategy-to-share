@@ -58,7 +58,7 @@ export const CompetitiveLandscapeSection = () => {
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mb-8 leading-relaxed">
-            Climate risk advisory, carbon accounting software and platform-only players each cover part of the picture. None combine integrated risk, carbon performance and operational monitoring with a financial Value at Risk view the way ClimVar does.
+            Climate risk advisory, carbon accounting software and platform-only players each cover part of the picture. None combine integrated risk, carbon performance and operational monitoring with a financial Value at Risk view the way RA+ Prism does.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -79,7 +79,7 @@ export const CompetitiveLandscapeSection = () => {
             <CardContent className="p-6">
               <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-primary" />
-                Why ClimVar Wins
+                Why RA+ Prism Wins
               </h3>
               <ul className="space-y-2">
                 {differentiators.map((d, i) => (
@@ -114,7 +114,7 @@ export const CompetitiveLandscapeSection = () => {
               ))}
             </div>
             <p className="text-xs text-muted-foreground italic">
-              Independent anchors that underwrite the credibility of every ClimVar engagement.
+              Independent anchors that underwrite the credibility of every RA+ Prism engagement.
             </p>
           </div>
         </div>

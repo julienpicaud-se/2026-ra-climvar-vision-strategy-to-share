@@ -20,12 +20,12 @@ import {
 
 const executiveSummarySlides = [
   {
-    title: "ClimVar is the published methodology, RA+ Prism is the product",
-    body: "ClimVar Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ Prism industrialises the same methodology as a continuous, in product capability.",
+    title: "RA+ Prism is the published methodology, RA+ Prism is the product",
+    body: "RA+ Prism Advisory delivers a defensible Climate Value at Risk using a published Discounted Cash Flow methodology that integrates physical, transition and nature risks. RA+ Prism industrialises the same methodology as a continuous, in product capability.",
   },
   {
     title: "Finance is the entry door for the climate conversation",
-    body: "CFOs and financial planners want a single Value at Risk number tied to enterprise value, impairment and capital allocation. ClimVar leads with finance, then layers the sustainability narrative once the financial case is on the table.",
+    body: "CFOs and financial planners want a single Value at Risk number tied to enterprise value, impairment and capital allocation. RA+ Prism leads with finance, then layers the sustainability narrative once the financial case is on the table.",
   },
   {
     title: "Adaptation is sized as gross vs net Value at Risk",
@@ -53,8 +53,8 @@ export const exportToPptx = async () => {
   const pptx = new PptxGenJS();
 
   pptx.author = "Schneider Electric";
-  pptx.title = "ClimVar Playbook — Financial Risk Quantification";
-  pptx.subject = "ClimVar Playbook — Financial Risk Quantification";
+  pptx.title = "RA+ Prism Playbook · Financial Risk Quantification";
+  pptx.subject = "RA+ Prism Playbook · Financial Risk Quantification";
   pptx.company = "Schneider Electric";
 
   pptx.defineSlideMaster({
@@ -87,7 +87,7 @@ export const exportToPptx = async () => {
 
   const buildTitle = () => {
     const s = newSlide();
-    s.addText("ClimVar", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("RA+ Prism", { x: 0.5, y: 1.8, w: 9, h: 0.8, fontSize: 18, color: BRAND_GREEN, align: "center" });
     s.addText("Climate Value at Risk", { x: 0.5, y: 2.5, w: 9, h: 0.8, fontSize: 40, bold: true, color: BRAND_GREEN, align: "center" });
     s.addText("Advisory + RA+ Prism", { x: 0.5, y: 3.2, w: 9, h: 0.8, fontSize: 40, bold: true, color: TEXT_WHITE, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4.5, w: 9, h: 0.5, fontSize: 14, color: TEXT_MUTED, align: "center" });
@@ -120,7 +120,7 @@ export const exportToPptx = async () => {
 
   const buildKeyChallenges = () => {
     const s = newSlide();
-    addTitle(s, "KEY CHALLENGES", "Why Now for ClimVar");
+    addTitle(s, "KEY CHALLENGES", "Why Now for RA+ Prism");
     whyNowColumns.forEach((col, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.85 + Math.floor(i / 3) * 1.95;
@@ -146,7 +146,7 @@ export const exportToPptx = async () => {
       { title: "Supply chain risk without a survey", description: "Use multi regional input output modelling to size supply chain exposure without a full supplier campaign." },
     ];
     const s = newSlide();
-    addTitle(s, "WHAT IF TOMORROW", "Aspirations ClimVar Unlocks");
+    addTitle(s, "WHAT IF TOMORROW", "Aspirations RA+ Prism Unlocks");
     whatIfScenarios.forEach((sc, i) => {
       const xPos = 0.3 + (i % 3) * 3.2;
       const yPos = 1.95 + Math.floor(i / 3) * 1.55;
@@ -197,7 +197,7 @@ export const exportToPptx = async () => {
 
   const buildJTBD = () => {
     const s = newSlide();
-    addTitle(s, "JOBS TO BE DONE", "What Clients Use ClimVar to Do", jobsToBeDone.intro);
+    addTitle(s, "JOBS TO BE DONE", "What Clients Use RA+ Prism to Do", jobsToBeDone.intro);
     jobsToBeDone.jobs.slice(0, 11).forEach((j, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 0.55;
@@ -245,7 +245,7 @@ export const exportToPptx = async () => {
 
   const buildCapabilityMapping = () => {
     const s = newSlide();
-    addTitle(s, "CAPABILITY MAPPING", "ClimVar across the Client Journey", "How ClimVar Advisory and RA+ Prism plug into each stage of the journey, from first conversation to continuous monitoring.");
+    addTitle(s, "CAPABILITY MAPPING", "RA+ Prism across the Client Journey", "How RA+ Prism Advisory and RA+ Prism plug into each stage of the journey, from first conversation to continuous monitoring.");
     const journeyStages = [
       { name: "Discovery", note: "CFO led framing of climate exposure on enterprise value" },
       { name: "Scoping", note: "Pick scenarios, horizons, asset granularity and risk drivers" },
@@ -297,7 +297,7 @@ export const exportToPptx = async () => {
     const archetypes = [
       {
         title: "Self-Serve Climate Team",
-        tagline: "FULL AUTONOMY ON RA+ CLIMVAR",
+        tagline: "FULL AUTONOMY ON RA+ PRISM",
         body: "Sustainability, risk and finance teams operate RA+ Prism themselves. They refresh scenarios, edit adaptation levers and drill into sites without waiting for a human in the loop.",
       },
       {
@@ -322,14 +322,14 @@ export const exportToPptx = async () => {
     addTitle(
       s2,
       "JUDGMENT LAYER",
-      "Where ClimVar Advisors Add Value",
+      "Where RA+ Prism Advisors Add Value",
       "Advisors are the judgment layer on top of the published methodology and RA+ Prism.",
     );
     const pillars = [
       { t: "Methodology framing", d: "Translate the Discounted Cash Flow methodology into the client's industry, geography and risk profile." },
       { t: "Scenario design", d: "Anchor scenarios on NGFS and IPCC RCP references, layer in client specific risk drivers." },
       { t: "Adaptation sizing", d: "Frame each adaptation lever as a financial choice with gross vs net VaR and a clear Schneider Electric offer." },
-      { t: "Exec communication", d: "Package ClimVar outputs into CFO and board ready impairment, capital and disclosure narratives." },
+      { t: "Exec communication", d: "Package RA+ Prism outputs into CFO and board ready impairment, capital and disclosure narratives." },
     ];
     pillars.forEach((p, i) => {
       const xPos = 0.5 + i * 2.3;
@@ -342,7 +342,7 @@ export const exportToPptx = async () => {
     });
 
     const tiers = [
-      ["Advisory", "First Climate Value at Risk", "Engagement", "Advisor led", "ClimVar methodology + scoped scenarios"],
+      ["Advisory", "First Climate Value at Risk", "Engagement", "Advisor led", "RA+ Prism methodology + scoped scenarios"],
       ["Assisted", "Refresh and disclosure cycles", "Async + reviews", "Advisor validates outputs", "Shared RA+ Prism workspace, annotated readouts"],
       ["Self-Serve", "Continuous monitoring", "Always on", "Client team operates the model", "Full RA+ Prism with on demand advisor access"],
     ];
@@ -371,9 +371,9 @@ export const exportToPptx = async () => {
 
   const buildPhasing = () => {
     const phases = [
-      { phase: "Phase 1", title: "ClimVar Advisory at Scale", tagline: "Methodology in market", timing: "2025 — 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
+      { phase: "Phase 1", title: "RA+ Prism Advisory at Scale", tagline: "Methodology in market", timing: "2025 to 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
       { phase: "Phase 2", title: "RA+ Prism MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ product: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
-      { phase: "Phase 3", title: "Cross Product Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the ClimVar backbone across RA+ Sustainability and Energy products. Position RA+ Prism as the replacement for legacy risk tooling across the Schneider Electric estate." },
+      { phase: "Phase 3", title: "Cross Product Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the RA+ Prism backbone across RA+ Sustainability and Energy products. Position RA+ Prism as the replacement for legacy risk tooling across the Schneider Electric estate." },
     ];
     const s = newSlide();
     addTitle(s, "PHASING", "What Ships, in What Order, Why", "From the published methodology in market today to a continuous, cross product capability inside RA+.");
@@ -403,7 +403,7 @@ export const exportToPptx = async () => {
       { title: "Do It For Me", subtitle: "Full advisory", body: "Schneider Electric runs the analysis end to end with the published methodology and delivers refresh cycles as a service." },
     ];
     const s = newSlide();
-    addTitle(s, "RA+ CLIMVAR VISION", "Embedded, Defensible, Continuous", "Client autonomy axis: from full self serve to fully delivered. RA+ Prism supports all three on the same methodology.");
+    addTitle(s, "RA+ PRISM VISION", "Embedded, Defensible, Continuous", "Client autonomy axis: from full self serve to fully delivered. RA+ Prism supports all three on the same methodology.");
     useCases.forEach((u, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, { x: xPos, y: 1.95, w: 2.95, h: 1.5, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 } });
@@ -426,7 +426,7 @@ export const exportToPptx = async () => {
       { label: "First Climate VaR", signal: "Weeks from kickoff to delivery" },
       { label: "Scenario Refresh Cycle", signal: "Days per refresh in RA+ Prism" },
       { label: "Adaptation Coverage", signal: "% VaR addressed by sized levers" },
-      { label: "Cross Product Reuse", signal: "ClimVar clients consuming adjacent products" },
+      { label: "Cross Product Reuse", signal: "RA+ Prism clients consuming adjacent products" },
       { label: "RA+ Prism Recurring Use", signal: "Active client teams (90d)" },
     ];
     quantKPIs.forEach((k, i) => {
@@ -454,11 +454,11 @@ export const exportToPptx = async () => {
 
   const buildStartStop = () => {
     const s = newSlide();
-    addTitle(s, "START / STOP", "Where ClimVar Stops, How It Operates", "The boundary list keeps ClimVar scope honest. The operating rules keep every Climate Value at Risk output trustworthy.");
+    addTitle(s, "START / STOP", "Where RA+ Prism Stops, How It Operates", "The boundary list keeps RA+ Prism scope honest. The operating rules keep every Climate Value at Risk output trustworthy.");
     const outOfScope = [
-      { title: "ROI Charts", detail: "ClimVar is not a savings calculator. We frame Value at Risk and adaptation cost vs benefit, not headline ROI charts." },
+      { title: "ROI Charts", detail: "RA+ Prism is not a savings calculator. We frame Value at Risk and adaptation cost vs benefit, not headline ROI charts." },
       { title: "Pricing and Discounting", detail: "Commercial terms and discounting policies live outside this playbook." },
-      { title: "Regulatory Commitments", detail: "ClimVar informs CSRD, TCFD, TNFD and impairment work; it does not replace regulatory sign off." },
+      { title: "Regulatory Commitments", detail: "RA+ Prism informs CSRD, TCFD, TNFD and impairment work; it does not replace regulatory sign off." },
     ];
     const guardrails = [
       { title: "Methodology Transparency", detail: "Published Discounted Cash Flow methodology with public reference scenarios, traceable assumptions and audit trails." },
@@ -486,7 +486,7 @@ export const exportToPptx = async () => {
     const s = newSlide();
     addTitle(s, "EXECUTIVE TAKEAWAY", "Why This, Why Now");
     s.addText(
-      "ClimVar turns climate and nature risk into a defensible financial number. Advisory delivers the first analysis, RA+ Prism industrialises it, and adaptation becomes a sized, prioritised portfolio of Schneider Electric offers.",
+      "RA+ Prism turns climate and nature risk into a defensible financial number. Advisory delivers the first analysis, RA+ Prism industrialises it, and adaptation becomes a sized, prioritised portfolio of Schneider Electric offers.",
       { x: 0.5, y: 2.0, w: 9, h: 2.5, fontSize: 16, color: TEXT_WHITE, align: "center", fit: "shrink" },
     );
   };
@@ -566,7 +566,7 @@ export const exportToPptx = async () => {
 
   const buildPainInventory = () => {
     const s = newSlide();
-    addTitle(s, "APPENDIX · PAIN INVENTORY", "What ClimVar Eliminates", painInventory.intro);
+    addTitle(s, "APPENDIX · PAIN INVENTORY", "What RA+ Prism Eliminates", painInventory.intro);
     painInventory.pains.forEach((p, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 1.2;
@@ -595,7 +595,7 @@ export const exportToPptx = async () => {
   const buildThankYou = () => {
     const s = newSlide();
     s.addText("Thank You", { x: 0.5, y: 2, w: 9, h: 1, fontSize: 44, bold: true, color: TEXT_WHITE, align: "center" });
-    s.addText("ClimVar · Climate Value at Risk", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
+    s.addText("RA+ Prism · Climate Value at Risk", { x: 0.5, y: 3.2, w: 9, h: 0.5, fontSize: 18, color: BRAND_GREEN, align: "center" });
     s.addText("Internal Only and Confidential", { x: 0.5, y: 4, w: 9, h: 0.5, fontSize: 12, color: TEXT_MUTED, align: "center" });
   };
 
@@ -643,5 +643,5 @@ export const exportToPptx = async () => {
 
   buildThankYou();
 
-  await pptx.writeFile({ fileName: "ClimVar-Playbook.pptx" });
+  await pptx.writeFile({ fileName: "RA-Plus-Prism-Playbook.pptx" });
 };

@@ -141,10 +141,10 @@ export const AppendixSection = () => {
             Appendix
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-            ClimVar Playbook Details
+            RA+ Prism Playbook Details
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mt-4">
-            Deep dive into the ClimVar methodology, RA+ Prism product scope, customer maturity, adaptation engine, and supporting evidence.
+            Deep dive into the RA+ Prism methodology, RA+ Prism product scope, customer maturity, adaptation engine, and supporting evidence.
           </p>
         </div>
 
@@ -216,7 +216,7 @@ export const AppendixSection = () => {
                   Guardrails
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Where ClimVar Stops, How It Operates
+                  Where RA+ Prism Stops, How It Operates
                 </h3>
               </div>
             </AccordionTrigger>
@@ -262,7 +262,7 @@ export const AppendixSection = () => {
                   Competitive Landscape
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Where ClimVar Wins
+                  Where RA+ Prism Wins
                 </h3>
               </div>
             </AccordionTrigger>
@@ -285,7 +285,7 @@ export const AppendixSection = () => {
                   Data Foundation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Data Required for ClimVar
+                  Data Required for RA+ Prism
                 </h3>
               </div>
             </AccordionTrigger>
@@ -308,7 +308,7 @@ export const AppendixSection = () => {
                   Calculation Engine
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  ClimVar Calculation Engine
+                  RA+ Prism Calculation Engine
                 </h3>
               </div>
             </AccordionTrigger>
@@ -354,10 +354,10 @@ export const AppendixSection = () => {
               <div className="text-left">
                 <span className="text-destructive text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <AlertOctagon className="w-3.5 h-3.5" />
-                  ClimVar Pain Inventory
+                  RA+ Prism Pain Inventory
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  What ClimVar Eliminates
+                  What RA+ Prism Eliminates
                 </h3>
               </div>
             </AccordionTrigger>
@@ -380,7 +380,7 @@ export const AppendixSection = () => {
                   VOC Validation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  ClimVar Customer Evidence
+                  RA+ Prism Customer Evidence
                 </h3>
               </div>
             </AccordionTrigger>
@@ -682,7 +682,7 @@ export const AppendixSection = () => {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6">
               <p className="text-sm text-muted-foreground max-w-2xl mb-6">
-                Key metrics that measure our progress toward the ClimVar vision.
+                Key metrics that measure our progress toward the RA+ Prism vision.
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {supportingScorecard.map((item, index) => (

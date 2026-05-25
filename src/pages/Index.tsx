@@ -73,7 +73,7 @@ const Index = () => {
       {/* Response */}
       <StrategicPillars />
       <KeyObjectivesSection />
-      {/* How – ClimVar Foundation cluster */}
+      {/* How – RA+ Prism Foundation cluster */}
       <ExistingToolsSection />
       <RAPlusPlatformFoundationSection />
       <PrismNameSection />

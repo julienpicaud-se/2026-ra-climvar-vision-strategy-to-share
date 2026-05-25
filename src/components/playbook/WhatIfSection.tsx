@@ -56,7 +56,7 @@ export const WhatIfSection = () => {
               What if you could, <span className="text-primary">tomorrow</span>...
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-              ClimVar turns climate, nature and transition risk into a financial conversation and gives clients a living, in product view they share across finance, risk and sustainability.
+              RA+ Prism turns climate, nature and transition risk into a financial conversation and gives clients a living, in product view they share across finance, risk and sustainability.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export const WhatIfSection = () => {
             <CardContent className="p-8 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                 <Sparkles className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">That is ClimVar</span>
+                <span className="text-sm font-medium text-primary">That is RA+ Prism</span>
               </div>
               <p className="text-lg text-foreground leading-relaxed max-w-2xl mx-auto">
                 Climate, nature and transition risk in financial terms, adaptation framed as investment in Schneider Electric solutions, and a living view of Climate Value at Risk inside RA+ Prism.

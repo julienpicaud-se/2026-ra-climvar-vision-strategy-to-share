@@ -16,7 +16,7 @@ const outOfScopeItems = [
   {
     icon: FileCheck,
     title: "Audit Sign Off",
-    description: "Statutory assurance of climate related financial figures stays with accredited auditors, not with the ClimVar methodology or platform.",
+    description: "Statutory assurance of climate related financial figures stays with accredited auditors, not with the RA+ Prism methodology or platform.",
   },
   {
     icon: Wrench,
@@ -26,7 +26,7 @@ const outOfScopeItems = [
   {
     icon: Boxes,
     title: "Pricing and Discounting",
-    description: "ClimVar advisory commercials and RA+ Prism pricing live outside this space. The focus here is methodology, value and product scope.",
+    description: "RA+ Prism advisory commercials and RA+ Prism pricing live outside this space. The focus here is methodology, value and product scope.",
   },
 ];
 
@@ -62,7 +62,7 @@ const guardrailCategories = [
     icon: Users,
     title: "User Experience and Escalation",
     points: [
-      "Offer a clear path from any RA+ Prism output to a ClimVar expert engagement",
+      "Offer a clear path from any RA+ Prism output to a RA+ Prism expert engagement",
       "Allow finance, risk and sustainability users to annotate, snooze or reject suggestions",
       "Lead every flow with finance framing, with sustainability narrative layered on top",
     ],
@@ -84,13 +84,13 @@ export const BoundariesSection = () => {
       <div className="container px-4">
         <div className="text-center mb-12 sm:mb-16">
           <span className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 sm:mb-4 block">
-            ClimVar Boundaries and Operating Rules
+            RA+ Prism Boundaries and Operating Rules
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Where ClimVar Stops, How It Operates
+            Where RA+ Prism Stops, How It Operates
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            The boundary list keeps ClimVar scope honest. The operating rules keep every Climate Value at Risk output produced by ClimVar advisory and RA+ Prism trustworthy.
+            The boundary list keeps RA+ Prism scope honest. The operating rules keep every Climate Value at Risk output produced by RA+ Prism advisory and RA+ Prism trustworthy.
           </p>
         </div>
 
