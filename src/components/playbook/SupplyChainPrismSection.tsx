@@ -1,53 +1,83 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Network, AlertTriangle, Layers, Activity } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 /**
- * Animated illustration: Prism for Supply Chain at scale.
- * Concentric rings of suppliers → distribution → stores around a core asset,
- * with a propagating disruption that Prism detects and reroutes.
+ * Prism at scale, illustrated on a supply chain example.
+ * Nested green discs (Rank-2 suppliers → Rank-1 → Distribution centers → Plants → Stores → Core),
+ * with inward arrow flows that turn red when a disruption cascades, then re-route.
  */
+type Phase = "build" | "flow1" | "flow2" | "disrupt" | "reroute";
+
+const PHASES: { p: Phase; label: string; danger?: boolean }[] = [
+  { p: "build", label: "Mapping the extended network" },
+  { p: "flow1", label: "Rank-2 Suppliers  →  Rank-1 Suppliers" },
+  { p: "flow2", label: "Distribution Centers  →  Stores" },
+  { p: "disrupt", label: "⚠  Distribution Center disruption (D7)  →  cascades to stores", danger: true },
+  { p: "reroute", label: "Prism reroutes  ·  exposure rebalanced" },
+];
+
 export const SupplyChainPrismSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [phase, setPhase] = useState<"build" | "flow" | "disrupt" | "reroute">("build");
+  const [phaseIdx, setPhaseIdx] = useState(0);
 
   useEffect(() => {
     if (!isVisible) return;
-    const seq: Array<{ p: typeof phase; t: number }> = [
-      { p: "build", t: 0 },
-      { p: "flow", t: 2200 },
-      { p: "disrupt", t: 5200 },
-      { p: "reroute", t: 8200 },
-    ];
-    const timers = seq.map(({ p, t }) => setTimeout(() => setPhase(p), t));
-    const loop = setInterval(() => {
-      setPhase("build");
-      setTimeout(() => setPhase("flow"), 2200);
-      setTimeout(() => setPhase("disrupt"), 5200);
-      setTimeout(() => setPhase("reroute"), 8200);
-    }, 12000);
-    return () => {
-      timers.forEach(clearTimeout);
-      clearInterval(loop);
-    };
+    const id = setInterval(() => {
+      setPhaseIdx((i) => (i + 1) % PHASES.length);
+    }, 2600);
+    return () => clearInterval(id);
   }, [isVisible]);
 
-  // Ring definitions (radius, count, label)
+  const phase = PHASES[phaseIdx].p;
+  const caption = PHASES[phaseIdx];
+
+  // Ring radii (outermost first, like the reference)
   const rings = useMemo(
     () => [
-      { r: 70, n: 6, label: "Core assets" },
-      { r: 130, n: 12, label: "Plants" },
-      { r: 200, n: 24, label: "Distribution centers" },
-      { r: 280, n: 48, label: "Rank-1 suppliers" },
-      { r: 360, n: 96, label: "Rank-2 suppliers" },
+      { r: 440, n: 140, dot: 2.5, fill: "hsl(134 45% 88%)" }, // outer halo
+      { r: 380, n: 110, dot: 2.5, fill: "hsl(134 50% 80%)" }, // Rank-2 Suppliers
+      { r: 315, n: 80, dot: 2.8, fill: "hsl(134 52% 72%)" }, // Rank-1 Suppliers
+      { r: 245, n: 48, dot: 3.2, fill: "hsl(134 55% 64%)" }, // Distribution Centers
+      { r: 175, n: 28, dot: 4, fill: "hsl(134 58% 56%)" }, // Plants
+      { r: 105, n: 16, dot: 5, fill: "hsl(134 62% 48%)" }, // Stores
     ],
     []
   );
 
-  const nodes = useMemo(() => {
-    const out: { x: number; y: number; ring: number; idx: number }[] = [];
+  // Build per-ring dot positions with small color variance
+  const dots = useMemo(() => {
+    const out: { x: number; y: number; ring: number; idx: number; tint: string }[] = [];
     rings.forEach((ring, ri) => {
       for (let i = 0; i < ring.n; i++) {
+        const a = (i / ring.n) * Math.PI * 2 - Math.PI / 2;
+        const tints = [
+          "hsl(134 55% 35%)",
+          "hsl(210 45% 45%)",
+          "hsl(30 55% 45%)",
+          "hsl(0 0% 25%)",
+          "hsl(134 55% 30%)",
+        ];
+        out.push({
+          x: 500 + Math.cos(a) * ring.r,
+          y: 500 + Math.sin(a) * ring.r,
+          ring: ri,
+          idx: i,
+          tint: tints[(i * 7 + ri) % tints.length],
+        });
+      }
+    });
+    return out;
+  }, [rings]);
+
+  // Highlighted hub nodes on each "structural" ring (rings 2..5)
+  const hubs = useMemo(() => {
+    const out: { x: number; y: number; ring: number; idx: number }[] = [];
+    [2, 3, 4, 5].forEach((ri) => {
+      const ring = rings[ri];
+      const count = ri === 5 ? 6 : ri === 4 ? 7 : 8;
+      for (let k = 0; k < count; k++) {
+        const i = Math.round((k * ring.n) / count);
         const a = (i / ring.n) * Math.PI * 2 - Math.PI / 2;
         out.push({
           x: 500 + Math.cos(a) * ring.r,
@@ -60,13 +90,53 @@ export const SupplyChainPrismSection = () => {
     return out;
   }, [rings]);
 
-  // Pick a disruption node on rank-2 supplier ring
+  // Disruption node on Distribution Centers (ring 3)
   const disruption = useMemo(() => {
-    const ring = 4;
-    const idx = 18;
-    const a = (idx / rings[ring].n) * Math.PI * 2 - Math.PI / 2;
-    return { x: 500 + Math.cos(a) * rings[ring].r, y: 500 + Math.sin(a) * rings[ring].r };
+    const ring = rings[3];
+    const i = 6;
+    const a = (i / ring.n) * Math.PI * 2 - Math.PI / 2;
+    return { x: 500 + Math.cos(a) * ring.r, y: 500 + Math.sin(a) * ring.r };
   }, [rings]);
+
+  // Flow segments by phase: pair adjacent rings, draw arrows from outer hub → inner hub
+  const flowSegments = useMemo(() => {
+    const pairs: Record<Phase, [number, number] | null> = {
+      build: null,
+      flow1: [2, 3], // Rank-1 suppliers → Distribution centers (visually outer→inner)
+      flow2: [3, 5], // Distribution centers → Stores
+      disrupt: null,
+      reroute: [3, 5],
+    };
+    return pairs;
+  }, []);
+
+  const renderFlow = (outer: number, inner: number, color: string, key: string) => {
+    const outerHubs = hubs.filter((h) => h.ring === outer);
+    const innerHubs = hubs.filter((h) => h.ring === inner);
+    const lines: JSX.Element[] = [];
+    outerHubs.forEach((o, oi) => {
+      // fan from each outer hub to ~3 inner hubs
+      for (let k = -1; k <= 1; k++) {
+        const t = innerHubs[(oi + k + innerHubs.length) % innerHubs.length];
+        lines.push(
+          <line
+            key={`${key}-${oi}-${k}`}
+            x1={o.x}
+            y1={o.y}
+            x2={t.x}
+            y2={t.y}
+            stroke={color}
+            strokeWidth={1.1}
+            strokeDasharray="5 5"
+            markerEnd={`url(#arr-${color === "hsl(0 84% 60%)" ? "red" : "green"})`}
+            style={{ animation: `dashFlow 1.6s linear infinite` }}
+            opacity={0.85}
+          />
+        );
+      }
+    });
+    return lines;
+  };
 
   return (
     <section
@@ -84,193 +154,193 @@ export const SupplyChainPrismSection = () => {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <Network className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Prism at scale · Supply chain</span>
+            <span className="text-sm font-medium text-primary">
+              Prism at scale · Example: Supply chain
+            </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
             One model. Every tier.{" "}
             <span className="text-primary">Disruption seen before it lands.</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Prism turns the extended supply chain into a single living graph. Core assets, plants,
-            distribution centers, rank-1 and rank-2 suppliers are connected, scored on climate and
-            nature exposure, and continuously re-evaluated as conditions change.
+            An example of how Prism turns an extended network into a single living graph. Rank-2 and
+            rank-1 suppliers, distribution centers, plants and stores are connected, scored on
+            climate and nature exposure, and continuously re-evaluated as conditions change.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center max-w-7xl mx-auto">
-          {/* Animated SVG illustration */}
-          <div className="relative w-full aspect-square max-w-[640px] mx-auto">
+        <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center max-w-7xl mx-auto">
+          <div className="relative w-full aspect-square max-w-[720px] mx-auto">
             <svg viewBox="0 0 1000 1000" className="w-full h-full">
               <defs>
-                <radialGradient id="ringFill" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="hsl(134 60% 52%)" stopOpacity="0.25" />
-                  <stop offset="100%" stopColor="hsl(134 60% 52%)" stopOpacity="0.04" />
-                </radialGradient>
-                <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="hsl(134 60% 52%)" stopOpacity="0.9" />
-                  <stop offset="100%" stopColor="hsl(134 60% 52%)" stopOpacity="0" />
-                </radialGradient>
+                <marker
+                  id="arr-green"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="5"
+                  markerHeight="5"
+                  orient="auto-start-reverse"
+                >
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="hsl(134 60% 45%)" />
+                </marker>
+                <marker
+                  id="arr-red"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="5"
+                  markerHeight="5"
+                  orient="auto-start-reverse"
+                >
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="hsl(0 84% 60%)" />
+                </marker>
               </defs>
 
-              {/* Ring backgrounds */}
-              {rings
-                .slice()
-                .reverse()
-                .map((ring, i) => (
-                  <circle
-                    key={`bg-${i}`}
-                    cx={500}
-                    cy={500}
-                    r={ring.r + 18}
-                    fill="url(#ringFill)"
-                    opacity={0.35 + i * 0.06}
-                  />
-                ))}
-
-              {/* Ring guide circles */}
-              {rings.map((ring, i) => (
+              {/* Concentric filled discs (outer → inner so inner sits on top) */}
+              {rings.map((ring, ri) => (
                 <circle
-                  key={`g-${i}`}
+                  key={`disc-${ri}`}
                   cx={500}
                   cy={500}
                   r={ring.r}
-                  fill="none"
-                  stroke="hsl(134 60% 52% / 0.18)"
-                  strokeWidth={1}
+                  fill={ring.fill}
+                  stroke="hsl(0 0% 100% / 0.85)"
+                  strokeWidth={2}
                 />
               ))}
 
-              {/* Flow arcs between rings (animate during flow / reroute) */}
-              {phase !== "build" &&
-                nodes
-                  .filter((n) => n.ring < rings.length - 1 && n.idx % 2 === 0)
-                  .map((n, k) => {
-                    const inner = rings[n.ring];
-                    const a = (n.idx / inner.n) * Math.PI * 2 - Math.PI / 2;
-                    const x2 = 500 + Math.cos(a) * rings[n.ring + 1].r;
-                    const y2 = 500 + Math.sin(a) * rings[n.ring + 1].r;
-                    return (
-                      <line
-                        key={`f-${k}`}
-                        x1={n.x}
-                        y1={n.y}
-                        x2={x2}
-                        y2={y2}
-                        stroke="hsl(134 60% 52% / 0.35)"
-                        strokeWidth={0.8}
-                        style={{
-                          strokeDasharray: 6,
-                          animation: `dashFlow 2.4s linear infinite`,
-                          animationDelay: `${(k % 12) * 0.08}s`,
-                        }}
-                      />
-                    );
-                  })}
+              {/* Tiny dots distributed on each ring */}
+              {dots.map((d, k) => (
+                <circle
+                  key={`d-${k}`}
+                  cx={d.x}
+                  cy={d.y}
+                  r={rings[d.ring].dot}
+                  fill={d.tint}
+                  opacity={phase === "build" ? 0.55 : 0.85}
+                  style={{ transition: "opacity 0.6s ease" }}
+                />
+              ))}
 
-              {/* Disruption cascade lines */}
-              {(phase === "disrupt" || phase === "reroute") && (
-                <g>
-                  {nodes
-                    .filter((n) => n.ring >= 2 && n.ring <= 3)
-                    .slice(0, 20)
-                    .map((n, k) => (
-                      <line
-                        key={`d-${k}`}
-                        x1={disruption.x}
-                        y1={disruption.y}
-                        x2={n.x}
-                        y2={n.y}
-                        stroke={phase === "reroute" ? "hsl(134 60% 52% / 0.55)" : "hsl(0 84% 60% / 0.7)"}
-                        strokeWidth={1}
-                        style={{
-                          animation: `dashFlow 1.6s linear infinite`,
-                          strokeDasharray: 4,
-                        }}
-                      />
-                    ))}
-                </g>
-              )}
-
-              {/* Nodes */}
-              {nodes.map((n, k) => {
-                const isDisruption =
+              {/* Hub nodes (slightly larger ringed nodes) */}
+              {hubs.map((h, k) => {
+                const isDisrupted =
                   (phase === "disrupt" || phase === "reroute") &&
-                  Math.abs(n.x - disruption.x) < 2 &&
-                  Math.abs(n.y - disruption.y) < 2;
-                const sizes = [6, 5, 4.5, 3.5, 2.5];
+                  Math.abs(h.x - disruption.x) < 1 &&
+                  Math.abs(h.y - disruption.y) < 1;
                 return (
                   <circle
-                    key={`n-${k}`}
-                    cx={n.x}
-                    cy={n.y}
-                    r={sizes[n.ring]}
-                    fill={
-                      isDisruption
-                        ? "hsl(0 84% 60%)"
-                        : n.ring === 0
-                          ? "hsl(134 60% 60%)"
-                          : "hsl(134 40% 70%)"
-                    }
-                    opacity={phase === "build" ? 0.4 + (4 - n.ring) * 0.12 : 0.9}
+                    key={`h-${k}`}
+                    cx={h.x}
+                    cy={h.y}
+                    r={6}
+                    fill={isDisrupted ? "hsl(0 84% 60%)" : "hsl(0 0% 98%)"}
+                    stroke={isDisrupted ? "hsl(0 84% 50%)" : "hsl(210 35% 45%)"}
+                    strokeWidth={1.6}
                     style={{
-                      transition: "opacity 0.6s ease, fill 0.6s ease",
-                      filter: isDisruption
-                        ? "drop-shadow(0 0 6px hsl(0 84% 60%))"
-                        : n.ring === 0
-                          ? "drop-shadow(0 0 4px hsl(134 60% 52%))"
-                          : undefined,
+                      filter: isDisrupted
+                        ? "drop-shadow(0 0 8px hsl(0 84% 60%))"
+                        : undefined,
+                      transition: "fill 0.4s ease",
                     }}
                   />
                 );
               })}
 
+              {/* Flow lines */}
+              {flowSegments[phase] &&
+                renderFlow(
+                  flowSegments[phase]![0],
+                  flowSegments[phase]![1],
+                  phase === "reroute" ? "hsl(134 60% 45%)" : "hsl(134 60% 45%)",
+                  phase
+                )}
+
+              {/* Disruption cascade: from disrupted DC inward through plants to stores */}
+              {phase === "disrupt" && (
+                <g>
+                  {hubs
+                    .filter((h) => h.ring === 4 || h.ring === 5)
+                    .map((t, k) => (
+                      <line
+                        key={`dc-${k}`}
+                        x1={disruption.x}
+                        y1={disruption.y}
+                        x2={t.x}
+                        y2={t.y}
+                        stroke="hsl(0 84% 60%)"
+                        strokeWidth={1.3}
+                        strokeDasharray="5 5"
+                        markerEnd="url(#arr-red)"
+                        style={{ animation: `dashFlow 1.2s linear infinite` }}
+                        opacity={0.9}
+                      />
+                    ))}
+                  {/* pulsing alert ring */}
+                  <circle
+                    cx={disruption.x}
+                    cy={disruption.y}
+                    r={10}
+                    fill="none"
+                    stroke="hsl(0 84% 60%)"
+                    strokeWidth={2}
+                    style={{
+                      transformBox: "fill-box",
+                      transformOrigin: "center",
+                      animation: "pulseAlert 1.4s ease-out infinite",
+                    }}
+                  />
+                </g>
+              )}
+
               {/* Core */}
-              <circle cx={500} cy={500} r={32} fill="url(#coreGlow)" />
+              <circle cx={500} cy={500} r={36} fill="hsl(0 0% 8%)" />
               <circle
                 cx={500}
                 cy={500}
-                r={14}
-                fill="hsl(134 60% 52%)"
-                style={{ filter: "drop-shadow(0 0 10px hsl(134 60% 52%))" }}
+                r={36}
+                fill="none"
+                stroke="hsl(0 0% 100% / 0.9)"
+                strokeWidth={2.5}
               />
               <circle
                 cx={500}
                 cy={500}
-                r={22}
+                r={46}
                 fill="none"
-                stroke="hsl(134 60% 52% / 0.6)"
-                strokeWidth={1.2}
-                style={{ animation: "pulseRing 2.4s ease-out infinite" }}
+                stroke="hsl(134 60% 52% / 0.5)"
+                strokeWidth={1.5}
+                style={{ animation: "pulseRing 2.6s ease-out infinite" }}
               />
 
               {/* Caption */}
               <text
                 x={500}
-                y={970}
+                y={985}
                 textAnchor="middle"
-                fontSize={26}
-                fill={phase === "disrupt" ? "hsl(0 84% 70%)" : "hsl(0 0% 85%)"}
+                fontSize={30}
+                fontWeight={500}
+                fill={caption.danger ? "hsl(0 84% 65%)" : "hsl(0 0% 92%)"}
                 style={{ transition: "fill 0.4s ease", fontFamily: "inherit" }}
               >
-                {phase === "build" && "Mapping the extended network"}
-                {phase === "flow" && "Plants  →  Distribution  →  Stores"}
-                {phase === "disrupt" && "⚠  Rank-2 supplier shock  →  cascading risk"}
-                {phase === "reroute" && "Prism reroutes  ·  exposure rebalanced"}
+                {caption.label}
               </text>
             </svg>
 
             <style>{`
-              @keyframes dashFlow {
-                to { stroke-dashoffset: -24; }
-              }
+              @keyframes dashFlow { to { stroke-dashoffset: -20; } }
               @keyframes pulseRing {
                 0% { transform-origin: 500px 500px; transform: scale(1); opacity: 0.7; }
-                100% { transform-origin: 500px 500px; transform: scale(2.2); opacity: 0; }
+                100% { transform-origin: 500px 500px; transform: scale(2); opacity: 0; }
+              }
+              @keyframes pulseAlert {
+                0% { transform: scale(1); opacity: 0.9; }
+                100% { transform: scale(2.4); opacity: 0; }
               }
             `}</style>
           </div>
 
-          {/* Value prop */}
           <div className="space-y-6">
             <div className="p-6 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm">
               <div className="flex items-center gap-3 mb-3">
