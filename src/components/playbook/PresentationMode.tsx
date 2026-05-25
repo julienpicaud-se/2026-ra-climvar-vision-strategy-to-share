@@ -5,6 +5,7 @@ import { Minimize2, ChevronLeft, ChevronRight, Grid3X3, X, Keyboard } from "luci
 const sections = [
   { id: "hero", title: "Overview" },
   { id: "executive-summary", title: "Executive Summary" },
+  { id: "prism-name", title: "Why RA+ Prism" },
   // Problem
   { id: "strategic-context-highlight", title: "Strategic Context" },
   { id: "market-context", title: "Market Context" },
@@ -23,7 +24,6 @@ const sections = [
   // How
   { id: "existing-tools", title: "Technology Landscape" },
   { id: "raplus-platform-foundation", title: "RA+ Platform Foundation" },
-  { id: "prism-name", title: "Why RA+ Prism" },
   { id: "ecm-mapping", title: "Capability Mapping" },
   { id: "regional-journeys", title: "Regional Journeys" },
   { id: "operating-model", title: "Operating Model" },
