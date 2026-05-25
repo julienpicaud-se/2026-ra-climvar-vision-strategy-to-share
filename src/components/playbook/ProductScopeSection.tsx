@@ -50,7 +50,7 @@ export const ProductScopeSection = () => {
 
         <Card className="border-border/60 bg-card mb-4">
           <CardContent className="p-5">
-            <h4 className="font-semibold text-foreground mb-3">Why Energy Efficiency First</h4>
+            <h4 className="font-semibold text-foreground mb-3">Why Advisory First</h4>
             <ul className="space-y-2">
               {productScope.whyEEFirst.map((r, i) => (
                 <li key={i} className="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-primary/40">{r}</li>
