@@ -87,7 +87,7 @@ export const KeyObjectivesSection = () => {
             Key Objectives
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Four objectives that operationalise the Quantify, Adapt and Automate pillars across RA+ Prism advisory and RA+ Prism.
+            Four objectives that operationalise the Quantify, Adapt and Automate pillars across Advisory and RA+ Prism.
           </p>
         </div>
 

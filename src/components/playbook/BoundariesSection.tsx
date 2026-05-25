@@ -90,7 +90,7 @@ export const BoundariesSection = () => {
             Where RA+ Prism Stops, How It Operates
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            The boundary list keeps RA+ Prism scope honest. The operating rules keep every Climate Value at Risk output produced by RA+ Prism advisory and RA+ Prism trustworthy.
+            The boundary list keeps RA+ Prism scope honest. The operating rules keep every Climate Value at Risk output produced by Advisory and RA+ Prism trustworthy.
           </p>
         </div>
 

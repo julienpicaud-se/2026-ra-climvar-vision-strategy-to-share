@@ -206,7 +206,7 @@ export const ExecutiveSummary = () => {
               Executive Summary
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              How RA+ Prism advisory and RA+ Prism turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
+              How Advisory and RA+ Prism turn climate, nature and transition risk into a financial conversation Schneider Electric can win.
             </p>
           </header>
 
