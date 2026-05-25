@@ -354,10 +354,10 @@ export const AppendixSection = () => {
               <div className="text-left">
                 <span className="text-destructive text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <AlertOctagon className="w-3.5 h-3.5" />
-                  Sustainability Pain Inventory
+                  ClimVar Pain Inventory
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  What the Sustainability Transformation Eliminates
+                  What ClimVar Eliminates
                 </h3>
               </div>
             </AccordionTrigger>
