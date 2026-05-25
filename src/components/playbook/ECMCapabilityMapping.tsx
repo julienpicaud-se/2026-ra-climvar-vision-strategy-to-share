@@ -88,10 +88,10 @@ const journeyStages = [
       "Refreshable scenarios, time horizons and adaptation profiles in product",
       "Portfolio to site drill on the same backbone",
       "Reusable inputs across disclosure, capital and transition planning",
-      "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy modules of RA+",
+      "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy products of RA+",
     ],
     value: "From a one off advisory analysis to a living, in product capability",
-    kpis: ["Active RA+ ClimVar clients", "Refreshes per client per year", "Cross module attach"],
+    kpis: ["Active RA+ ClimVar clients", "Refreshes per client per year", "Cross product attach"],
     foundation: "Quantify and Adapt phases must be stable before RA+ ClimVar takes over the refresh cadence.",
   },
 ];

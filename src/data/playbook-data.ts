@@ -53,16 +53,16 @@ export const strategicPillars = [
     promise: "After the first ClimVar advisory analysis, RA+ ClimVar turns the model into a continuously updated, in product capability that follows clients across their portfolio.",
     description: "RA+ ClimVar takes the methodology out of decks and into the platform. Clients monitor their Climate Value at Risk over time, refresh assumptions, drill from portfolio to site, and reuse the same trusted spine for disclosures, transition planning and capital reviews.",
     whatLivesHere: [
-      "RA+ module that quantifies Value at Risk before and after adaptation",
+      "RA+ product that quantifies Value at Risk before and after adaptation",
       "Geographic and asset level deep dives on the same data backbone",
       "Refreshable scenarios, time horizons and adaptation profiles",
       "Reusable financial and operational inputs across engagements",
-      "Bridge from ClimVar advisory to the wider Sustainability and Energy modules of RA+",
+      "Bridge from ClimVar advisory to the wider Sustainability and Energy products of RA+",
     ],
     successMetrics: [
       "Recurring use of RA+ ClimVar by sustainability, risk and finance teams",
       "Lower marginal cost of every additional Climate Value at Risk refresh",
-      "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy modules",
+      "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy products",
       "Stickier multi year engagements anchored on a living risk model",
     ],
     icon: "Sparkles",
@@ -79,7 +79,7 @@ export const objectives = [
     businessValue: "A clear, published methodology that positions Schneider Electric as the reference for financial quantification of climate risk.",
     keyResults: [
       { id: "KR1", title: "Six risk drivers covered in production (4 physical, 2 transition)", metric: "Live", roiMetric: "Coverage breadth" },
-      { id: "KR2", title: "Nature risk module wired into the same waterfall", metric: "In progress", roiMetric: "Integration depth" },
+      { id: "KR2", title: "Nature risk product wired into the same waterfall", metric: "In progress", roiMetric: "Integration depth" },
       { id: "KR3", title: "Scenarios anchored on public references (NGFS, IPCC RCP)", metric: "100%", roiMetric: "Auditability" },
     ],
   },
@@ -104,7 +104,7 @@ export const objectives = [
     keyResults: [
       { id: "KR7", title: "RA+ ClimVar MVP available to advisory clients", metric: "2026", roiMetric: "Active accounts" },
       { id: "KR8", title: "Self serve scenario and adaptation editing", metric: "Enabled", roiMetric: "Refresh frequency" },
-      { id: "KR9", title: "Linkage with Carbon Performance, Climate Risk and Supply Chain modules", metric: "Complete", roiMetric: "Module reuse" },
+      { id: "KR9", title: "Linkage with Carbon Performance, Climate Risk and Supply Chain products", metric: "Complete", roiMetric: "Product reuse" },
     ],
   },
 ];
@@ -119,7 +119,7 @@ export const roadmapBets = {
     { title: "Run lighthouse use case on data centres", pillar: "adapt", outcome: "Joint work with the Schneider Electric Research Institute", objective: "O2", kr: "KR4" },
   ],
   next: [
-    { title: "Add the nature risk module", pillar: "quantify", outcome: "Renewable natural capital loss in the same waterfall", objective: "O1", kr: "KR2" },
+    { title: "Add the nature risk product", pillar: "quantify", outcome: "Renewable natural capital loss in the same waterfall", objective: "O1", kr: "KR2" },
     { title: "Connect the adaptation library to SE offers", pillar: "adapt", outcome: "PPA, efficiency, supply chain and resilience tied to Value at Risk reduction", objective: "O2", kr: "KR5" },
     { title: "Launch RA+ ClimVar MVP", pillar: "continuous", outcome: "Continuous Value at Risk monitoring in product", objective: "O3", kr: "KR7" },
     { title: "Productise the site level deep dive", pillar: "adapt", outcome: "Geo and asset level Value at Risk with adaptation profiles", objective: "O2", kr: "KR6" },
@@ -129,7 +129,7 @@ export const roadmapBets = {
   later: [
     { title: "Extend transition risks beyond carbon and customer shift", pillar: "quantify", outcome: "Energy prices, reputational, litigation, investor and technology risks", objective: "O1", kr: "KR1" },
     { title: "Adaptation profile editor", pillar: "adapt", outcome: "CAPEX, OPEX and risk reduction profile per intervention", objective: "O2", kr: "KR5" },
-    { title: "Cross module reuse with Carbon Performance and Climate Risk", pillar: "continuous", outcome: "One client spine across ClimVar and adjacent RA+ modules", objective: "O3", kr: "KR9" },
+    { title: "Cross product reuse with Carbon Performance and Climate Risk", pillar: "continuous", outcome: "One client spine across ClimVar and adjacent RA+ products", objective: "O3", kr: "KR9" },
     { title: "Portfolio level investor reporting view", pillar: "continuous", outcome: "Multi entity Value at Risk consolidation for asset owners", objective: "O3", kr: "KR9" },
     { title: "Internal Schneider Electric deployment on SE sites", pillar: "continuous", outcome: "Replace legacy risk tools with RA+ ClimVar across SE estate", objective: "O3", kr: "KR9" },
     { title: "Continuous outcome tracking", pillar: "adapt", outcome: "Realised vs modelled risk reduction after adaptation", objective: "O2", kr: "KR6" },
@@ -221,7 +221,7 @@ export const roiLevers = [
   {
     lever: "Recurring Platform Use",
     description: "RA+ ClimVar turns the analysis into a living capability refreshed across portfolio and time",
-    metrics: ["Active RA+ ClimVar accounts", "Refresh frequency", "Cross module reuse"],
+    metrics: ["Active RA+ ClimVar accounts", "Refresh frequency", "Cross product reuse"],
     icon: "DollarSign",
   },
   {
@@ -307,7 +307,7 @@ export const valuePillars = [
   {
     title: "Scale",
     icon: "Rocket",
-    description: "Published methodology, public scenarios, and integration across RA+ modules",
+    description: "Published methodology, public scenarios, and integration across RA+ products",
   },
 ];
 
@@ -395,25 +395,25 @@ export const appendixPillars = [
     focus: [
       "Productise ClimVar inside RA+ as RA+ ClimVar",
       "Enable continuous refresh across portfolio and time",
-      "Reuse the same client spine across adjacent RA+ modules",
+      "Reuse the same client spine across adjacent RA+ products",
       "Bring self serve scenario and adaptation editing to clients",
     ],
     outcomes: [
       "Recurring use of RA+ ClimVar by sustainability, risk and finance teams",
       "Lower marginal cost per Value at Risk refresh",
       "Stickier multi year engagements anchored on a living model",
-      "Cross sell into Carbon Performance, Climate Risk and Supply Chain modules",
+      "Cross sell into Carbon Performance, Climate Risk and Supply Chain products",
     ],
     themes: [
       "RA+ ClimVar MVP",
       "Continuous monitoring",
       "Self serve scenarios",
-      "Cross module reuse",
+      "Cross product reuse",
     ],
     valueProof: [
       "Active RA+ ClimVar accounts",
       "Refresh frequency per account",
-      "Module reuse rate",
+      "Product reuse rate",
     ],
   },
 ];
@@ -487,7 +487,7 @@ export const roadmapSummary = {
       focus: [
         "Continuous Value at Risk monitoring in RA+",
         "Self serve scenario and adaptation editing",
-        "Cross module reuse across RA+ Sustainability and Energy",
+        "Cross product reuse across RA+ Sustainability and Energy",
       ],
       outcomes: [
         "Recurring use of RA+ ClimVar",
@@ -498,12 +498,12 @@ export const roadmapSummary = {
         "RA+ ClimVar MVP",
         "Continuous monitoring",
         "Self serve",
-        "Module reuse",
+        "Product reuse",
       ],
       valueProof: [
         "Active accounts",
         "Refresh cadence",
-        "Module reuse",
+        "Product reuse",
       ],
     },
   ],
@@ -599,7 +599,7 @@ export const whyNowColumns = [
     color: "violet",
     items: [
       "One methodology that adapts to any sector, any geography",
-      "Reusable client spine across adjacent RA+ modules",
+      "Reusable client spine across adjacent RA+ products",
       "Internal Schneider Electric use case (data centres, SE sites) demonstrating scale",
       "No competitor on par on risk plus carbon plus monitoring to finance",
     ],
@@ -624,7 +624,7 @@ export const capabilityMatrix = {
     "First Advisory Analyses",
     "NOW (Adaptation Engine)",
     "NEXT (RA+ ClimVar MVP)",
-    "LATER (Cross module reuse)",
+    "LATER (Cross product reuse)",
   ],
   capabilities: [
     {
@@ -635,7 +635,7 @@ export const capabilityMatrix = {
         { status: "done", note: "Validated on data centre lighthouse and pilots" },
         { status: "done", note: "Required for adaptation framing" },
         { status: "done", note: "Core of the RA+ ClimVar MVP" },
-        { status: "done", note: "Shared across modules" },
+        { status: "done", note: "Shared across products" },
       ],
     },
     {
@@ -646,7 +646,7 @@ export const capabilityMatrix = {
         { status: "done", note: "Used across all advisory analyses" },
         { status: "done", note: "Carried into adaptation runs" },
         { status: "done", note: "Editable per client in RA+ ClimVar" },
-        { status: "done", note: "Reusable across modules" },
+        { status: "done", note: "Reusable across products" },
       ],
     },
     {
@@ -690,7 +690,7 @@ export const capabilityMatrix = {
         { status: "done", note: "Used in client deliverables" },
         { status: "done", note: "Available in advisory tool" },
         { status: "done", note: "In product visualisation in RA+ ClimVar" },
-        { status: "done", note: "Shared across modules" },
+        { status: "done", note: "Shared across products" },
       ],
     },
     {
@@ -701,7 +701,7 @@ export const capabilityMatrix = {
         { status: "done", note: "Demonstrated on data centre lighthouse" },
         { status: "partial", note: "Rank one supplier inputs in design" },
         { status: "partial", note: "Productised in RA+ ClimVar next" },
-        { status: "done", note: "Reused with Supply Chain module" },
+        { status: "done", note: "Reused with Supply Chain product" },
       ],
     },
     {
@@ -712,7 +712,7 @@ export const capabilityMatrix = {
         { status: "done", note: "Standard output of advisory analyses" },
         { status: "done", note: "Default comparison view" },
         { status: "done", note: "Editable in RA+ ClimVar" },
-        { status: "done", note: "Reused across modules" },
+        { status: "done", note: "Reused across products" },
       ],
     },
     {
@@ -745,7 +745,7 @@ export const capabilityMatrix = {
         { status: "not-done", note: "" },
         { status: "not-done", note: "" },
         { status: "done", note: "Core of RA+ ClimVar MVP" },
-        { status: "done", note: "Shared backbone for adjacent modules" },
+        { status: "done", note: "Shared backbone for adjacent products" },
       ],
     },
   ],
@@ -775,7 +775,7 @@ export const quarterlyRoadmap = [
     color: "emerald",
     deliverables: [
       "Connect the adaptation library to the Schneider Electric offer catalogue",
-      "Add the nature risk module to the integrated waterfall",
+      "Add the nature risk product to the integrated waterfall",
       "Productise the site level deep dive with reusable inputs",
       "Pilot rank one supplier inputs for refined supply chain risk",
       "Prepare the RA+ ClimVar MVP scope and design",
@@ -805,18 +805,18 @@ export const quarterlyRoadmap = [
   },
   {
     quarter: "Q1 2027",
-    theme: "Hardening, Internal Use and Cross Module Reuse",
+    theme: "Hardening, Internal Use and Cross Product Reuse",
     color: "violet",
     deliverables: [
       "Pilot RA+ ClimVar on Schneider Electric internal sites (extend Macon pilot)",
       "Refine adaptation profiles and SE offer linkage based on usage",
-      "Connect ClimVar spine with Carbon Performance, Climate Risk and Supply Chain modules",
+      "Connect ClimVar spine with Carbon Performance, Climate Risk and Supply Chain products",
       "Expand transition risk coverage beyond carbon and customer shift",
       "Stand up the portfolio level investor reporting view",
     ],
     teamImpact: [
       "Internal Schneider Electric deployment validates the platform at scale",
-      "Reuse across modules lowers the marginal cost per engagement",
+      "Reuse across products lowers the marginal cost per engagement",
       "Asset owners get a portfolio level Value at Risk view",
     ],
   },
@@ -966,7 +966,7 @@ export const competitiveLandscape = [
   {
     name: "Carbon Accounting Platforms",
     scope: "Global",
-    description: "Carbon and ESG platforms expanding into climate risk modules",
+    description: "Carbon and ESG platforms expanding into climate risk products",
     threat: "Strong on emissions, weaker on physical and nature risk valuation",
   },
   {
@@ -1000,7 +1000,7 @@ export const serviceModelComparison = [
     model: "RA+ ClimVar",
     fullName: "ClimVar embedded in RA+",
     description: "A subscription product that turns the same methodology into a continuously refreshable capability inside RA+, with self serve scenarios, adaptation editing and portfolio drill down.",
-    typicalOutcomes: ["Continuous Value at Risk monitoring", "Self serve scenario and adaptation editing", "Reuse of the same spine across Sustainability and Energy modules"],
+    typicalOutcomes: ["Continuous Value at Risk monitoring", "Self serve scenario and adaptation editing", "Reuse of the same spine across Sustainability and Energy products"],
     dataNeeds: ["Same mandatory inputs as advisory", "Optional richer financial and operational data over time", "Custom risk profile inputs for client specific drivers"],
     verificationLevel: "Same published methodology, exposed in product with transparent assumption registry and intra scenario uncertainty.",
   },
@@ -1047,7 +1047,7 @@ export const marketConstraints = [
 ];
 
 export const executiveNarrative = {
-  whatsHappening: "ClimVar is Schneider Electric's dedicated financial risk quantification offering, combining advisory services and a technology module (RA+ ClimVar) that turns climate and nature risks into a single Value at Risk view.",
+  whatsHappening: "ClimVar is Schneider Electric's dedicated financial risk quantification offering, combining advisory services and a technology product (RA+ ClimVar) that turns climate and nature risks into a single Value at Risk view.",
   trueProblem: "Risk analyses today are fragmented across physical, transition and nature lenses. Material risk prioritisation is largely qualitative, and adaptation choices are debated without a financial price tag.",
   northStarTitle: "ClimVar as the integrated financial view of climate and nature risk",
   northStar: "ClimVar quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. RA+ ClimVar embeds that capability in the platform, so risk quantification, adaptation choices and continuous improvement run on one trusted spine.",
@@ -1078,7 +1078,7 @@ export const timeline = {
     title: "Q1: Methodology and Coverage",
     items: [
       "Six risk drivers in production",
-      "Nature risk module in progress",
+      "Nature risk product in progress",
       "Public reference scenarios anchored",
       "Gross vs net Value at Risk live",
       "First assessment offer at country and sector level",
@@ -1095,12 +1095,12 @@ export const timeline = {
     ],
   },
   h2: {
-    title: "H2: RA+ ClimVar and Cross Module Reuse",
+    title: "H2: RA+ ClimVar and Cross Product Reuse",
     items: [
       "RA+ ClimVar MVP live",
       "Self serve scenarios and adaptation editing",
       "Internal Schneider Electric deployment",
-      "Cross module reuse with Carbon Performance, Climate Risk and Supply Chain",
+      "Cross product reuse with Carbon Performance, Climate Risk and Supply Chain",
       "Portfolio level investor reporting view",
     ],
   },
@@ -1319,10 +1319,10 @@ export const efficiencyStrategicContext = {
           "Integrated physical, transition and nature view",
           "Strong methodology that strengthens disclosures",
           "Linkage with transition plans and SE solutions",
-          "A path into broader RA+ Sustainability modules",
+          "A path into broader RA+ Sustainability products",
         ],
         risk: "A purely qualitative deliverable underwhelms boards. Without financial framing, action stalls.",
-        fit: "Full ClimVar plus RA+ ClimVar deployment, integrated with adjacent sustainability modules.",
+        fit: "Full ClimVar plus RA+ ClimVar deployment, integrated with adjacent sustainability products.",
       },
     ],
     tension:
@@ -1380,7 +1380,7 @@ export const platformShift = {
       "Gross vs net Value at Risk with adaptation cost and benefit",
       "Reusable client spine across engagements and refreshes",
       "RA+ ClimVar productises the analysis as a living capability",
-      "Same backbone reused across adjacent Sustainability and Energy modules",
+      "Same backbone reused across adjacent Sustainability and Energy products",
     ],
   },
   thesis:
@@ -1397,7 +1397,7 @@ export const platformShift = {
       {
         layer: "Accelerator",
         name: "RA+ ClimVar",
-        detail: "In product module of RA+ that turns the analysis into a continuous capability. Refreshable scenarios, self serve adaptation editing, drill from portfolio to site.",
+        detail: "In product product of RA+ that turns the analysis into a continuous capability. Refreshable scenarios, self serve adaptation editing, drill from portfolio to site.",
       },
     ],
     soWhat:
@@ -1579,7 +1579,7 @@ export const painInventory = {
 
 export const productScope = {
   intro:
-    "ClimVar is delivered through two complementary modes within the Sustainability family of Schneider Electric. This playbook covers both: the advisory engagement model and the RA+ ClimVar in product module.",
+    "ClimVar is delivered through two complementary modes within the Sustainability family of Schneider Electric. This playbook covers both: the advisory engagement model and the RA+ ClimVar in product product.",
   products: [
     {
       name: "ClimVar Advisory",
@@ -1597,14 +1597,14 @@ export const productScope = {
     {
       name: "RA+ ClimVar",
       tag: "Product Mode",
-      summary: "RA+ module that turns the analysis into a continuously refreshable capability. Self serve scenarios, adaptation editing, drill from portfolio to site.",
+      summary: "RA+ product that turns the analysis into a continuously refreshable capability. Self serve scenarios, adaptation editing, drill from portfolio to site.",
       capabilities: [
         "Continuous Value at Risk monitoring across the portfolio",
         "Self serve scenario and adaptation editing",
         "Custom client risk profile inputs",
         "Time series, waterfall, cross scenario and income statement views",
         "Geographic and asset level deep dives",
-        "Cross module reuse with Carbon Performance, Climate Risk and Supply Chain",
+        "Cross product reuse with Carbon Performance, Climate Risk and Supply Chain",
       ],
     },
   ],
@@ -1625,12 +1625,12 @@ export const architectureDecision = {
     {
       id: "plan-a",
       label: "Plan A",
-      title: "Native RA+ ClimVar module",
+      title: "Native RA+ ClimVar product",
       summary:
-        "Stand up ClimVar quantification, adaptation and monitoring as first class RA+ services consumed by the new module and shared with adjacent ones.",
+        "Stand up ClimVar quantification, adaptation and monitoring as first class RA+ services consumed by the new product and shared with adjacent ones.",
       pros: [
-        "Cleanest long term architecture and shared services across modules",
-        "Best foundation for cross module reuse with Carbon Performance, Climate Risk and Supply Chain",
+        "Cleanest long term architecture and shared services across products",
+        "Best foundation for cross product reuse with Carbon Performance, Climate Risk and Supply Chain",
         "Single client spine across ClimVar and the wider RA+ suite",
       ],
       cons: [
@@ -1652,7 +1652,7 @@ export const architectureDecision = {
       cons: [
         "Bridge code becomes technical debt that must be retired",
         "Risk of carrying advisory tool data model shortcuts into RA+",
-        "Cross module reuse may feel less coherent until native services land",
+        "Cross product reuse may feel less coherent until native services land",
       ],
     },
   ],
@@ -1706,7 +1706,7 @@ export const seraKPIs = {
     { label: "Refresh frequency", description: "Number of Value at Risk refreshes per account over the period" },
     { label: "Adaptation profiles edited", description: "Self serve adaptation editing actually used, not just available" },
     { label: "Granularity uplift", description: "Share of accounts moving from country sector to site or supply chain level" },
-    { label: "Cross module reuse", description: "Use of the same client spine across ClimVar and adjacent RA+ modules" },
+    { label: "Cross product reuse", description: "Use of the same client spine across ClimVar and adjacent RA+ products" },
   ],
 };
 
@@ -1722,10 +1722,10 @@ export const raPlusPlatformFoundation = {
       tagline: "One platform, one client spine",
       icon: "Layers",
       components: [
-        "Shared client entity and site model across ClimVar and adjacent modules",
+        "Shared client entity and site model across ClimVar and adjacent products",
         "Ingest and transform services that standardise client financial and operational inputs",
         "Scenario library anchored on public references (NGFS, IPCC RCP)",
-        "Connectors to Carbon Performance, Climate Risk and Supply Chain modules",
+        "Connectors to Carbon Performance, Climate Risk and Supply Chain products",
       ],
       gspBenefit:
         "Advisory consultants and clients work off the same trusted client spine. The model stitching that slows engagements today goes away.",

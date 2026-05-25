@@ -43,9 +43,9 @@ const keyObjectives = [
     description:
       "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios on demand, drill from portfolio to site, and reuse the same backbone across disclosure, capital and transition planning cycles.",
     keyResults: [
-      "RA+ ClimVar module live with refreshable scenarios, horizons and adaptation profiles",
+      "RA+ ClimVar product live with refreshable scenarios, horizons and adaptation profiles",
       "Lower marginal cost on every additional Climate Value at Risk refresh",
-      "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy modules",
+      "Cross sell into Carbon Performance, Supply Chain, Climate Risk and Energy products",
     ],
   },
   {

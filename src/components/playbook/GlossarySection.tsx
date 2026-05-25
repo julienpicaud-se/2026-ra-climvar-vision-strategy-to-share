@@ -7,7 +7,7 @@ const glossaryTerms = [
     category: "ClimVar core concepts",
     terms: [
       { abbr: "ClimVar", full: "Climate Value at Risk: financial quantification of climate, transition and nature risk on enterprise value, revenue, OPEX and COGS" },
-      { abbr: "RA+ ClimVar", full: "The in product RA+ module that turns the ClimVar methodology into a continuously refreshable capability" },
+      { abbr: "RA+ ClimVar", full: "The in product RA+ product that turns the ClimVar methodology into a continuously refreshable capability" },
       { abbr: "DCF", full: "Discounted Cash Flow, the financial modelling backbone of the ClimVar methodology" },
       { abbr: "Gross VaR", full: "Climate Value at Risk before any adaptation measure is applied" },
       { abbr: "Net VaR", full: "Climate Value at Risk after Schneider Electric adaptation measures are deployed" },
