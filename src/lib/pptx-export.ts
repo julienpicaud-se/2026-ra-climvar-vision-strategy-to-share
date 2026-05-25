@@ -25,7 +25,7 @@ const executiveSummarySlides = [
   },
   {
     title: "Finance is the entry door for the climate conversation",
-    body: "CFOs and treasurers want a single Value at Risk number tied to enterprise value, impairment and capital allocation. ClimVar leads with finance, then layers the sustainability narrative once the financial case is on the table.",
+    body: "CFOs and financial planners want a single Value at Risk number tied to enterprise value, impairment and capital allocation. ClimVar leads with finance, then layers the sustainability narrative once the financial case is on the table.",
   },
   {
     title: "Adaptation is sized as gross vs net Value at Risk",
