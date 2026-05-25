@@ -35,7 +35,7 @@ export const PrismNameSection = () => {
           <CardContent className="p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                <Prism className="w-5 h-5 text-primary" />
+                <Triangle className="w-5 h-5 text-primary" />
               </div>
               <h3 className="text-lg font-bold text-foreground">One lens, every facet</h3>
             </div>
