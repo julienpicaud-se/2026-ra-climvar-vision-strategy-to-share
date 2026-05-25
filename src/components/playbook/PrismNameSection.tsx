@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Prism } from "lucide-react";
+import { Triangle } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const facets = [
