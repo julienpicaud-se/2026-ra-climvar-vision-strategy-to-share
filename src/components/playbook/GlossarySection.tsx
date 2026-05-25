@@ -41,12 +41,28 @@ const glossaryTerms = [
   {
     category: "Roles and platform",
     terms: [
-      { abbr: "RA+", full: "Schneider Electric's integrated platform for sustainability, energy and risk" },
+      { abbr: "RA+", full: "Schneider Electric's integrated platform that hosts ClimVar and adjacent Sustainability and Energy products" },
+      { abbr: "RA+ ClimVar", full: "The in product capability that turns ClimVar advisory analyses into a continuously refreshable risk view" },
+      { abbr: "ClimVar Advisory", full: "Engagement led delivery of the published ClimVar methodology by SE Advisory Services" },
       { abbr: "CFO", full: "Chief Financial Officer" },
+      { abbr: "Financial planner", full: "Finance lead responsible for impairment, capital allocation and forward financial planning" },
       { abbr: "CRO", full: "Chief Risk Officer" },
       { abbr: "CSO", full: "Chief Sustainability Officer" },
       { abbr: "VOC", full: "Voice of Customer" },
       { abbr: "JTBD", full: "Jobs To Be Done" },
+    ],
+  },
+  {
+    category: "Financial and modelling",
+    terms: [
+      { abbr: "VaR", full: "Value at Risk, the financial measure ClimVar produces per scenario, driver and asset" },
+      { abbr: "NPV", full: "Net Present Value, the discounted sum of future cash flows used as the ClimVar valuation anchor" },
+      { abbr: "OPEX", full: "Operating Expenses, one of the impact lines ClimVar projects under each scenario" },
+      { abbr: "COGS", full: "Cost of Goods Sold, modelled in ClimVar to capture supply chain and input cost exposure" },
+      { abbr: "CAPEX", full: "Capital Expenditure, the envelope used to size adaptation investment choices in ClimVar" },
+      { abbr: "MRIO", full: "Multi Regional Input Output modelling, used in ClimVar for supply chain risk without supplier data collection" },
+      { abbr: "ECLR", full: "Schneider Electric internal physical climate risk tool deployed across 100+ SE sites" },
+      { abbr: "SSRN", full: "Social Science Research Network, where the ClimVar Discounted Cash Flow methodology is published" },
     ],
   },
 ];
