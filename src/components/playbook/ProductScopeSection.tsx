@@ -19,7 +19,7 @@ export const ProductScopeSection = () => {
             Product Scope
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Energy Efficiency vs Asset Planning
+            Advisory vs RA+ Prism Product
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{productScope.intro}</p>
         </div>
