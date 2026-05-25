@@ -197,7 +197,7 @@ export const exportToPptx = async () => {
 
   const buildJTBD = () => {
     const s = newSlide();
-    addTitle(s, "JOBS TO BE DONE", "What Users Hire ClimVar to Do", jobsToBeDone.intro);
+    addTitle(s, "JOBS TO BE DONE", "What Clients Use ClimVar to Do", jobsToBeDone.intro);
     jobsToBeDone.jobs.slice(0, 11).forEach((j, i) => {
       const xPos = 0.3 + (i % 2) * 4.7;
       const yPos = 1.95 + Math.floor(i / 2) * 0.55;
