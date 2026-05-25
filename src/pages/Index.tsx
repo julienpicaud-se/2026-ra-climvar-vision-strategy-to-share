@@ -13,6 +13,7 @@ import { KeyChallengesSection } from "@/components/playbook/KeyChallengesSection
 import { StrategicPillars } from "@/components/playbook/StrategicPillars";
 import { ExistingToolsSection } from "@/components/playbook/ExistingToolsSection";
 import { RAPlusPlatformFoundationSection } from "@/components/playbook/RAPlusPlatformFoundationSection";
+import { PrismNameSection } from "@/components/playbook/PrismNameSection";
 
 import { ECMIngestionEngineSection } from "@/components/playbook/ECMIngestionEngineSection";
 import { StrategicContextSection } from "@/components/playbook/StrategicContextSection";
@@ -75,6 +76,7 @@ const Index = () => {
       {/* How – ClimVar Foundation cluster */}
       <ExistingToolsSection />
       <RAPlusPlatformFoundationSection />
+      <PrismNameSection />
       <ECMCapabilityMapping />
       
       

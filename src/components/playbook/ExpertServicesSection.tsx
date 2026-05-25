@@ -19,7 +19,7 @@ const archetypes = [
     title: "Living Platform Client",
     tagline: "RA+ CLIMVAR, REFRESHED ON DEMAND",
     description:
-      "Has been through a first ClimVar engagement and now wants the model inside RA+ ClimVar so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
+      "Has been through a first ClimVar engagement and now wants the model inside RA+ Prism so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
       "Self service refresh of scenarios, horizons and adaptation profiles",
       "Geographic and asset level deep dives on demand",
@@ -68,14 +68,14 @@ const tiers = [
     audience: "Recurring refresh, expert assist",
     cadence: "Quarterly or disclosure aligned",
     human: "Expert validates scenarios and adaptation framing at each refresh",
-    platform: "Shared RA+ ClimVar workspace with annotated Value at Risk outputs",
+    platform: "Shared RA+ Prism workspace with annotated Value at Risk outputs",
   },
   {
-    name: "RA+ ClimVar",
+    name: "RA+ Prism",
     audience: "Living platform client",
     cadence: "On demand",
     human: "Expert services available a la carte for new scenarios or deep dives",
-    platform: "Full RA+ ClimVar autonomy on portfolio, country, site and supplier views",
+    platform: "Full RA+ Prism autonomy on portfolio, country, site and supplier views",
   },
 ];
 
@@ -94,10 +94,10 @@ export const ExpertServicesSection = () => {
             Advisory Plus Platform
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            ClimVar Advisory on the RA+ ClimVar Backbone
+            ClimVar Advisory on the RA+ Prism Backbone
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ ClimVar industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
+            Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ Prism industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export const ExpertServicesSection = () => {
             </table>
           </div>
           <p className="text-xs text-muted-foreground italic mt-5">
-            One methodology, one backbone. Clients move from advisory to RA+ ClimVar without losing scenarios, assumptions or model continuity.
+            One methodology, one backbone. Clients move from advisory to RA+ Prism without losing scenarios, assumptions or model continuity.
           </p>
         </div>
       </div>

@@ -37,11 +37,11 @@ export const ExecutiveTakeaway = () => {
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 sm:mb-8 text-foreground">
             Climate risk in{" "}
-            <span className="text-primary">financial terms</span>, adaptation as an investment, and a living view in RA+ ClimVar.
+            <span className="text-primary">financial terms</span>, adaptation as an investment, and a living view in RA+ Prism.
           </h2>
 
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10 sm:mb-12">
-            ClimVar advisory delivers the first Climate Value at Risk analysis and sizes the adaptation case in Schneider Electric solutions. RA+ ClimVar turns that work into a continuous, in product capability finance, risk and sustainability teams share, refresh and reuse.
+            ClimVar advisory delivers the first Climate Value at Risk analysis and sizes the adaptation case in Schneider Electric solutions. RA+ Prism turns that work into a continuous, in product capability finance, risk and sustainability teams share, refresh and reuse.
           </p>
 
           <Button

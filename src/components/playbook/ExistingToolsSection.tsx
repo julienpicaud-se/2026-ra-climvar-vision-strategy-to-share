@@ -49,7 +49,7 @@ export const ExistingToolsSection = () => {
             Risk Quantification Landscape
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Where we are today, what the market demands, and how ClimVar advisory IP becomes a living capability inside RA+ ClimVar.
+            Where we are today, what the market demands, and how ClimVar advisory IP becomes a living capability inside RA+ Prism.
           </p>
         </div>
 

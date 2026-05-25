@@ -34,7 +34,7 @@ const differentiators = [
   "Published Discounted Cash Flow methodology that turns climate, transition and nature risk into one Climate Value at Risk per scenario",
   "Gross to net Value at Risk view that prices Schneider Electric adaptation levers in financial terms",
   "Variable granularity from country and sector down to site, asset and supplier",
-  "Living in product capability through RA+ ClimVar instead of a one off study refreshed yearly",
+  "Living in product capability through RA+ Prism instead of a one off study refreshed yearly",
   "Bridge into the wider RA+ portfolio across Carbon Performance, Supply Chain, Climate Risk and Energy",
   "Internal Schneider Electric use cases on data centres and SE sites validate the model at scale",
 ];
@@ -90,7 +90,7 @@ export const CompetitiveLandscapeSection = () => {
                 ))}
               </ul>
               <p className="text-sm text-foreground italic mt-4 pt-4 border-t border-border/40">
-                Not a slide deck study. Not a generic ratings feed. A published methodology delivered as advisory and industrialised as RA+ ClimVar.
+                Not a slide deck study. Not a generic ratings feed. A published methodology delivered as advisory and industrialised as RA+ Prism.
               </p>
             </CardContent>
           </Card>

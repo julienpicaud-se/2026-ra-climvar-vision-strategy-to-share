@@ -34,15 +34,15 @@ const successMetrics = [
   },
   {
     icon: Repeat,
-    metric: "RA+ ClimVar refresh cadence",
-    description: "How often clients refresh scenarios, horizons or adaptation profiles inside RA+ ClimVar after the first engagement.",
+    metric: "RA+ Prism refresh cadence",
+    description: "How often clients refresh scenarios, horizons or adaptation profiles inside RA+ Prism after the first engagement.",
     indicator: "Living capability",
     signal: "Refreshes per client per year",
   },
   {
     icon: DollarSign,
-    metric: "Recurring RA+ ClimVar revenue",
-    description: "Share of ClimVar revenue that comes from recurring RA+ ClimVar subscriptions rather than one off advisory work.",
+    metric: "Recurring RA+ Prism revenue",
+    description: "Share of ClimVar revenue that comes from recurring RA+ Prism subscriptions rather than one off advisory work.",
     indicator: "Business impact",
     signal: "% recurring vs project",
   },
@@ -82,7 +82,7 @@ export const SuccessMetricsSection = () => {
                     The signal is simple: integrated risk, adaptation pull through, and a living view that gets reused.
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Success shows up in how broadly ClimVar covers risk drivers, how often Schneider Electric solutions attach to the adaptation case, and how frequently clients come back into RA+ ClimVar between engagements.
+                    Success shows up in how broadly ClimVar covers risk drivers, how often Schneider Electric solutions attach to the adaptation case, and how frequently clients come back into RA+ Prism between engagements.
                   </p>
                 </div>
 
