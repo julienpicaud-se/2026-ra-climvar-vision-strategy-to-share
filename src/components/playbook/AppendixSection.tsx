@@ -305,10 +305,10 @@ export const AppendixSection = () => {
               <div className="text-left">
                 <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <ScanText className="w-3.5 h-3.5" />
-                  Knowledge Engine
+                  Calculation Engine
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Sustainability Knowledge Engine
+                  ClimVar Calculation Engine
                 </h3>
               </div>
             </AccordionTrigger>
