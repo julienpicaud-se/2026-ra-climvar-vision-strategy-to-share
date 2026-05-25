@@ -54,10 +54,10 @@ const phases = [
     summary:
       "Take the methodology out of decks and into RA+ ClimVar so clients refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
-      "RA+ ClimVar module quantifies Value at Risk before and after adaptation",
+      "RA+ ClimVar product quantifies Value at Risk before and after adaptation",
       "Refreshable scenarios, time horizons and adaptation profiles",
       "Reusable financial and operational inputs across engagements",
-      "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy modules of RA+",
+      "Bridge into Carbon Performance, Supply Chain, Climate Risk and Energy products of RA+",
     ],
     dependencies: "Depends on Quantify and Adapt being stable. Unlocks recurring revenue and lower marginal cost per refresh.",
   },

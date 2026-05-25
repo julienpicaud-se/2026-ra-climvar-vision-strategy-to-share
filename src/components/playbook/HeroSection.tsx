@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            ClimVar quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ ClimVar, the in product module that turns the analysis into a living capability.
+            ClimVar quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ ClimVar, the in product product that turns the analysis into a living capability.
           </p>
 
           {/* Key pillars preview */}

@@ -372,11 +372,11 @@ export const exportToPptx = async () => {
   const buildPhasing = () => {
     const phases = [
       { phase: "Phase 1", title: "ClimVar Advisory at Scale", tagline: "Methodology in market", timing: "2025 — 2026", summary: "Deliver Climate Value at Risk engagements with the published methodology. Anchor scenarios on NGFS and IPCC, integrate physical, transition and nature, and tie adaptation to Schneider Electric offers." },
-      { phase: "Phase 2", title: "RA+ ClimVar MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ module: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
-      { phase: "Phase 3", title: "Cross Module Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the ClimVar backbone across RA+ Sustainability and Energy modules. Position RA+ ClimVar as the replacement for legacy risk tooling across the Schneider Electric estate." },
+      { phase: "Phase 2", title: "RA+ ClimVar MVP", tagline: "Product mode launch", timing: "2026", summary: "Industrialise the methodology as an RA+ product: refreshable scenarios, self serve adaptation editing, drill from portfolio to site, and time series views." },
+      { phase: "Phase 3", title: "Cross Product Spine", tagline: "Continuous capability", timing: "2027+", summary: "Reuse the ClimVar backbone across RA+ Sustainability and Energy products. Position RA+ ClimVar as the replacement for legacy risk tooling across the Schneider Electric estate." },
     ];
     const s = newSlide();
-    addTitle(s, "PHASING", "What Ships, in What Order, Why", "From the published methodology in market today to a continuous, cross module capability inside RA+.");
+    addTitle(s, "PHASING", "What Ships, in What Order, Why", "From the published methodology in market today to a continuous, cross product capability inside RA+.");
     phases.forEach((p, i) => {
       const xPos = 0.5 + i * 3.05;
       s.addShape("rect" as PptxGenJS.ShapeType, {
@@ -426,7 +426,7 @@ export const exportToPptx = async () => {
       { label: "First Climate VaR", signal: "Weeks from kickoff to delivery" },
       { label: "Scenario Refresh Cycle", signal: "Days per refresh in RA+ ClimVar" },
       { label: "Adaptation Coverage", signal: "% VaR addressed by sized levers" },
-      { label: "Cross Module Reuse", signal: "ClimVar clients consuming adjacent modules" },
+      { label: "Cross Product Reuse", signal: "ClimVar clients consuming adjacent products" },
       { label: "RA+ ClimVar Recurring Use", signal: "Active client teams (90d)" },
     ];
     quantKPIs.forEach((k, i) => {
