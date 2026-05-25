@@ -13,7 +13,7 @@ const keyObjectives = [
     id: "O1",
     tag: "Quantify",
     tagIcon: Layers,
-    title: "Establish ClimVar as the integrated financial view of climate and nature risk",
+    title: "Establish RA+ Prism as the integrated financial view of climate and nature risk",
     description:
       "Combine physical, transition and nature drivers into a single Climate Value at Risk per scenario, anchored on a published DCF methodology and public scenario references.",
     keyResults: [
@@ -39,7 +39,7 @@ const keyObjectives = [
     id: "O3",
     tag: "Automate",
     tagIcon: Sparkles,
-    title: "Industrialise ClimVar inside RA+ as a recurring product",
+    title: "Industrialise RA+ Prism inside RA+ as a recurring product",
     description:
       "Take the methodology out of decks and into RA+ Prism so clients refresh scenarios on demand, drill from portfolio to site, and reuse the same backbone across disclosure, capital and transition planning cycles.",
     keyResults: [
@@ -54,11 +54,11 @@ const keyObjectives = [
     tagIcon: DollarSign,
     title: "Make finance the entry door for the climate conversation",
     description:
-      "Position ClimVar so every first conversation starts with the financial framing and sustainability follows. The buyer set spans CFO, CRO, CSO and operational leaders on the same Value at Risk backbone.",
+      "Position RA+ Prism so every first conversation starts with the financial framing and sustainability follows. The buyer set spans CFO, CRO, CSO and operational leaders on the same Value at Risk backbone.",
     keyResults: [
       "First meetings led by Climate Value at Risk framing, not qualitative heatmaps",
       "Shared one number view used by finance, risk and sustainability teams",
-      "ClimVar outputs reused in impairment, capital allocation and disclosure work",
+      "RA+ Prism outputs reused in impairment, capital allocation and disclosure work",
     ],
   },
 ];
@@ -87,7 +87,7 @@ export const KeyObjectivesSection = () => {
             Key Objectives
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Four objectives that operationalise the Quantify, Adapt and Automate pillars across ClimVar advisory and RA+ Prism.
+            Four objectives that operationalise the Quantify, Adapt and Automate pillars across RA+ Prism advisory and RA+ Prism.
           </p>
         </div>
 

@@ -21,7 +21,7 @@ const successMetrics = [
   {
     icon: TrendingUp,
     metric: "Adaptation pull through",
-    description: "Schneider Electric energy, efficiency, PPA, supply chain and resilience offers attached to a ClimVar adaptation case.",
+    description: "Schneider Electric energy, efficiency, PPA, supply chain and resilience offers attached to a RA+ Prism adaptation case.",
     indicator: "Cross sell",
     signal: "Attach rate per engagement",
   },
@@ -42,7 +42,7 @@ const successMetrics = [
   {
     icon: DollarSign,
     metric: "Recurring RA+ Prism revenue",
-    description: "Share of ClimVar revenue that comes from recurring RA+ Prism subscriptions rather than one off advisory work.",
+    description: "Share of RA+ Prism revenue that comes from recurring RA+ Prism subscriptions rather than one off advisory work.",
     indicator: "Business impact",
     signal: "% recurring vs project",
   },
@@ -82,7 +82,7 @@ export const SuccessMetricsSection = () => {
                     The signal is simple: integrated risk, adaptation pull through, and a living view that gets reused.
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    Success shows up in how broadly ClimVar covers risk drivers, how often Schneider Electric solutions attach to the adaptation case, and how frequently clients come back into RA+ Prism between engagements.
+                    Success shows up in how broadly RA+ Prism covers risk drivers, how often Schneider Electric solutions attach to the adaptation case, and how frequently clients come back into RA+ Prism between engagements.
                   </p>
                 </div>
 
@@ -140,7 +140,7 @@ export const SuccessMetricsSection = () => {
           <Card className="mt-8 glass-card border-primary/30 glow-border">
             <CardContent className="p-5 sm:p-6 text-center">
               <p className="text-base sm:text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
-                These metrics map directly onto the three ClimVar pillars: 
+                These metrics map directly onto the three RA+ Prism pillars: 
                 <span className="text-primary font-semibold"> Quantify</span>, 
                 <span className="text-primary font-semibold"> Adapt</span>, and 
                 <span className="text-primary font-semibold"> Automate</span>.

@@ -27,7 +27,7 @@ export const PrismNameSection = () => {
             RA+ Prism: multi-faceted risk seen through one lens
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A prism takes one beam of light and reveals every colour inside it. RA+ Prism does the same with climate exposure: it takes the many facets of risk facing a business and refracts them through a single financial lens, the ClimVar methodology.
+            A prism takes one beam of light and reveals every colour inside it. RA+ Prism does the same with climate exposure: it takes the many facets of risk facing a business and refracts them through a single financial lens, the RA+ Prism methodology.
           </p>
         </div>
 

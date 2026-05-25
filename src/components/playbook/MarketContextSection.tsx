@@ -25,12 +25,12 @@ const forces = [
   {
     icon: Leaf,
     title: "Nature Joins the Agenda",
-    body: "Biodiversity, water and ecosystem dependencies are moving from voluntary to mandatory. ClimVar wires nature risk into the same Value at Risk waterfall as climate.",
+    body: "Biodiversity, water and ecosystem dependencies are moving from voluntary to mandatory. RA+ Prism wires nature risk into the same Value at Risk waterfall as climate.",
   },
   {
     icon: ShieldCheck,
     title: "Auditability is Non Negotiable",
-    body: "Boards and auditors want public references, traceable assumptions and reproducible scenarios. NGFS and IPCC RCP scenarios anchor every ClimVar run.",
+    body: "Boards and auditors want public references, traceable assumptions and reproducible scenarios. NGFS and IPCC RCP scenarios anchor every RA+ Prism run.",
   },
   {
     icon: Sparkles,
@@ -62,7 +62,7 @@ export const MarketContextSection = () => {
             Forces Pulling Climate Risk Into Finance
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Eight converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures ClimVar is built to meet.
+            Eight converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures RA+ Prism is built to meet.
           </p>
         </div>
 

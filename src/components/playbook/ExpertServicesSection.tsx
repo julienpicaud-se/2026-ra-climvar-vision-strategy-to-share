@@ -7,7 +7,7 @@ const archetypes = [
     title: "Advisory First Client",
     tagline: "EXPERT LED, METHODOLOGY GROUNDED",
     description:
-      "Wants a senior ClimVar team in the room to size their first Climate Value at Risk, calibrate scenarios with the CFO and risk team, and frame adaptation as a capital allocation question. The methodology travels with the engagement.",
+      "Wants a senior RA+ Prism team in the room to size their first Climate Value at Risk, calibrate scenarios with the CFO and risk team, and frame adaptation as a capital allocation question. The methodology travels with the engagement.",
     bullets: [
       "Bespoke scoping with finance, risk and sustainability stakeholders",
       "Hands on calibration of physical, transition and nature drivers",
@@ -17,9 +17,9 @@ const archetypes = [
   {
     icon: Bot,
     title: "RA+ Prism Client",
-    tagline: "RA+ CLIMVAR, REFRESHED ON DEMAND",
+    tagline: "RA+ PRISM, REFRESHED ON DEMAND",
     description:
-      "Has been through a first ClimVar engagement and now wants the model inside RA+ Prism so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
+      "Has been through a first RA+ Prism engagement and now wants the model inside RA+ Prism so finance, risk and sustainability can refresh scenarios, drill from portfolio to site, and reuse the same backbone across cycles.",
     bullets: [
       "Self service refresh of scenarios, horizons and adaptation profiles",
       "Geographic and asset level deep dives on demand",
@@ -60,8 +60,8 @@ const tiers = [
     name: "Advisory",
     audience: "First time Climate Value at Risk",
     cadence: "Project based",
-    human: "Senior ClimVar team owns scoping, calibration and exec communication",
-    platform: "Bespoke modelling shared back via the ClimVar advisory deliverable",
+    human: "Senior RA+ Prism team owns scoping, calibration and exec communication",
+    platform: "Bespoke modelling shared back via the RA+ Prism advisory deliverable",
   },
   {
     name: "Hybrid",
@@ -94,7 +94,7 @@ export const ExpertServicesSection = () => {
             Advisory Plus Platform
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            ClimVar Advisory on the RA+ Prism Backbone
+            RA+ Prism Advisory on the RA+ Prism Backbone
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
             Experts deliver the first Climate Value at Risk analysis and frame the adaptation case. RA+ Prism industrialises the model so clients move from a one off engagement to a living capability without losing methodology continuity.
@@ -139,7 +139,7 @@ export const ExpertServicesSection = () => {
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex items-center gap-3 mb-6">
             <UserCog className="w-5 h-5 text-primary" />
-            <h3 className="font-semibold text-foreground">Where ClimVar Experts Make the Difference</h3>
+            <h3 className="font-semibold text-foreground">Where RA+ Prism Experts Make the Difference</h3>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {judgementPillars.map((p) => {
@@ -163,7 +163,7 @@ export const ExpertServicesSection = () => {
         <div className="max-w-6xl mx-auto bg-card rounded-xl border border-border/50 p-6 sm:p-8">
           <div className="flex items-center gap-3 mb-6">
             <MessageSquare className="w-5 h-5 text-primary" />
-            <h3 className="font-semibold text-foreground">Engagement Tiers on One ClimVar Backbone</h3>
+            <h3 className="font-semibold text-foreground">Engagement Tiers on One RA+ Prism Backbone</h3>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm min-w-[680px]">

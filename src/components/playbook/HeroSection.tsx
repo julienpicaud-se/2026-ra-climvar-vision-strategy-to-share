@@ -65,7 +65,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">ClimVar · Financial Risk Quantification</span>
+            <span className="text-sm font-medium text-primary">RA+ Prism · Financial Risk Quantification</span>
           </div>
 
           {/* Main headline */}
@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            ClimVar quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ Prism, the in product product that turns the analysis into a living capability.
+            RA+ Prism quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ Prism, the in product product that turns the analysis into a living capability.
           </p>
 
           {/* Key pillars preview */}

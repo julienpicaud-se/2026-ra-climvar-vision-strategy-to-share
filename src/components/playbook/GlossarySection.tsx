@@ -4,11 +4,11 @@ import { Search } from "lucide-react";
 
 const glossaryTerms = [
   {
-    category: "ClimVar core concepts",
+    category: "RA+ Prism core concepts",
     terms: [
-      { abbr: "ClimVar", full: "Climate Value at Risk: financial quantification of climate, transition and nature risk on enterprise value, revenue, OPEX and COGS" },
-      { abbr: "RA+ Prism", full: "The in product RA+ product that turns the ClimVar methodology into a continuously refreshable capability" },
-      { abbr: "DCF", full: "Discounted Cash Flow, the financial modelling backbone of the ClimVar methodology" },
+      { abbr: "RA+ Prism", full: "Climate Value at Risk: financial quantification of climate, transition and nature risk on enterprise value, revenue, OPEX and COGS" },
+      { abbr: "RA+ Prism", full: "The in product RA+ product that turns the RA+ Prism methodology into a continuously refreshable capability" },
+      { abbr: "DCF", full: "Discounted Cash Flow, the financial modelling backbone of the RA+ Prism methodology" },
       { abbr: "Gross VaR", full: "Climate Value at Risk before any adaptation measure is applied" },
       { abbr: "Net VaR", full: "Climate Value at Risk after Schneider Electric adaptation measures are deployed" },
       { abbr: "Waterfall", full: "View that decomposes total Value at Risk across drivers, geographies, assets or scenarios" },
@@ -41,9 +41,9 @@ const glossaryTerms = [
   {
     category: "Roles and platform",
     terms: [
-      { abbr: "RA+", full: "Schneider Electric's integrated platform that hosts ClimVar and adjacent Sustainability and Energy products" },
-      { abbr: "RA+ Prism", full: "The in product capability that turns ClimVar advisory analyses into a continuously refreshable risk view" },
-      { abbr: "ClimVar Advisory", full: "Engagement led delivery of the published ClimVar methodology by SE Advisory Services" },
+      { abbr: "RA+", full: "Schneider Electric's integrated platform that hosts RA+ Prism and adjacent Sustainability and Energy products" },
+      { abbr: "RA+ Prism", full: "The in product capability that turns RA+ Prism advisory analyses into a continuously refreshable risk view" },
+      { abbr: "RA+ Prism Advisory", full: "Engagement led delivery of the published RA+ Prism methodology by SE Advisory Services" },
       { abbr: "CFO", full: "Chief Financial Officer" },
       { abbr: "Financial planner", full: "Finance lead responsible for impairment, capital allocation and forward financial planning" },
       { abbr: "CRO", full: "Chief Risk Officer" },
@@ -55,14 +55,14 @@ const glossaryTerms = [
   {
     category: "Financial and modelling",
     terms: [
-      { abbr: "VaR", full: "Value at Risk, the financial measure ClimVar produces per scenario, driver and asset" },
-      { abbr: "NPV", full: "Net Present Value, the discounted sum of future cash flows used as the ClimVar valuation anchor" },
-      { abbr: "OPEX", full: "Operating Expenses, one of the impact lines ClimVar projects under each scenario" },
-      { abbr: "COGS", full: "Cost of Goods Sold, modelled in ClimVar to capture supply chain and input cost exposure" },
-      { abbr: "CAPEX", full: "Capital Expenditure, the envelope used to size adaptation investment choices in ClimVar" },
-      { abbr: "MRIO", full: "Multi Regional Input Output modelling, used in ClimVar for supply chain risk without supplier data collection" },
+      { abbr: "VaR", full: "Value at Risk, the financial measure RA+ Prism produces per scenario, driver and asset" },
+      { abbr: "NPV", full: "Net Present Value, the discounted sum of future cash flows used as the RA+ Prism valuation anchor" },
+      { abbr: "OPEX", full: "Operating Expenses, one of the impact lines RA+ Prism projects under each scenario" },
+      { abbr: "COGS", full: "Cost of Goods Sold, modelled in RA+ Prism to capture supply chain and input cost exposure" },
+      { abbr: "CAPEX", full: "Capital Expenditure, the envelope used to size adaptation investment choices in RA+ Prism" },
+      { abbr: "MRIO", full: "Multi Regional Input Output modelling, used in RA+ Prism for supply chain risk without supplier data collection" },
       { abbr: "ECLR", full: "Schneider Electric internal physical climate risk tool deployed across 100+ SE sites" },
-      { abbr: "SSRN", full: "Social Science Research Network, where the ClimVar Discounted Cash Flow methodology is published" },
+      { abbr: "SSRN", full: "Social Science Research Network, where the RA+ Prism Discounted Cash Flow methodology is published" },
     ],
   },
 ];
@@ -95,7 +95,7 @@ export const GlossarySection = () => {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search terms (e.g. ClimVar, NGFS, TCFD)..."
+          placeholder="Search terms (e.g. RA+ Prism, NGFS, TCFD)..."
           className="pl-9"
           aria-label="Search glossary"
         />

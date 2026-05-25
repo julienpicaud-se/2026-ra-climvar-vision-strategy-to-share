@@ -37,7 +37,7 @@ export const DataRequirementsSection = () => {
             Data Foundation
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-            Data Required for ClimVar
+            Data Required for RA+ Prism
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
             The core data objects needed to produce a defensible Climate Value at Risk waterfall, plus optional client context that sharpens the view and unlocks deeper site, supplier and adaptation analysis.

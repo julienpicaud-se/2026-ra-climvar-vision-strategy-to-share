@@ -14,7 +14,7 @@ const phases = [
     statusLabel: "In production",
     timing: "Live, expanding driver coverage",
     summary:
-      "Establish ClimVar advisory as the integrated financial view of climate and nature risk, combining physical, transition and nature drivers into one Climate Value at Risk waterfall.",
+      "Establish RA+ Prism advisory as the integrated financial view of climate and nature risk, combining physical, transition and nature drivers into one Climate Value at Risk waterfall.",
     bullets: [
       "Six risk drivers live: four physical, two transition",
       "Nature risk wired into the same waterfall",
@@ -93,7 +93,7 @@ export const PhasingSection = () => {
             Phasing: Quantify, Adapt, Automate
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto">
-            A clear order of operations for ClimVar. Quantify first as advisory, then Adapt connects risk to Schneider Electric offers, then Automate turns the model into a living capability in RA+ Prism.
+            A clear order of operations for RA+ Prism. Quantify first as advisory, then Adapt connects risk to Schneider Electric offers, then Automate turns the model into a living capability in RA+ Prism.
           </p>
         </div>
 
