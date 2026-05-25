@@ -19,7 +19,7 @@ export const VOCEvidenceSection = () => {
             VOC Validation
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Customer Evidence
+            ClimVar Customer Evidence
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{vocEvidence.intro}</p>
         </div>

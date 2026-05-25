@@ -16,10 +16,10 @@ export const PainInventorySection = () => {
         <div className="mb-10 max-w-3xl">
           <span className="text-destructive text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3 flex items-center gap-2">
             <AlertOctagon className="w-4 h-4" />
-            Sustainability Pain Inventory
+            ClimVar Pain Inventory
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            What the Sustainability Transformation Eliminates
+            What ClimVar Eliminates
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{painInventory.intro}</p>
         </div>

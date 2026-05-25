@@ -454,7 +454,7 @@ export const exportToPptx = async () => {
 
   const buildStartStop = () => {
     const s = newSlide();
-    addTitle(s, "START / STOP", "Where We Stop, How We Operate", "The boundary list keeps scope honest. The operating rules keep customer-facing advice trustworthy.");
+    addTitle(s, "START / STOP", "Where ClimVar Stops, How It Operates", "The boundary list keeps ClimVar scope honest. The operating rules keep every Climate Value at Risk output trustworthy.");
     const outOfScope = [
       { title: "ROI Charts", detail: "ClimVar is not a savings calculator. We frame Value at Risk and adaptation cost vs benefit, not headline ROI charts." },
       { title: "Pricing and Discounting", detail: "Commercial terms and discounting policies live outside this playbook." },

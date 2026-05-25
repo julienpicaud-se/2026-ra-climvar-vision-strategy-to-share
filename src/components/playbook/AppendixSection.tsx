@@ -144,7 +144,7 @@ export const AppendixSection = () => {
             ClimVar Playbook Details
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mt-4">
-            Deep dive into the operating model, capability evolution, quarterly plans, and supporting metrics.
+            Deep dive into the ClimVar methodology, RA+ ClimVar product scope, customer maturity, adaptation engine, and supporting evidence.
           </p>
         </div>
 
@@ -216,7 +216,7 @@ export const AppendixSection = () => {
                   Guardrails
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Where We Stop, How We Operate
+                  Where ClimVar Stops, How It Operates
                 </h3>
               </div>
             </AccordionTrigger>
@@ -262,7 +262,7 @@ export const AppendixSection = () => {
                   Competitive Landscape
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Sustainability Technology Landscape
+                  Where ClimVar Wins
                 </h3>
               </div>
             </AccordionTrigger>
@@ -285,7 +285,7 @@ export const AppendixSection = () => {
                   Data Foundation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Data Required for Sustainability Capabilities
+                  Data Required for ClimVar
                 </h3>
               </div>
             </AccordionTrigger>
@@ -305,10 +305,10 @@ export const AppendixSection = () => {
               <div className="text-left">
                 <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <ScanText className="w-3.5 h-3.5" />
-                  Knowledge Engine
+                  Calculation Engine
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Sustainability Knowledge Engine
+                  ClimVar Calculation Engine
                 </h3>
               </div>
             </AccordionTrigger>
@@ -334,7 +334,7 @@ export const AppendixSection = () => {
                   Reference Customer
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Reference Customer Pattern
+                  Schneider Electric as Internal Lighthouse
                 </h3>
               </div>
             </AccordionTrigger>
@@ -354,10 +354,10 @@ export const AppendixSection = () => {
               <div className="text-left">
                 <span className="text-destructive text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <AlertOctagon className="w-3.5 h-3.5" />
-                  Sustainability Pain Inventory
+                  ClimVar Pain Inventory
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  What the Sustainability Transformation Eliminates
+                  What ClimVar Eliminates
                 </h3>
               </div>
             </AccordionTrigger>
@@ -380,7 +380,7 @@ export const AppendixSection = () => {
                   VOC Validation
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Customer Evidence
+                  ClimVar Customer Evidence
                 </h3>
               </div>
             </AccordionTrigger>
