@@ -77,7 +77,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            RA+ Prism quantifies the combined impact of climate and nature risks on asset value. Advisory services plus RA+ Prism, the in product product that turns the analysis into a living capability.
+            RA+ Prism quantifies the combined impact of climate and nature risks on asset value through a published Discounted Cash Flow methodology. Advisory services deliver the analysis; the platform makes it a living capability.
           </p>
 
           {/* Key pillars preview */}
