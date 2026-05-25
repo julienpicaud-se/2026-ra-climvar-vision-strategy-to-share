@@ -7,7 +7,7 @@ const archetypes = [
     title: "Advisory First Client",
     tagline: "EXPERT LED, METHODOLOGY GROUNDED",
     description:
-      "Wants a senior RA+ Prism team in the room to size their first Climate Value at Risk, calibrate scenarios with the CFO and risk team, and frame adaptation as a capital allocation question. The methodology travels with the engagement.",
+      "Wants a senior advisory team in the room to size their first Climate Value at Risk, calibrate scenarios with the CFO and risk team, and frame adaptation as a capital allocation question. The methodology travels with the engagement.",
     bullets: [
       "Bespoke scoping with finance, risk and sustainability stakeholders",
       "Hands on calibration of physical, transition and nature drivers",
