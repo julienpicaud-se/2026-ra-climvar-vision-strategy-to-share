@@ -514,7 +514,7 @@ export const exportToPptx = async () => {
 
   const buildMaturityLadder = () => {
     const s = newSlide();
-    addTitle(s, "APPENDIX · MATURITY LADDER", "Meet Customers Where They Are", maturityLadder.intro);
+    addTitle(s, "DELIVERY · MATURITY LADDER", "Meet Customers Where They Are", maturityLadder.intro);
     maturityLadder.stages.forEach((stage, i) => {
       const xPos = 0.5 + i * 2.35;
       s.addShape("rect" as PptxGenJS.ShapeType, {
@@ -527,6 +527,92 @@ export const exportToPptx = async () => {
     });
     s.addText(maturityLadder.note, { x: 0.5, y: 4.7, w: 9, h: 0.3, fontSize: 8, italic: true, color: TEXT_MUTED });
   };
+
+  const buildDataCenter = () => {
+    // Slide 1: headline stats + intro
+    const s1 = newSlide();
+    addTitle(
+      s1,
+      "APPENDIX · DATA CENTERS",
+      "The Repricing of Compute",
+      "First full ClimVaR application on a sector. 8,572 installed facilities, 90.8 GW, 120 countries, plus 4,633 prospective AI-era sites. Source: Paccou and Epelbaum, April 2026.",
+    );
+    const stats = [
+      { v: "$388B", l: "Unpriced ClimVaR", d: "Conservative lower bound on installed base" },
+      { v: "38.3%", l: "of $1,012B EV", d: "Climate risk hidden inside today's data center EV" },
+      { v: "2.6x", l: "Hazard per GW (AI tier)", d: "AI-era sites amplify physical risk per GW of load" },
+      { v: "30 to 39%", l: "ClimVaR cut via adaptation", d: "Every modeled lever is NPV positive" },
+    ];
+    stats.forEach((st, i) => {
+      const xPos = 0.5 + i * 2.35;
+      s1.addShape("rect" as PptxGenJS.ShapeType, {
+        x: xPos, y: 2.0, w: 2.15, h: 2.2,
+        fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 },
+      });
+      s1.addText(st.v, { x: xPos + 0.15, y: 2.15, w: 1.85, h: 0.5, fontSize: 22, bold: true, color: BRAND_GREEN });
+      s1.addText(st.l, { x: xPos + 0.15, y: 2.7, w: 1.85, h: 0.3, fontSize: 10, bold: true, color: TEXT_WHITE });
+      s1.addText(st.d, { x: xPos + 0.15, y: 3.05, w: 1.85, h: 1.1, fontSize: 7, color: TEXT_MUTED, fit: "shrink" });
+    });
+    s1.addText(
+      "Geography drives channel mix more than magnitude. The total ClimVaR envelope is stable across regions; what changes is whether physical hazard, carbon transition, or upstream interruption dominates.",
+      { x: 0.5, y: 4.5, w: 9, h: 0.6, fontSize: 9, italic: true, color: TEXT_WHITE, fit: "shrink" },
+    );
+
+    // Slide 2: AI vs Legacy + four channels
+    const s2 = newSlide();
+    addTitle(s2, "APPENDIX · DATA CENTERS", "The AI tier flips the risk profile", "Risk composition by tier, and the four channels SE's portfolio defends.");
+    const rows = [
+      { label: "Legacy installed base", physical: "28%", carbon: "55%", other: "17%", note: "Carbon and transition costs dominate. Policy and price driven." },
+      { label: "AI-tier prospective sites", physical: "94%", carbon: "6%", other: "0%", note: "Physical hazard becomes the dominant driver." },
+    ];
+    rows.forEach((r, i) => {
+      const xPos = 0.5 + i * 4.6;
+      s2.addShape("rect" as PptxGenJS.ShapeType, {
+        x: xPos, y: 1.9, w: 4.4, h: 1.5, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 },
+      });
+      s2.addText(r.label, { x: xPos + 0.15, y: 1.98, w: 4.1, h: 0.3, fontSize: 10, bold: true, color: BRAND_GREEN });
+      s2.addText(`Physical ${r.physical}  ·  Carbon ${r.carbon}  ·  Other ${r.other}`, {
+        x: xPos + 0.15, y: 2.32, w: 4.1, h: 0.35, fontSize: 11, bold: true, color: TEXT_WHITE,
+      });
+      s2.addText(r.note, { x: xPos + 0.15, y: 2.75, w: 4.1, h: 0.6, fontSize: 8, color: TEXT_MUTED, fit: "shrink" });
+    });
+    const channels = [
+      { t: "Hazard at the site", b: "Heat, water stress, flood, storm hit cooling and uptime. SE on-site power, cooling, resilience." },
+      { t: "Upstream interruption", b: "Over 90% of BI risk sits upstream (Leontief). Prism's supply-chain graph surfaces tier-2 fragility." },
+      { t: "Grid and power continuity", b: "Climate-driven grid stress reshapes PPA economics. SE energy, microgrid, PPA advisory." },
+      { t: "Transition and carbon", b: "Carbon pricing and electrification remain material on legacy base. SE efficiency and electrification offers." },
+    ];
+    channels.forEach((c, i) => {
+      const xPos = 0.5 + (i % 2) * 4.6;
+      const yPos = 3.6 + Math.floor(i / 2) * 1.05;
+      s2.addShape("rect" as PptxGenJS.ShapeType, {
+        x: xPos, y: yPos, w: 4.4, h: 0.95, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 },
+      });
+      s2.addText(c.t, { x: xPos + 0.15, y: yPos + 0.08, w: 4.1, h: 0.3, fontSize: 10, bold: true, color: BRAND_GREEN });
+      s2.addText(c.b, { x: xPos + 0.15, y: yPos + 0.38, w: 4.1, h: 0.55, fontSize: 7.5, color: TEXT_MUTED, fit: "shrink" });
+    });
+
+    // Slide 3: MAC curve message
+    const s3 = newSlide();
+    addTitle(s3, "APPENDIX · DATA CENTERS", "Adaptation is the cheapest defended dollar of EV", "10 actions on the MAC curve, all below $1.00 break-even, protecting roughly $150B of enterprise value.");
+    const actions = [
+      "On-site cooling redesign", "Water re-use and dry cooling", "Hardened grid connection", "Microgrid + storage", "On-site PPA",
+      "Energy efficiency retrofit", "Supplier diversification", "Tier-2 mapping and monitoring", "Site relocation screening", "Adaptive capex sequencing",
+    ];
+    actions.forEach((a, i) => {
+      const xPos = 0.5 + (i % 5) * 1.85;
+      const yPos = 2.1 + Math.floor(i / 5) * 1.1;
+      s3.addShape("rect" as PptxGenJS.ShapeType, {
+        x: xPos, y: yPos, w: 1.7, h: 0.9, fill: { color: CARD_BG }, line: { color: BRAND_GREEN, width: 1 },
+      });
+      s3.addText(a, { x: xPos + 0.1, y: yPos + 0.15, w: 1.5, h: 0.6, fontSize: 8.5, bold: true, color: TEXT_WHITE, align: "center", fit: "shrink" });
+    });
+    s3.addText(
+      "Data centers are the proof point. One ClimVaR run reprices the asset base, flips the AI-tier risk story, and converts every SE offer into a quantified EV defense.",
+      { x: 0.5, y: 4.8, w: 9, h: 0.6, fontSize: 10, italic: true, color: BRAND_GREEN, align: "center", fit: "shrink" },
+    );
+  };
+
 
   const buildVocEvidence = () => {
     const s = newSlide();
@@ -627,6 +713,7 @@ export const exportToPptx = async () => {
 
   // Delivery
   buildPhasing();
+  buildMaturityLadder();
   buildIdmVision();
   buildSuccessMetrics();
   buildStartStop();
@@ -634,12 +721,13 @@ export const exportToPptx = async () => {
 
   // Appendix
   addSectionDivider("APPENDIX", "Reference Materials");
+  buildDataCenter();
   buildKnowledgeEngine();
-  buildMaturityLadder();
   buildVocEvidence();
   buildSECorporateBlueprint();
   buildPainInventory();
   buildFlywheel();
+
 
   buildThankYou();
 
