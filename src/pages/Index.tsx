@@ -85,6 +85,7 @@ const Index = () => {
       <ExpertServicesSection />
       {/* Delivery */}
       <PhasingSection />
+      <MaturityLadderSection />
       {/* Guardrails */}
       <SuccessMetricsSection />
       <StartStopMatrix />

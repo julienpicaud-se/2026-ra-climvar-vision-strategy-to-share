@@ -1,4 +1,4 @@
-import { TrendingUp, Layers, Sparkles, Leaf, ShieldCheck, Database, Activity, DollarSign, Globe } from "lucide-react";
+import { TrendingUp, Layers, Sparkles, Leaf, ShieldCheck, Database, Activity, DollarSign, Globe, Compass } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const forces = [
@@ -42,6 +42,11 @@ const forces = [
     title: "From Decks to Living Models",
     body: "One off PowerPoint risk studies no longer fit a yearly disclosure and quarterly capital cadence. Clients want a continuously refreshable view in product.",
   },
+  {
+    icon: Compass,
+    title: "Blue Ocean for the Risk to Finance Stack",
+    body: "Competitors match Schneider Electric on individual blocks: risk modelling, carbon accounting, or operational monitoring. None combine all three and route the output into finance. RA+ Prism sits in that gap.",
+  },
 ];
 
 export const MarketContextSection = () => {
@@ -62,7 +67,7 @@ export const MarketContextSection = () => {
             Forces Pulling Climate Risk Into Finance
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Eight converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures RA+ Prism is built to meet.
+            Nine converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures RA+ Prism is built to meet.
           </p>
         </div>
 
