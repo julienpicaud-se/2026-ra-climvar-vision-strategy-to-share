@@ -5,7 +5,7 @@ import { PainInventorySection } from "@/components/playbook/PainInventorySection
 import { VOCEvidenceSection } from "@/components/playbook/VOCEvidenceSection";
 import { SECorporateBlueprintSection } from "@/components/playbook/SECorporateBlueprintSection";
 import { GlossarySection } from "@/components/playbook/GlossarySection";
-import { MaturityLadderSection } from "@/components/playbook/MaturityLadderSection";
+import { DataCenterSection } from "@/components/playbook/DataCenterSection";
 import { BoundariesSection } from "@/components/playbook/BoundariesSection";
 import { StrategicContextSection } from "@/components/playbook/StrategicContextSection";
 import { CompetitiveLandscapeSection } from "@/components/playbook/CompetitiveLandscapeSection";
@@ -48,7 +48,7 @@ const StatusIcon = ({ status }: { status: string }) => {
 };
 
 const APPENDIX_SECTIONS = [
-  "maturity-ladder",
+  "data-center",
   "boundaries",
   "strategic-context",
   "competitive-landscape",
@@ -179,28 +179,29 @@ export const AppendixSection = () => {
           className="space-y-4"
         >
 
-        {/* ============ Maturity Ladder ============ */}
+        {/* ============ Data Center Deep Dive ============ */}
           <AccordionItem
-            value="maturity-ladder"
-            ref={setItemRef("maturity-ladder")}
-            data-section="maturity-ladder"
-            className={itemClass("maturity-ladder")}
+            value="data-center"
+            ref={setItemRef("data-center")}
+            data-section="data-center"
+            className={itemClass("data-center")}
           >
             <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-muted/30">
               <div className="text-left">
                 <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
                   <Compass className="w-3.5 h-3.5" />
-                  Customer Maturity Ladder
+                  Sector Deep Dive
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                  Meet Customers Where They Are, Pull Them Up
+                  Data Centers · The Repricing of Compute
                 </h3>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-2 pb-2">
-              <MaturityLadderSection />
+              <DataCenterSection />
             </AccordionContent>
           </AccordionItem>
+
 
         {/* ============ Boundaries ============ */}
           <AccordionItem

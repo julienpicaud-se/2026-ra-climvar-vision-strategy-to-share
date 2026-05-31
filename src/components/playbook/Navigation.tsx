@@ -79,6 +79,7 @@ const groups: NavGroup[] = [
     label: "Delivery",
     items: [
       { id: "phasing", label: "Phasing" },
+      { id: "maturity-ladder", label: "Maturity Ladder" },
       
       { id: "success-metrics", label: "Success Metrics" },
       { id: "start-stop", label: "Start / Stop" },
@@ -89,6 +90,7 @@ const groups: NavGroup[] = [
     label: "Appendix",
     items: [
       { id: "appendix", label: "Browse full appendix" },
+      { id: "appendix:data-center", label: "Data Centers Deep Dive" },
     ],
   },
 ];

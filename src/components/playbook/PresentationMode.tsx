@@ -30,6 +30,7 @@ const sections = [
   { id: "expert-services", title: "Expert Services" },
   // Delivery
   { id: "phasing", title: "Phasing" },
+  { id: "maturity-ladder", title: "Maturity Ladder" },
   
   { id: "success-metrics", title: "Success Metrics" },
   { id: "start-stop", title: "Start / Stop" },

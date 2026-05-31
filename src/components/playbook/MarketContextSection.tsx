@@ -67,7 +67,7 @@ export const MarketContextSection = () => {
             Forces Pulling Climate Risk Into Finance
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Eight converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures RA+ Prism is built to meet.
+            Nine converging forces are turning climate, nature and transition risk into a financial conversation. These are the pressures RA+ Prism is built to meet.
           </p>
         </div>
 
